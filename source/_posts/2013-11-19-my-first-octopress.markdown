@@ -18,3 +18,19 @@ wn)
 This file is to describe the myconfig file structure and how to use
 ```
 
+## References:
+
+http://zespia.tw/blog/2012/01/14/hello-octopress/
+http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/
+
+[Fast deploy post]
+rake generate
+rake preview
+
+[Remember to push&deploy]
+git add .
+git commit -m "msg"
+git push origin master
+
+rake deploy
+
