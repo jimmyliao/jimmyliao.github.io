@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[There is always a better way.]]></title>
+  <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2013-11-19T21:26:45+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My First Octopress]]></title>
+    <link href="http://jimmyliao.github.io/blog/2013/11/19/my-first-octopress/"/>
+    <updated>2013-11-19T21:08:03+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/19/my-first-octopress</id>
+    <content type="html"><![CDATA[<p>this page uses the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax. (or refer: <a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo</a>
+wn)</p>
+
+<h1>1. /README.md</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>This file is to describe the myconfig file structure and how to use</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>
