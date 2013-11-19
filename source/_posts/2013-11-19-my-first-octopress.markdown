@@ -18,10 +18,28 @@ wn)
 This file is to describe the myconfig file structure and how to use
 ```
 
+# Tweaks:
+http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress
+Edit the Rakefile and look for this line:
+```
+system "git push origin #{deploy_branch}"
+```
+Alter the line by adding a plus (+) before the #{deploy_branch} tag:
+```
+system "git push origin +#{deploy_branch}"
+```
+Run the command
+
+```
+rake deploy
+```
+
 ## References:
 
 http://zespia.tw/blog/2012/01/14/hello-octopress/
 http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/
+
+git pull origin master
 
 [Fast deploy post]
 rake generate
