@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Jimmy's Octopress Blog]]></title>
+  <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2013-11-19T23:34:00+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[1st post: setup on Octopress on Github page]]></title>
+    <link href="http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/"/>
+    <updated>2013-11-16T10:39:00+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page</id>
+    <content type="html"><![CDATA[<p>abc</p>
+]]></content>
+  </entry>
+  
+</feed>
