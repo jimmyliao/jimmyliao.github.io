@@ -105,6 +105,27 @@ wn)</p>
 </pre></td><td class='code'><pre><code class=''><span class='line'>This file is to describe the myconfig file structure and how to use</span></code></pre></td></tr></table></div></figure>
 
 
+<h1>Tweaks:</h1>
+
+<p><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress</a>
+Edit the Rakefile and look for this line:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin #{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin +#{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Run the command</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
 <h2>References:</h2>
 
 <p><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/</a>
