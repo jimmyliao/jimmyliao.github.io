@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Markdown | Jimmy's Blog]]></title>
+  <title><![CDATA[Category: Markdown | There is always a better way.]]></title>
   <link href="http://jimmyliao.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2013-11-19T21:22:43+08:00</updated>
+  <updated>2013-11-19T21:26:45+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
