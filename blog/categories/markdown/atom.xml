@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | There is always a better way.]]></title>
   <link href="http://jimmyliao.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2013-11-19T21:26:45+08:00</updated>
+  <updated>2013-11-19T21:57:45+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -26,6 +26,41 @@ wn)</p>
 <p><code>
 This file is to describe the myconfig file structure and how to use
 </code></p>
+
+<h1>Tweaks:</h1>
+
+<p><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress</a>
+Edit the Rakefile and look for this line:
+<code>
+system "git push origin #{deploy_branch}"
+</code>
+Alter the line by adding a plus (+) before the #{deploy_branch} tag:
+<code>
+system "git push origin +#{deploy_branch}"
+</code>
+Run the command</p>
+
+<p><code>
+rake deploy
+</code></p>
+
+<h2>References:</h2>
+
+<p><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/</a>
+<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
+<p>git pull origin master</p>
+
+<p>[Fast deploy post]
+rake generate
+rake preview</p>
+
+<p>[Remember to push&amp;deploy]
+git add .
+git commit -m &ldquo;msg&rdquo;
+git push origin master</p>
+
+<p>rake deploy</p>
 ]]></content>
   </entry>
   
