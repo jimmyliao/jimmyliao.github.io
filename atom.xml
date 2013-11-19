@@ -4,7 +4,7 @@
   <title><![CDATA[There is always a better way.]]></title>
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2013-11-19T21:57:45+08:00</updated>
+  <updated>2013-11-19T22:09:26+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[中文標題]]></title>
+    <link href="http://jimmyliao.github.io/blog/2013/11/19/chinese-test/"/>
+    <updated>2013-11-19T22:07:46+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/19/chinese-test</id>
+    <content type="html"><![CDATA[<p>等123</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Octopress]]></title>
