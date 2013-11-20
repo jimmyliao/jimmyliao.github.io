@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
+<<<<<<< HEAD
   <title><![CDATA[There is always a better way.]]></title>
+=======
+  <title><![CDATA[There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2013-11-19T22:09:26+08:00</updated>
+  <updated>2013-11-20T08:21:41+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -14,7 +18,11 @@
 
   
   <entry>
+<<<<<<< HEAD
     <title type="html"><![CDATA[中文標題]]></title>
+=======
+    <title type="html"><![CDATA[中文標題]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
     <link href="http://jimmyliao.github.io/blog/2013/11/19/chinese-test/"/>
     <updated>2013-11-19T22:07:46+08:00</updated>
     <id>http://jimmyliao.github.io/blog/2013/11/19/chinese-test</id>
@@ -23,7 +31,11 @@
   </entry>
   
   <entry>
+<<<<<<< HEAD
     <title type="html"><![CDATA[My First Octopress]]></title>
+=======
+    <title type="html"><![CDATA[my first octopress]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
     <link href="http://jimmyliao.github.io/blog/2013/11/19/my-first-octopress/"/>
     <updated>2013-11-19T21:08:03+08:00</updated>
     <id>http://jimmyliao.github.io/blog/2013/11/19/my-first-octopress</id>
