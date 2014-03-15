@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<<<<<<< HEAD
+  <title><![CDATA[Category: Gradle | There is always a better way.]]></title>
+=======
+  <title><![CDATA[Category: Gradle | There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+  <link href="http://jimmyliao.github.io/blog/categories/gradle/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2014-03-16T00:36:11+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Migrate Enterprise Development to Gradle]]></title>
+=======
+    <title type="html"><![CDATA[Migrate enterprise development to gradle]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/02/10/migrate-enterprise-development-to-gradle/"/>
+    <updated>2014-02-10T23:55:23+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/02/10/migrate-enterprise-development-to-gradle</id>
+    <content type="html"><![CDATA[<p>The gradle migration series is about to migrate your existing enterprise Java Project from Ant script to the Gradle-based building. In this article (phase 1), you will learn how to setup gradle tasks into your existed project and how it works.</p>
+
+<ul>
+<li>Gradle Introduction</li>
+<li>What essential feature / steps before start</li>
+<li>Steps with Sample projects</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

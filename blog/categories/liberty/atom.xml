@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<<<<<<< HEAD
+  <title><![CDATA[Category: Liberty | There is always a better way.]]></title>
+=======
+  <title><![CDATA[Category: Liberty | There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+  <link href="http://jimmyliao.github.io/blog/categories/liberty/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2014-03-16T00:36:11+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Build a Worklight Application on Bluemix]]></title>
+=======
+    <title type="html"><![CDATA[Build a Worklight Application on Bluemix]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/03/05/build-a-worklight-application-on-bluemix/"/>
+    <updated>2014-03-05T23:57:25+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/03/05/build-a-worklight-application-on-bluemix</id>
+    <content type="html"><![CDATA[<p>You will learn how to create a sample worklight application on Bluemix stack.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Your First Worklight Runtime on Bluemix]]></title>
+=======
+    <title type="html"><![CDATA[Your first Worklight runtime on Bluemix]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/03/01/your-first-worklight-runtime-on-bluemix/"/>
+    <updated>2014-03-01T23:57:04+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/03/01/your-first-worklight-runtime-on-bluemix</id>
+    <content type="html"><![CDATA[<p>Based on the previous article, you will know how to add the worklight runtime with liberty on Bluemix stack.</p>
+]]></content>
+  </entry>
+  
+</feed>

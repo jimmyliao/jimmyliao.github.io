@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<<<<<<< HEAD
+  <title><![CDATA[Category: JazzHub | There is always a better way.]]></title>
+=======
+  <title><![CDATA[Category: JazzHub | There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+  <link href="http://jimmyliao.github.io/blog/categories/jazzhub/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2014-03-16T00:36:11+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Integrate JazzHub With Bluemix]]></title>
+=======
+    <title type="html"><![CDATA[Integrate JazzHub with Bluemix]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/02/24/integrate-jazzhub-with-bluemix/"/>
+    <updated>2014-02-24T23:51:11+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/02/24/integrate-jazzhub-with-bluemix</id>
+    <content type="html"><![CDATA[<p>You will know how to integrate current JazzHub project with Bluemix services.</p>
+
+<ul>
+<li>What you should consider to use Bluemix</li>
+<li>What NOT to use Bluemix</li>
+<li>Sample project with simple steps</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Integrate Jenkins Build With JazzHub]]></title>
+=======
+    <title type="html"><![CDATA[Integrate Jenkins build with JazzHub]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub/"/>
+    <updated>2013-12-14T23:54:30+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub</id>
+    <content type="html"><![CDATA[<p>In this article, you will learn how to integrate jenkins build jobs with JazzHub (RTC) build engines.</p>
+
+<ul>
+<li>How to setup your build engine with JazzHub (RTC)</li>
+<li>Artitecture</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Continuous Integration With JazzHub]]></title>
+=======
+    <title type="html"><![CDATA[Continuous Integration with JazzHub]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/12/12/continuous-integration-with-jazzhub/"/>
+    <updated>2013-12-12T23:53:34+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/12/12/continuous-integration-with-jazzhub</id>
+    <content type="html"><![CDATA[<p>In this article, will show how to use JazzHub to manage your product source and document. From work item, source control, building, to customize your build engine, manage building.</p>
+
+<ul>
+<li>Work item</li>
+<li>Source control</li>
+<li>Building, Build Engine</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[JazzHub From Zero]]></title>
+=======
+    <title type="html"><![CDATA[JazzHub from zero]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/12/10/jazzhub-from-zero/"/>
+    <updated>2013-12-10T23:50:57+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/12/10/jazzhub-from-zero</id>
+    <content type="html"><![CDATA[<p>Here I will note how to start the JazzHub tour&hellip;</p>
+
+<ol>
+<li>Register account</li>
+<li>Link (or without) to your exist GitHub account</li>
+<li>Setup your environment with Browser based or desktop application (RTC)</li>
+<li>Manage your JazzHub project</li>
+<li>Project tracking with team member</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

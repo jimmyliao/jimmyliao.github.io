@@ -8,7 +8,7 @@
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2014-03-15T22:38:15+08:00</updated>
+  <updated>2014-03-16T00:36:11+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -16,6 +16,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[How to Add [Read on] More Link]]></title>
+=======
+    <title type="html"><![CDATA[How to add [Read on] more link]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/01/10/how-to-add-read-on-more-link/"/>
+    <updated>2014-01-10T21:39:47+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/01/10/how-to-add-read-on-more-link</id>
+    <content type="html"><![CDATA[<p>Simply add &lsquo;more&rsquo; in the <strong>&lsquo;<!--'** + **'-->&rsquo;</strong> into the post where you want to add the more link. Be sure there has some text before more link except Reference link.</p>
+
+<p>Reference:
+<a href="http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502">http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Octopress From Zero]]></title>
+=======
+    <title type="html"><![CDATA[octopress from zero]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/11/19/octopress-from-zero/"/>
+    <updated>2013-11-19T22:07:46+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/19/octopress-from-zero</id>
+    <content type="html"><![CDATA[<p>How to use rake &amp; git with your octopress.</p>
+
+<p>Reference:
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
+<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
+<!--more-->
+
+
+<ol>
+<li><p>How to new post
+rake new_post
+Enter a title for your post: &ldquo;Octopress from zero&hellip;again!&rdquo;
+Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-again.markdown</p></li>
+<li><p>Edit the markdown file</p></li>
+<li><p>Generate &amp; Preview
+&ndash;> rake generate
+&ndash;> rake watch
+&ndash;> rake preview (preview on localhost:4000)</p></li>
+<li><p>Push &amp; Deploy
+&ndash;> git add .
+&ndash;> git commit -m &ldquo;&hellip;&rdquo;
+&ndash;> git push origin master
+&ndash;> rake deploy</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
 <<<<<<< HEAD

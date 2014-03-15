@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<<<<<<< HEAD
+  <title><![CDATA[Category: Jenkins | There is always a better way.]]></title>
+=======
+  <title><![CDATA[Category: Jenkins | There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+  <link href="http://jimmyliao.github.io/blog/categories/jenkins/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2014-03-16T00:36:11+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Integrate Jenkins Build With JazzHub]]></title>
+=======
+    <title type="html"><![CDATA[Integrate Jenkins build with JazzHub]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub/"/>
+    <updated>2013-12-14T23:54:30+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub</id>
+    <content type="html"><![CDATA[<p>In this article, you will learn how to integrate jenkins build jobs with JazzHub (RTC) build engines.</p>
+
+<ul>
+<li>How to setup your build engine with JazzHub (RTC)</li>
+<li>Artitecture</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

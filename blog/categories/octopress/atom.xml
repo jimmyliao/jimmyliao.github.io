@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<<<<<<< HEAD
+  <title><![CDATA[Category: Octopress | There is always a better way.]]></title>
+=======
+  <title><![CDATA[Category: Octopress | There is always a better way.]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+  <link href="http://jimmyliao.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://jimmyliao.github.io/"/>
+  <updated>2014-03-16T00:36:11+08:00</updated>
+  <id>http://jimmyliao.github.io/</id>
+  <author>
+    <name><![CDATA[Jimmy Liao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[How to Add Category List Into Your Octopress]]></title>
+=======
+    <title type="html"><![CDATA[How to add Category list into your octopress]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/03/15/how-to-add-category-list-into-your-octopress/"/>
+    <updated>2014-03-15T23:42:07+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/03/15/how-to-add-category-list-into-your-octopress</id>
+    <content type="html"><![CDATA[<p>Following Eddie&rsquo;s blog entry. Thank you, Eddie! :&ndash;)</p>
+
+<p>Steps:</p>
+
+<ol>
+<li>Download the categories rb file into octopress plugins directory</li>
+<li>Modify your _config.yml</li>
+<li>rake generate; rake deploy</li>
+</ol>
+
+
+<p>Reference:
+<a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/</a></p>
+]]></content>
+  </entry>
+  
+</feed>
