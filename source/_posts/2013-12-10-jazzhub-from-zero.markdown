@@ -8,6 +8,7 @@ categories:
 - IBM RTC
 ---
 Here I will note how to start the JazzHub tour...
+
 1. Register account
 2. Link (or without) to your exist GitHub account
 3. Setup your environment with Browser based or desktop application (RTC)
