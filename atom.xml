@@ -8,7 +8,7 @@
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2014-03-15T21:03:55+08:00</updated>
+  <updated>2014-03-15T22:38:15+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -16,6 +16,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[How to Add [Read on] More Link]]></title>
+=======
+    <title type="html"><![CDATA[How to add [Read on] more link]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/01/10/how-to-add-read-on-more-link/"/>
+    <updated>2014-01-10T21:39:47+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/01/10/how-to-add-read-on-more-link</id>
+    <content type="html"><![CDATA[<p>Simply add &ldquo;<!-- more -->&rdquo; in the post where you want to add the more link. Be sure there has some text before more link except Reference link.</p>
+
+<p>Reference:
+<a href="http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502">http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502</a></p>
+]]></content>
+  </entry>
   
   <entry>
 <<<<<<< HEAD
