@@ -13,6 +13,8 @@ categories:
 this page uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax. (or refer: https://help.github.com/articles/github-flavored-markdo
 wn)
 
+<!--more-->
+
 #1. /README.md
 ```
 This file is to describe the myconfig file structure and how to use
