@@ -4,6 +4,8 @@ title: "octopress from zero"
 date: 2013-11-19 22:07:46 +0800
 comments: true
 categories: 
+- Blog
+- Markdown
 ---
 How to use rake & git with your octopress.
 
