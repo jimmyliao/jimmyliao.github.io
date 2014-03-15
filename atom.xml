@@ -8,7 +8,7 @@
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2014-03-15T18:41:38+08:00</updated>
+  <updated>2014-03-15T21:03:55+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -19,16 +19,37 @@
   
   <entry>
 <<<<<<< HEAD
-    <title type="html"><![CDATA[Octopress From zero...again!]]></title>
+    <title type="html"><![CDATA[Clone Your Octopress From Two Machines]]></title>
 =======
-    <title type="html"><![CDATA[Octopress from zero...again!]]></title>
+    <title type="html"><![CDATA[clone your octopress from two machines]]></title>
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again/"/>
-    <updated>2014-01-01T18:23:43+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again</id>
-    <content type="html"><![CDATA[<p>Reference:
+    <link href="http://jimmyliao.github.io/blog/2014/01/01/clone-your-octopress-from-two-machines/"/>
+    <updated>2014-01-01T20:46:15+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/01/01/clone-your-octopress-from-two-machines</id>
+    <content type="html"><![CDATA[<p>I used MacBook Pro 09&#8217; &amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging  with octopress&hellip;</p>
+
+<p>Reference:
+<a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Octopress From Zero]]></title>
+=======
+    <title type="html"><![CDATA[octopress from zero]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/11/19/octopress-from-zero/"/>
+    <updated>2013-11-19T22:07:46+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/19/octopress-from-zero</id>
+    <content type="html"><![CDATA[<p>How to use rake &amp; git with your octopress.</p>
+
+<p>Reference:
 <a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
 <a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
+<!--more-->
+
 
 <ol>
 <li><p>How to new post
@@ -41,25 +62,12 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 &ndash;> rake watch
 &ndash;> rake preview (preview on localhost:4000)</p></li>
 <li><p>Push &amp; Deploy
-git add .
-git commit -m &ldquo;&hellip;&rdquo;
-git push origin master
-rake deploy</p></li>
+&ndash;> git add .
+&ndash;> git commit -m &ldquo;&hellip;&rdquo;
+&ndash;> git push origin master
+&ndash;> rake deploy</p></li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[中文標題]]></title>
-=======
-    <title type="html"><![CDATA[中文標題]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2013/11/19/chinese-test/"/>
-    <updated>2013-11-19T22:07:46+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2013/11/19/chinese-test</id>
-    <content type="html"><![CDATA[<p>等123</p>
 ]]></content>
   </entry>
   
@@ -74,6 +82,9 @@ rake deploy</p></li>
     <id>http://jimmyliao.github.io/blog/2013/11/19/my-first-octopress</id>
     <content type="html"><![CDATA[<p>this page uses the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax. (or refer: <a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo</a>
 wn)</p>
+
+<!--more-->
+
 
 <h1>1. /README.md</h1>
 
@@ -124,12 +135,12 @@ git push origin master</p>
   
   <entry>
 <<<<<<< HEAD
-    <title type="html"><![CDATA[1st Post Setup on Octopress on Github Page]]></title>
+    <title type="html"><![CDATA[1st Post: Setup on Octopress on Github Page]]></title>
 =======
-    <title type="html"><![CDATA[1st Post Setup On Octopress On Github Page]]></title>
+    <title type="html"><![CDATA[1st post: setup on Octopress on Github page]]></title>
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
     <link href="http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/"/>
-    <updated>2013-11-16T00:00:00+08:00</updated>
+    <updated>2013-11-16T10:39:00+08:00</updated>
     <id>http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page</id>
     <content type="html"><![CDATA[
 ]]></content>

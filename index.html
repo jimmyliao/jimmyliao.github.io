@@ -13,11 +13,7 @@
   <meta name="author" content="Jimmy Liao">
 
   
-  <meta name="description" content="Reference:
-http://octopress.org/docs/blogging/
-http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/ How to new post
-rake new_post
-Enter a &hellip;">
+  <meta name="description" content="I used MacBook Pro 09&#8217; &amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress&hellip; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,7 +79,7 @@ Enter a &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again/">Octopress From zero&#8230;again!</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/01/01/clone-your-octopress-from-two-machines/">Clone Your Octopress From Two Machines</a></h1>
     
     
       <p class="meta">
@@ -99,34 +95,17 @@ Enter a &hellip;">
   
 
 
-<time datetime="2014-01-01T18:23:43+08:00" pubdate data-updated="true">Jan 1<span>st</span>, 2014</time>
+<time datetime="2014-01-01T20:46:15+08:00" pubdate data-updated="true">Jan 1<span>st</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Reference:
-<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
-<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+  <div class="entry-content"><p>I used MacBook Pro 09&#8217; &amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging  with octopress&hellip;</p>
 
-<ol>
-<li><p>How to new post
-rake new_post
-Enter a title for your post: &ldquo;Octopress from zero&hellip;again!&rdquo;
-Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-again.markdown</p></li>
-<li><p>Edit the markdown file</p></li>
-<li><p>Generate &amp; Preview
-&ndash;> rake generate
-&ndash;> rake watch
-&ndash;> rake preview (preview on localhost:4000)</p></li>
-<li><p>Push &amp; Deploy
-git add .
-git commit -m &ldquo;&hellip;&rdquo;
-git push origin master
-rake deploy</p></li>
-</ol>
-
+<p>Reference:
+<a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</a></p>
 </div>
   
   
@@ -139,7 +118,7 @@ rake deploy</p></li>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/11/19/chinese-test/">中文標題</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/19/octopress-from-zero/">Octopress From Zero</a></h1>
     
     
       <p class="meta">
@@ -162,9 +141,18 @@ rake deploy</p></li>
   </header>
 
 
-  <div class="entry-content"><p>等123</p>
+  <div class="entry-content"><p>How to use rake &amp; git with your octopress.</p>
+
+<p>Reference:
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
+<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/19/octopress-from-zero/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -201,52 +189,12 @@ rake deploy</p></li>
   <div class="entry-content"><p>this page uses the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax. (or refer: <a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo</a>
 wn)</p>
 
-<h1>1. /README.md</h1>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>This file is to describe the myconfig file structure and how to use</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>Tweaks:</h1>
-
-<p><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress</a>
-Edit the Rakefile and look for this line:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin #{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin +#{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Run the command</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>References:</h2>
-
-<p><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/</a>
-<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
-
-<p>git pull origin master</p>
-
-<p>[Fast deploy post]
-rake generate
-rake preview</p>
-
-<p>[Remember to push&amp;deploy]
-git add .
-git commit -m &ldquo;msg&rdquo;
-git push origin master</p>
-
-<p>rake deploy</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/19/my-first-octopress/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -257,7 +205,7 @@ git push origin master</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post Setup on Octopress on Github Page</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post: Setup on Octopress on Github Page</a></h1>
     
     
       <p class="meta">
@@ -273,7 +221,7 @@ git push origin master</p>
   
 
 
-<time datetime="2013-11-16T00:00:00+08:00" pubdate data-updated="true"></time>
+<time datetime="2013-11-16T10:39:00+08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2013</time>
         
       </p>
     
@@ -301,11 +249,11 @@ git push origin master</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again/">Octopress From zero&#8230;again!</a>
+        <a href="/blog/2014/01/01/clone-your-octopress-from-two-machines/">Clone Your Octopress From Two Machines</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/19/chinese-test/">中文標題</a>
+        <a href="/blog/2013/11/19/octopress-from-zero/">Octopress From Zero</a>
       </li>
     
       <li class="post">
@@ -313,7 +261,7 @@ git push origin master</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post Setup on Octopress on Github Page</a>
+        <a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post: Setup on Octopress on Github Page</a>
       </li>
     
   </ul>
