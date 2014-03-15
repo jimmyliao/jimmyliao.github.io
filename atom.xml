@@ -8,7 +8,7 @@
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2013-11-20T08:23:48+08:00</updated>
+  <updated>2014-03-15T18:41:38+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -16,6 +16,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[Octopress From zero...again!]]></title>
+=======
+    <title type="html"><![CDATA[Octopress from zero...again!]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again/"/>
+    <updated>2014-01-01T18:23:43+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/01/01/octopress-from-zero-dot-dot-dot-again</id>
+    <content type="html"><![CDATA[<p>Reference:
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
+<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
+<ol>
+<li><p>How to new post
+rake new_post
+Enter a title for your post: &ldquo;Octopress from zero&hellip;again!&rdquo;
+Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-again.markdown</p></li>
+<li><p>Edit the markdown file</p></li>
+<li><p>Generate &amp; Preview
+&ndash;> rake generate
+&ndash;> rake watch
+&ndash;> rake preview (preview on localhost:4000)</p></li>
+<li><p>Push &amp; Deploy
+git add .
+git commit -m &ldquo;&hellip;&rdquo;
+git push origin master
+rake deploy</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
 <<<<<<< HEAD
@@ -86,6 +119,19 @@ git commit -m &ldquo;msg&rdquo;
 git push origin master</p>
 
 <p>rake deploy</p>
+]]></content>
+  </entry>
+  
+  <entry>
+<<<<<<< HEAD
+    <title type="html"><![CDATA[1st Post Setup on Octopress on Github Page]]></title>
+=======
+    <title type="html"><![CDATA[1st Post Setup On Octopress On Github Page]]></title>
+>>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
+    <link href="http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/"/>
+    <updated>2013-11-16T00:00:00+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page</id>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
