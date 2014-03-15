@@ -87,6 +87,7 @@ $ git checkout gh-pages
   <meta name="author" content="Jimmy Liao">
 
   
+<<<<<<< HEAD
   <meta name="description" content="等123
 =======
   <title>Jimmy's Octopress Blog</title>
@@ -96,6 +97,9 @@ $ git checkout gh-pages
   <meta name="description" content="abc
 >>>>>>> 550be3f7ad7c9bc4947fef88f93827b820ecaaca
 ">
+=======
+  <meta name="description" content="I used MacBook Pro 09&#8217; &amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress&hellip; &hellip;">
+>>>>>>> 0b350a9e64f3e24a87013e99d0446e3fcbf896a1
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -177,7 +181,50 @@ $ git checkout gh-pages
   <header>
     
 <<<<<<< HEAD
+<<<<<<< HEAD
       <h1 class="entry-title"><a href="/blog/2013/11/19/chinese-test/">中文標題</a></h1>
+=======
+      <h1 class="entry-title"><a href="/blog/2014/01/01/clone-your-octopress-from-two-machines/">Clone Your Octopress From Two Machines</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-01T20:46:15+08:00" pubdate data-updated="true">Jan 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I used MacBook Pro 09&#8217; &amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging  with octopress&hellip;</p>
+
+<p>Reference:
+<a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/19/octopress-from-zero/">Octopress From Zero</a></h1>
+>>>>>>> 0b350a9e64f3e24a87013e99d0446e3fcbf896a1
     
     
       <p class="meta">
@@ -200,9 +247,18 @@ $ git checkout gh-pages
   </header>
 
 
-  <div class="entry-content"><p>等123</p>
+  <div class="entry-content"><p>How to use rake &amp; git with your octopress.</p>
+
+<p>Reference:
+<a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/</a>
+<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/19/octopress-from-zero/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -247,53 +303,53 @@ $ git checkout gh-pages
   <div class="entry-content"><p>this page uses the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax. (or refer: <a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo</a>
 wn)</p>
 
-<h1>1. /README.md</h1>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>This file is to describe the myconfig file structure and how to use</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>Tweaks:</h1>
-
-<p><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress</a>
-Edit the Rakefile and look for this line:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin #{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/19/my-first-octopress/">Read on &rarr;</a>
+    </footer>
+  
 
 
-<p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:</p>
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post: Setup on Octopress on Github Page</a></h1>
+    
+    
+      <p class="meta">
+        
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>system "git push origin +#{deploy_branch}"</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Run the command</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>References:</h2>
 
-<p><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/</a>
-<a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
 
-<p>git pull origin master</p>
 
-<p>[Fast deploy post]
-rake generate
-rake preview</p>
+  
 
-<p>[Remember to push&amp;deploy]
-git add .
-git commit -m &ldquo;msg&rdquo;
-git push origin master</p>
 
+<time datetime="2013-11-16T10:39:00+08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<<<<<<< HEAD
 <p>rake deploy</p>
 =======
   <div class="entry-content"><p>abc</p>
 >>>>>>> 550be3f7ad7c9bc4947fef88f93827b820ecaaca
+=======
+  <div class="entry-content">
+>>>>>>> 0b350a9e64f3e24a87013e99d0446e3fcbf896a1
 </div>
   
   
@@ -315,11 +371,23 @@ git push origin master</p>
     
       <li class="post">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="/blog/2013/11/19/chinese-test/">中文標題</a>
+=======
+        <a href="/blog/2014/01/01/clone-your-octopress-from-two-machines/">Clone Your Octopress From Two Machines</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/19/octopress-from-zero/">Octopress From Zero</a>
+>>>>>>> 0b350a9e64f3e24a87013e99d0446e3fcbf896a1
       </li>
     
       <li class="post">
         <a href="/blog/2013/11/19/my-first-octopress/">My First Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/16/1st-post-setup-on-octopress-on-github-page/">1st Post: Setup on Octopress on Github Page</a>
       </li>
     
   </ul>
@@ -383,7 +451,7 @@ git push origin master</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Jimmy Liao -
+  Copyright &copy; 2014 - Jimmy Liao -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
