@@ -2,6 +2,7 @@
 layout: post
 title: "Integrate JazzHub with Bluemix"
 date: 2014-02-24 23:51:11 +0800
+published: false
 comments: true
 categories: 
 - JazzHub

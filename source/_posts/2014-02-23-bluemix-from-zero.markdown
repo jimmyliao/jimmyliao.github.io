@@ -2,6 +2,7 @@
 layout: post
 title: "Bluemix from zero"
 date: 2014-02-23 23:50:46 +0800
+published: false
 comments: true
 categories: 
 - Bluemix

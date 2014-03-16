@@ -2,6 +2,7 @@
 layout: post
 title: "Integrate Jenkins build with JazzHub"
 date: 2013-12-14 23:54:30 +0800
+published: false
 comments: true
 categories: 
 - JazzHub
