@@ -8,7 +8,7 @@
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
   <link href="http://jimmyliao.github.io/atom.xml" rel="self"/>
   <link href="http://jimmyliao.github.io/"/>
-  <updated>2014-03-16T00:36:03+08:00</updated>
+  <updated>2014-03-16T22:52:53+08:00</updated>
   <id>http://jimmyliao.github.io/</id>
   <author>
     <name><![CDATA[Jimmy Liao]]></name>
@@ -23,9 +23,9 @@
 =======
     <title type="html"><![CDATA[How to add Category list into your octopress]]></title>
 >>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/03/15/how-to-add-category-list-into-your-octopress/"/>
-    <updated>2014-03-15T23:42:07+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/03/15/how-to-add-category-list-into-your-octopress</id>
+    <link href="http://jimmyliao.github.io/blog/2014/01/19/how-to-add-category-list-into-your-octopress/"/>
+    <updated>2014-01-19T23:42:07+08:00</updated>
+    <id>http://jimmyliao.github.io/blog/2014/01/19/how-to-add-category-list-into-your-octopress</id>
     <content type="html"><![CDATA[<p>Following Eddie&rsquo;s blog entry. Thank you, Eddie! :&ndash;)</p>
 
 <p>Steps:</p>
@@ -39,106 +39,6 @@
 
 <p>Reference:
 <a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Build a Worklight Application on Bluemix]]></title>
-=======
-    <title type="html"><![CDATA[Build a Worklight Application on Bluemix]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/03/05/build-a-worklight-application-on-bluemix/"/>
-    <updated>2014-03-05T23:57:25+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/03/05/build-a-worklight-application-on-bluemix</id>
-    <content type="html"><![CDATA[<p>You will learn how to create a sample worklight application on Bluemix stack.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Your First Worklight Runtime on Bluemix]]></title>
-=======
-    <title type="html"><![CDATA[Your first Worklight runtime on Bluemix]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/03/01/your-first-worklight-runtime-on-bluemix/"/>
-    <updated>2014-03-01T23:57:04+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/03/01/your-first-worklight-runtime-on-bluemix</id>
-    <content type="html"><![CDATA[<p>Based on the previous article, you will know how to add the worklight runtime with liberty on Bluemix stack.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Your First Python Runtime on Bluemix]]></title>
-=======
-    <title type="html"><![CDATA[Your first python runtime on Bluemix]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/02/28/your-first-python-runtime-on-bluemix/"/>
-    <updated>2014-02-28T23:56:38+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/02/28/your-first-python-runtime-on-bluemix</id>
-    <content type="html"><![CDATA[<p>You will learn how to add python runtime with virtualenv onto the Bluemix stack.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Integrate JazzHub With Bluemix]]></title>
-=======
-    <title type="html"><![CDATA[Integrate JazzHub with Bluemix]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/02/24/integrate-jazzhub-with-bluemix/"/>
-    <updated>2014-02-24T23:51:11+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/02/24/integrate-jazzhub-with-bluemix</id>
-    <content type="html"><![CDATA[<p>You will know how to integrate current JazzHub project with Bluemix services.</p>
-
-<ul>
-<li>What you should consider to use Bluemix</li>
-<li>What NOT to use Bluemix</li>
-<li>Sample project with simple steps</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Bluemix From Zero]]></title>
-=======
-    <title type="html"><![CDATA[Bluemix from zero]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/02/23/bluemix-from-zero/"/>
-    <updated>2014-02-23T23:50:46+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/02/23/bluemix-from-zero</id>
-    <content type="html"><![CDATA[<p>IBM opens the Bluemix with beta for now. You will know how to start a bluemix runtime from scratch.</p>
-
-<ul>
-<li>Registration and environment setup</li>
-<li>Some essential command before get hands dirty</li>
-<li>Your first app on the Bluemix</li>
-<li>Link JazzHub with Bluemix</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Migrate Enterprise Development to Gradle]]></title>
-=======
-    <title type="html"><![CDATA[Migrate enterprise development to gradle]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2014/02/10/migrate-enterprise-development-to-gradle/"/>
-    <updated>2014-02-10T23:55:23+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2014/02/10/migrate-enterprise-development-to-gradle</id>
-    <content type="html"><![CDATA[<p>The gradle migration series is about to migrate your existing enterprise Java Project from Ant script to the Gradle-based building. In this article (phase 1), you will learn how to setup gradle tasks into your existed project and how it works.</p>
-
-<ul>
-<li>Gradle Introduction</li>
-<li>What essential feature / steps before start</li>
-<li>Steps with Sample projects</li>
-</ul>
-
 ]]></content>
   </entry>
   
@@ -171,67 +71,6 @@
 
 <p>Reference:
 <a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Integrate Jenkins Build With JazzHub]]></title>
-=======
-    <title type="html"><![CDATA[Integrate Jenkins build with JazzHub]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub/"/>
-    <updated>2013-12-14T23:54:30+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2013/12/14/integrate-jenkins-build-with-jazzhub</id>
-    <content type="html"><![CDATA[<p>In this article, you will learn how to integrate jenkins build jobs with JazzHub (RTC) build engines.</p>
-
-<ul>
-<li>How to setup your build engine with JazzHub (RTC)</li>
-<li>Artitecture</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Continuous Integration With JazzHub]]></title>
-=======
-    <title type="html"><![CDATA[Continuous Integration with JazzHub]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2013/12/12/continuous-integration-with-jazzhub/"/>
-    <updated>2013-12-12T23:53:34+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2013/12/12/continuous-integration-with-jazzhub</id>
-    <content type="html"><![CDATA[<p>In this article, will show how to use JazzHub to manage your product source and document. From work item, source control, building, to customize your build engine, manage building.</p>
-
-<ul>
-<li>Work item</li>
-<li>Source control</li>
-<li>Building, Build Engine</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[JazzHub From Zero]]></title>
-=======
-    <title type="html"><![CDATA[JazzHub from zero]]></title>
->>>>>>> 1741bf31dc3a992831cf458dcabd4cf0442a79b5
-    <link href="http://jimmyliao.github.io/blog/2013/12/10/jazzhub-from-zero/"/>
-    <updated>2013-12-10T23:50:57+08:00</updated>
-    <id>http://jimmyliao.github.io/blog/2013/12/10/jazzhub-from-zero</id>
-    <content type="html"><![CDATA[<p>Here I will note how to start the JazzHub tour&hellip;</p>
-
-<ol>
-<li>Register account</li>
-<li>Link (or without) to your exist GitHub account</li>
-<li>Setup your environment with Browser based or desktop application (RTC)</li>
-<li>Manage your JazzHub project</li>
-<li>Project tracking with team member</li>
-</ol>
-
 ]]></content>
   </entry>
   
