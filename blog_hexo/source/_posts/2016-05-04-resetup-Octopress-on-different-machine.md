@@ -10,4 +10,6 @@ categories:
 ---
 You will learn how to create blog post on different laptop.
 
+<!--more-->
+
 Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.

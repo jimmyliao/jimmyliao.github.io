@@ -6,8 +6,9 @@
 title: Jimmy's Blog
 subtitle: notes for life
 description:
-author: Jimmy Liao <sjliao at gmail dot com>
-language:
+author: JimmyLiao
+email: sjliao@gmail.com
+language: en
 timezone:
 
 # URL
@@ -63,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
