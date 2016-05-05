@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Move to Hexo | Jimmy&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="A new start for blogging…
+
+Follow this
+
+$ sudo npm install --unsafe-perm --verbose -g hexo
+$ mkdir hexo
+$ cd hexo
+$ hexo init
+$ npm install hexo --no-optional
+$ npm install  
+
+$ hexo g #完整是hexo genera">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Move to Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/05/05/2016-05-05-move-hexo/index.html">
+<meta property="og:site_name" content="Jimmy's Blog">
+<meta property="og:description" content="A new start for blogging…
+
+Follow this
+
+$ sudo npm install --unsafe-perm --verbose -g hexo
+$ mkdir hexo
+$ cd hexo
+$ hexo init
+$ npm install hexo --no-optional
+$ npm install  
+
+$ hexo g #完整是hexo genera">
+<meta property="og:updated_time" content="2016-05-05T15:00:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Move to Hexo">
+<meta name="twitter:description" content="A new start for blogging…
+
+Follow this
+
+$ sudo npm install --unsafe-perm --verbose -g hexo
+$ mkdir hexo
+$ cd hexo
+$ hexo init
+$ npm install hexo --no-optional
+$ npm install  
+
+$ hexo g #完整是hexo genera">
+  
+    <link rel="alternate" href="/atom.xml" title="Jimmy&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jimmy&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">notes for life</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2016-05-05-move-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/05/2016-05-05-move-hexo/" class="article-date">
+  <time datetime="2016-05-05T15:00:46.000Z" itemprop="datePublished">2016-05-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>►<a class="article-category-link" href="/categories/Hexo/Blog/">Blog</a>►<a class="article-category-link" href="/categories/Hexo/Blog/Markdown/">Markdown</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Move to Hexo
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>A new start for blogging…</p>
+<ol>
+<li>Follow <a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/" target="_blank" rel="external">this</a></li>
+</ol>
+<pre><code class="bash">$ sudo npm install --unsafe-perm --verbose -g hexo
+$ mkdir hexo
+$ <span class="built_in">cd</span> hexo
+$ hexo init
+$ npm install hexo --no-optional
+$ npm install  
+
+$ hexo g <span class="comment">#完整是hexo generate 生成靜態頁面</span>
+$ hexo s <span class="comment">#完整是hexo server 運行本地服務器</span>
+</code></pre>
+<p>裝git發布插件，運行：  </p>
+<pre><code class="bash">$ npm install hexo-deployer-git --save
+</code></pre>
+<p>安裝完成後在Hexo根目錄通過_config.yml對相關參數進行設置，在最後幾行：  </p>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com/abc/abc.github.io.git #這裏是你剛獲取的地址
+branch: master
+</code></pre><pre><code class="bash">$ vim ~/.ssh/config
+</code></pre>
+<pre><code>host abc.github.com
+ HostName github.com
+ IdentityFile ~/.ssh/github_rsa
+ User git
+</code></pre><p>保存設置，撰寫新文章，然後生成頁面，最後發布頁面：  </p>
+<pre><code class="bash">$ hexo new [layout] &lt;title&gt;
+$ hexo g
+$ hexo d <span class="comment">#完整是hexo deploy 發布到遠程服務器</span>
+</code></pre>
+<p>或是生成頁面和發布頁面用一條命令：  </p>
+<pre><code class="bash">$ hexo d -g
+</code></pre>
+<p>P.S. have to hexo clean before hexo g</p>
+<pre><code class="bash">$ hexo clean
+$ hexo g
+$ hexo d
+</code></pre>
+<ol>
+<li>Follow this instructio to <a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E7%AB%A0" target="_blank" rel="external">setup local env</a>.</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/05/2016-05-05-move-hexo/" data-id="cinuf6gva000301kcxikpvu5o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/05/2016-05-05-hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/Blog/">Blog</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/Blog/Markdown/">Markdown</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Octopress/">Octopress</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Octopress/Blog/">Blog</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Octopress/Blog/Markdown/">Markdown</a></li></ul></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/05/2016-05-05-move-hexo/">Move to Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/05/2016-05-05-hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/04/2016-05-04-resetup-Octopress-on-different-machine/">Re-Setup Octopress on different laptop</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Jimmy Liao &lt;sjliao at gmail dot com&gt;<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
