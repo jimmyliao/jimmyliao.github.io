@@ -27,7 +27,9 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -59,6 +61,8 @@
 
 
 
+
+
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
@@ -86,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/05/05/2016-05-05-move-hexo/index.html">
 <meta property="og:site_name" content="Jimmy's Blog">
 <meta property="og:description" content="A new start for blogging…">
-<meta property="og:updated_time" content="2016-05-05T15:27:25.000Z">
+<meta property="og:updated_time" content="2016-05-06T03:18:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Move to Hexo">
 <meta name="twitter:description" content="A new start for blogging…">
@@ -163,7 +167,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
@@ -173,7 +177,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             Archives
           </a>
@@ -183,7 +187,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             Tags
           </a>
@@ -353,8 +357,17 @@ $ hexo g
 $ hexo d
 </code></pre>
 <ol>
-<li>Follow this instructio to <a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E7%AB%A0" target="_blank" rel="external">setup local env</a>.</li>
+<li>Follow this instruction to <a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E7%AB%A0" target="_blank" rel="external">setup local env</a>.</li>
 </ol>
+<p>Update: Following steps are for anther laptop</p>
+<pre><code class="bash">$ git <span class="built_in">clone</span> your hexo repo (<span class="built_in">source</span> branch)
+$ npm install hexo --save <span class="comment">#reinstall if new env does not have hexo cli</span>
+$ npm install hexo-deployer-git --save
+$ hexo init
+$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next
+$ hexo g
+$ hexo d
+</code></pre>
 
       
     </div>
@@ -445,7 +458,7 @@ $ hexo d
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/default_avatar.jpg"
+               src="/images/avatar.gif"
                alt="JimmyLiao" />
           <p class="site-author-name" itemprop="name">JimmyLiao</p>
           <p class="site-description motion-element" itemprop="description"></p>
