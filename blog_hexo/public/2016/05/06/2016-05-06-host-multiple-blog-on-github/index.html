@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="How to use rake &amp;amp; git with your octopress.
-Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">
+<meta name="description" content="不同Blog想要放在同個Github Page…?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="octopress from zero">
-<meta property="og:url" content="http://yoursite.com/2013/11/19/2013-11-19-octopress-from-zero/index.html">
+<meta property="og:title" content="Host Multple Blog on one Github Pages">
+<meta property="og:url" content="http://yoursite.com/2016/05/06/2016-05-06-host-multiple-blog-on-github/index.html">
 <meta property="og:site_name" content="Jimmy's Blog">
-<meta property="og:description" content="How to use rake &amp;amp; git with your octopress.
-Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">
-<meta property="og:updated_time" content="2016-05-06T02:51:53.000Z">
+<meta property="og:description" content="不同Blog想要放在同個Github Page…?">
+<meta property="og:updated_time" content="2016-05-06T08:50:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="octopress from zero">
-<meta name="twitter:description" content="How to use rake &amp;amp; git with your octopress.
-Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">
+<meta name="twitter:title" content="Host Multple Blog on one Github Pages">
+<meta name="twitter:description" content="不同Blog想要放在同個Github Page…?">
 
 
 
@@ -114,7 +111,7 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
   };
 </script>
 
-  <title> octopress from zero | Jimmy's Blog </title>
+  <title> Host Multple Blog on one Github Pages | Jimmy's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -234,7 +231,7 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
             
             
               
-                octopress from zero
+                Host Multple Blog on one Github Pages
               
             
           </h1>
@@ -246,8 +243,8 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2013-11-19T22:07:46+08:00" content="2013-11-19">
-              2013-11-19
+            <time itemprop="dateCreated" datetime="2016-05-06T15:50:46+08:00" content="2016-05-06">
+              2016-05-06
             </time>
           </span>
 
@@ -260,7 +257,19 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Hexo/Blog/" itemprop="url" rel="index">
                     <span itemprop="name">Blog</span>
                   </a>
                 </span>
@@ -272,7 +281,7 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Blog/Markdown/" itemprop="url" rel="index">
+                  <a href="/categories/Hexo/Blog/Markdown/" itemprop="url" rel="index">
                     <span itemprop="name">Markdown</span>
                   </a>
                 </span>
@@ -305,19 +314,77 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
       
 
       
-        <p>How to use rake &amp; git with your octopress.</p>
-<p>Reference:<br><a href="http://octopress.org/docs/blogging/" target="_blank" rel="external">http://octopress.org/docs/blogging/</a><br><a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/" target="_blank" rel="external">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/</a></p>
+        <p>不同Blog想要放在同個Github Page…?</p>
 <a id="more"></a>
 <ol>
-<li><p>How to new post<br>rake new_post<br>Enter a title for your post: “Octopress from zero…again!”<br>Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-again.markdown</p>
+<li>建立Repo. Ex. <a href="https://github.com/jimmyliao/Life.git" target="_blank" rel="external">https://github.com/jimmyliao/Life.git</a></li>
+<li>裡面新增一個source branch</li>
+<li><p>最簡單的方法，新增index.html<br>(optional) 或是把原本site generator(例如hexo)搬同樣一份, 請見步驟4</p>
 </li>
-<li><p>Edit the markdown file</p>
-</li>
-<li><p>Generate &amp; Preview<br>-&gt; rake generate<br>-&gt; rake watch<br>-&gt; rake preview (preview on localhost:4000)</p>
-</li>
-<li><p>Push &amp; Deploy<br>-&gt; git add .<br>-&gt; git commit -m “…”<br>-&gt; git push origin master<br>-&gt; rake deploy</p>
+<li><p>4.1 clone一份Project repo, 方便起見還是在remote設定gh-pages &amp; source, gh-pages就是最後發布的branch. 請見 Ref #1<br>4.2 </p>
 </li>
 </ol>
+<pre><code class="bash">$ mkdir hexo
+$ <span class="built_in">cd</span> hexo
+$ hexo init
+INFO  Cloning hexo-starter to ~/WebDrive/GitHub/Blogging/Life.git/blog_src
+Cloning into <span class="string">'/Users/jimmyliao/WebDrive/GitHub/Blogging/Life.git/blog_src'</span>...
+remote: Counting objects: 53, done.
+remote: Total 53 (delta 0), reused 0 (delta 0), pack-reused 53
+Unpacking objects: 100% (53/53), done.
+Checking connectivity... done.
+Submodule <span class="string">'themes/landscape'</span> (https://github.com/hexojs/hexo-theme-landscape.git) registered <span class="keyword">for</span> path <span class="string">'themes/landscape'</span>
+Cloning into <span class="string">'themes/landscape'</span>...
+remote: Counting objects: 730, done.
+remote: Total 730 (delta 0), reused 0 (delta 0), pack-reused 730
+Receiving objects: 100% (730/730), 2.51 MiB | 955.00 KiB/s, done.
+Resolving deltas: 100% (384/384), done.
+Checking connectivity... done.
+Submodule path <span class="string">'themes/landscape'</span>: checked out <span class="string">'decdc2d9956776cbe95420ae94bac87e22468d38'</span>
+INFO  Install dependencies
+...
+
+  `-- serve-static@1.10.2
+    +-- escape-html@1.0.3
+    `-- send@0.13.1
+      +-- destroy@1.0.4
+      +-- etag@1.7.0
+      +-- fresh@0.3.0
+      +-- http-errors@1.3.1
+      +-- range-parser@1.0.3
+      `-- statuses@1.2.1
+INFO  Start blogging with Hexo!
+</code></pre>
+<p>產生template之後</p>
+<pre><code class="bash">$ hexo g
+...
+INFO  28 files generated <span class="keyword">in</span> 648 ms
+</code></pre>
+<p>記得修改一下_config.yml</p>
+<pre><code>url: http://jimmyliao.github.io/Life
+root: /Life/
+
+...
+deploy:
+  type: git
+  repo: https://github.com/jimmyliao/Life.git
+branch: gh-pages
+</code></pre><pre><code class="bash">$ npm install hexo-deployer-git --save <span class="comment">#裝一下deployer</span>
+$ npm install hexo-renderer-stylus --save <span class="comment">#裝一下不然會整個css破掉, hexo issue</span>
+$ hexo d
+...
+To https://github.com/jimmyliao/Life.git
+ + 541ea14...4eb6485 HEAD -&gt; gh-pages (forced update)
+Branch master <span class="built_in">set</span> up to track remote branch gh-pages from https://github.com/jimmyliao/Life.git.
+INFO  Deploy <span class="keyword">done</span>: git
+</code></pre>
+<ol>
+<li>測試.</li>
+</ol>
+<p><a href="http://jimmyliao.github.io" target="_blank" rel="external">http://jimmyliao.github.io</a> -&gt; 主站<br><a href="http://jimmyliao.github.io/Life" target="_blank" rel="external">http://jimmyliao.github.io/Life</a> -&gt; 利用Project Pages新增的</p>
+<p>P.S. 不過我開這麼多個，也沒在寫Blog啊</p>
+<p>Ref.</p>
+<p>#1. <a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="external">https://help.github.com/articles/user-organization-and-project-pages/</a></p>
 
       
     </div>
@@ -342,17 +409,13 @@ Reference:http://octopress.org/docs/blogging/http://zerodie.github.io/blog/2012/
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2013/11/19/2013-11-19-my-first-octopress/" rel="next" title="my first octopress">
-                <i class="fa fa-chevron-left"></i> my first octopress
+              <a href="/2016/05/05/2016-05-05-move-hexo/" rel="next" title="Move to Hexo">
+                <i class="fa fa-chevron-left"></i> Move to Hexo
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2014/01/01/2014-01-01-clone-your-octopress-from-two-machines/" rel="prev" title="clone your octopress from two machines">
-                clone your octopress from two machines <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
