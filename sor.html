@@ -1,0 +1,16 @@
+<button style="width:240px;height:80px;font-size:20px;" onclick="myFunction()">Click me</button>
+
+<script>
+function myFunction() {
+    if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){ window.location.href = 'https://itunes.apple.com/tw/app/%E6%98%9F%E8%BC%AA%E4%B9%8B%E6%88%B0-%E9%9B%B7%E7%93%A6%E6%8B%89/id1232479619?mt=8'; }
+
+    if(navigator.userAgent.toLowerCase().indexOf("ipad") > -1){ window.location.href = 'https://itunes.apple.com/tw/app/%E6%98%9F%E8%BC%AA%E4%B9%8B%E6%88%B0-%E9%9B%B7%E7%93%A6%E6%8B%89/id1232479619?platform=ipad&preserveScrollPosition=true#platform/ipad'; }
+
+    if(navigator.userAgent.toLowerCase().indexOf("android") > -1){ window.location.href = 'https://play.google.com/store/apps/details?id=com.seedstudio.seed19android'; }
+
+    //Update #2
+    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)) {
+         window.location.href = 'https://www.sor.seedstudio.com/'; //Desktop Browser
+    }
+}
+</script>
