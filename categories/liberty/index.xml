@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Liberty on JimmyLiao&#39;s Note</title>
-    <link>http://example.org/categories/liberty/</link>
+    <link>https://jimmyliao.github.io/categories/liberty/</link>
     <description>Recent content in Liberty on JimmyLiao&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Mar 2014 23:57:25 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/liberty/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimmyliao.github.io/categories/liberty/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build a Worklight Application on Bluemix</title>
-      <link>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</link>
+      <link>https://jimmyliao.github.io/posts/2014-03-05-build-a-worklight-application-on-bluemix/</link>
       <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
       
-      <guid>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</guid>
+      <guid>https://jimmyliao.github.io/posts/2014-03-05-build-a-worklight-application-on-bluemix/</guid>
       <description>You will learn how to create a sample worklight application on Bluemix stack.</description>
     </item>
     
     <item>
       <title>Your first Worklight runtime on Bluemix</title>
-      <link>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</link>
+      <link>https://jimmyliao.github.io/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</link>
       <pubDate>Sat, 01 Mar 2014 23:57:04 +0800</pubDate>
       
-      <guid>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</guid>
+      <guid>https://jimmyliao.github.io/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</guid>
       <description>Based on the previous article, you will know how to add the worklight runtime with liberty on Bluemix stack.</description>
     </item>
     

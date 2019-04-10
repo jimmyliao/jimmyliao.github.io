@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on JimmyLiao&#39;s Note</title>
-    <link>http://example.org/categories/markdown/</link>
+    <link>https://jimmyliao.github.io/categories/markdown/</link>
     <description>Recent content in Markdown on JimmyLiao&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 May 2016 15:50:46 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimmyliao.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Host Multple Blog on one Github Pages</title>
-      <link>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</link>
+      <link>https://jimmyliao.github.io/posts/2016-05-06-host-multiple-blog-on-github/</link>
       <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</guid>
+      <guid>https://jimmyliao.github.io/posts/2016-05-06-host-multiple-blog-on-github/</guid>
       <description>&lt;p&gt;不同Blog想要放在同個Github Page&amp;hellip;?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Move to Hexo</title>
-      <link>http://example.org/posts/2016-05-05-move-hexo/</link>
+      <link>https://jimmyliao.github.io/posts/2016-05-05-move-hexo/</link>
       <pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016-05-05-move-hexo/</guid>
+      <guid>https://jimmyliao.github.io/posts/2016-05-05-move-hexo/</guid>
       <description>&lt;p&gt;A new start for blogging&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://example.org/posts/2016-05-05-hello-world/</link>
+      <link>https://jimmyliao.github.io/posts/2016-05-05-hello-world/</link>
       <pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016-05-05-hello-world/</guid>
+      <guid>https://jimmyliao.github.io/posts/2016-05-05-hello-world/</guid>
       <description>&lt;p&gt;Another Hello World for Hexo&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Re-Setup Octopress on different laptop</title>
-      <link>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</link>
+      <link>https://jimmyliao.github.io/posts/2016-05-04-resetup-octopress-on-different-machine/</link>
       <pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</guid>
+      <guid>https://jimmyliao.github.io/posts/2016-05-04-resetup-octopress-on-different-machine/</guid>
       <description>&lt;p&gt;You will learn how to create blog post on different laptop.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to add [Read on] more link</title>
-      <link>http://example.org/posts/2014-01-10-how-to-add-read-on-more-link/</link>
+      <link>https://jimmyliao.github.io/posts/2014-01-10-how-to-add-read-on-more-link/</link>
       <pubDate>Fri, 10 Jan 2014 21:39:47 +0800</pubDate>
       
-      <guid>http://example.org/posts/2014-01-10-how-to-add-read-on-more-link/</guid>
+      <guid>https://jimmyliao.github.io/posts/2014-01-10-how-to-add-read-on-more-link/</guid>
       <description>Simply add &amp;lsquo;more&amp;rsquo; in the &amp;lsquo;&amp;lt;!&amp;ndash;&amp;rsquo; + &amp;rsquo;&amp;ndash;&amp;gt;&amp;rsquo; into the post where you want to add the more link. Be sure there has some text before more link except Reference link.
 Reference: http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502</description>
     </item>
     
     <item>
       <title>octopress from zero</title>
-      <link>http://example.org/posts/2013-11-19-octopress-from-zero/</link>
+      <link>https://jimmyliao.github.io/posts/2013-11-19-octopress-from-zero/</link>
       <pubDate>Tue, 19 Nov 2013 22:07:46 +0800</pubDate>
       
-      <guid>http://example.org/posts/2013-11-19-octopress-from-zero/</guid>
+      <guid>https://jimmyliao.github.io/posts/2013-11-19-octopress-from-zero/</guid>
       <description>&lt;p&gt;How to use rake &amp;amp; git with your octopress.&lt;/p&gt;
 
 &lt;p&gt;Reference:
@@ -72,10 +72,10 @@ Reference: http://stackoverflow.com/questions/13538047/octopress-index-page/1355
     
     <item>
       <title>my first octopress</title>
-      <link>http://example.org/posts/2013-11-19-my-first-octopress/</link>
+      <link>https://jimmyliao.github.io/posts/2013-11-19-my-first-octopress/</link>
       <pubDate>Tue, 19 Nov 2013 21:08:03 +0800</pubDate>
       
-      <guid>http://example.org/posts/2013-11-19-my-first-octopress/</guid>
+      <guid>https://jimmyliao.github.io/posts/2013-11-19-my-first-octopress/</guid>
       <description>&lt;p&gt;this page uses the &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; syntax. (or refer: &lt;a href=&#34;https://help.github.com/articles/github-flavored-markdo&#34;&gt;https://help.github.com/articles/github-flavored-markdo&lt;/a&gt;
 wn)&lt;/p&gt;</description>
     </item>

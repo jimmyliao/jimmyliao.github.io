@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on JimmyLiao&#39;s Note</title>
-    <link>http://example.org/categories/</link>
+    <link>https://jimmyliao.github.io/categories/</link>
     <description>Recent content in Categories on JimmyLiao&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 May 2016 15:50:46 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimmyliao.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blog</title>
-      <link>http://example.org/categories/blog/</link>
+      <link>https://jimmyliao.github.io/categories/blog/</link>
       <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
       
-      <guid>http://example.org/categories/blog/</guid>
+      <guid>https://jimmyliao.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bluemix</title>
-      <link>http://example.org/categories/bluemix/</link>
+      <link>https://jimmyliao.github.io/categories/bluemix/</link>
       <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
       
-      <guid>http://example.org/categories/bluemix/</guid>
+      <guid>https://jimmyliao.github.io/categories/bluemix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hexo</title>
-      <link>http://example.org/categories/hexo/</link>
+      <link>https://jimmyliao.github.io/categories/hexo/</link>
       <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
       
-      <guid>http://example.org/categories/hexo/</guid>
+      <guid>https://jimmyliao.github.io/categories/hexo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Liberty</title>
-      <link>http://example.org/categories/liberty/</link>
+      <link>https://jimmyliao.github.io/categories/liberty/</link>
       <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
       
-      <guid>http://example.org/categories/liberty/</guid>
+      <guid>https://jimmyliao.github.io/categories/liberty/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>http://example.org/categories/markdown/</link>
+      <link>https://jimmyliao.github.io/categories/markdown/</link>
       <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
       
-      <guid>http://example.org/categories/markdown/</guid>
+      <guid>https://jimmyliao.github.io/categories/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Octopress</title>
-      <link>http://example.org/categories/octopress/</link>
+      <link>https://jimmyliao.github.io/categories/octopress/</link>
       <pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate>
       
-      <guid>http://example.org/categories/octopress/</guid>
+      <guid>https://jimmyliao.github.io/categories/octopress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Worklight</title>
-      <link>http://example.org/categories/worklight/</link>
+      <link>https://jimmyliao.github.io/categories/worklight/</link>
       <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
       
-      <guid>http://example.org/categories/worklight/</guid>
+      <guid>https://jimmyliao.github.io/categories/worklight/</guid>
       <description></description>
     </item>
     
