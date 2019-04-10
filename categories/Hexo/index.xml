@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hexo on JimmyLiao&#39;s Note</title>
+    <link>http://example.org/categories/hexo/</link>
+    <description>Recent content in Hexo on JimmyLiao&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 May 2016 15:50:46 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Host Multple Blog on one Github Pages</title>
+      <link>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</link>
+      <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</guid>
+      <description>&lt;p&gt;不同Blog想要放在同個Github Page&amp;hellip;?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Move to Hexo</title>
+      <link>http://example.org/posts/2016-05-05-move-hexo/</link>
+      <pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-05-move-hexo/</guid>
+      <description>&lt;p&gt;A new start for blogging&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://example.org/posts/2016-05-05-hello-world/</link>
+      <pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-05-hello-world/</guid>
+      <description>&lt;p&gt;Another Hello World for Hexo&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

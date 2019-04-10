@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on JimmyLiao&#39;s Note</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on JimmyLiao&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Apr 2019 05:27:15 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019 04 05 Test</title>
+      <link>http://example.org/posts/2019-04-05-test/</link>
+      <pubDate>Fri, 05 Apr 2019 05:27:15 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2019-04-05-test/</guid>
+      <description>Test Hugo 123</description>
+    </item>
+    
+    <item>
+      <title>Host Multple Blog on one Github Pages</title>
+      <link>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</link>
+      <pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</guid>
+      <description>&lt;p&gt;不同Blog想要放在同個Github Page&amp;hellip;?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Move to Hexo</title>
+      <link>http://example.org/posts/2016-05-05-move-hexo/</link>
+      <pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-05-move-hexo/</guid>
+      <description>&lt;p&gt;A new start for blogging&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://example.org/posts/2016-05-05-hello-world/</link>
+      <pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-05-hello-world/</guid>
+      <description>&lt;p&gt;Another Hello World for Hexo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Re-Setup Octopress on different laptop</title>
+      <link>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</link>
+      <pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</guid>
+      <description>&lt;p&gt;You will learn how to create blog post on different laptop.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build a Worklight Application on Bluemix</title>
+      <link>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</link>
+      <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</guid>
+      <description>You will learn how to create a sample worklight application on Bluemix stack.</description>
+    </item>
+    
+    <item>
+      <title>Your first Worklight runtime on Bluemix</title>
+      <link>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</link>
+      <pubDate>Sat, 01 Mar 2014 23:57:04 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</guid>
+      <description>Based on the previous article, you will know how to add the worklight runtime with liberty on Bluemix stack.</description>
+    </item>
+    
+    <item>
+      <title>How to add Category list into your octopress</title>
+      <link>http://example.org/posts/2014-01-19-how-to-add-category-list-into-your-octopress/</link>
+      <pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-01-19-how-to-add-category-list-into-your-octopress/</guid>
+      <description>Following Eddie&amp;rsquo;s blog entry. Thank you, Eddie! :-)
+Steps:
+ Download the categories rb file into octopress plugins directory Modify your _config.yml rake generate; rake deploy  Reference: http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/</description>
+    </item>
+    
+    <item>
+      <title>How to add [Read on] more link</title>
+      <link>http://example.org/posts/2014-01-10-how-to-add-read-on-more-link/</link>
+      <pubDate>Fri, 10 Jan 2014 21:39:47 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-01-10-how-to-add-read-on-more-link/</guid>
+      <description>Simply add &amp;lsquo;more&amp;rsquo; in the &amp;lsquo;&amp;lt;!&amp;ndash;&amp;rsquo; + &amp;rsquo;&amp;ndash;&amp;gt;&amp;rsquo; into the post where you want to add the more link. Be sure there has some text before more link except Reference link.
+Reference: http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502</description>
+    </item>
+    
+    <item>
+      <title>clone your octopress from two machines</title>
+      <link>http://example.org/posts/2014-01-01-clone-your-octopress-from-two-machines/</link>
+      <pubDate>Wed, 01 Jan 2014 20:46:15 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-01-01-clone-your-octopress-from-two-machines/</guid>
+      <description>I used MacBook Pro 09&amp;rsquo; &amp;amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress&amp;hellip;
+Reference: http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</description>
+    </item>
+    
+    <item>
+      <title>octopress from zero</title>
+      <link>http://example.org/posts/2013-11-19-octopress-from-zero/</link>
+      <pubDate>Tue, 19 Nov 2013 22:07:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2013-11-19-octopress-from-zero/</guid>
+      <description>&lt;p&gt;How to use rake &amp;amp; git with your octopress.&lt;/p&gt;
+
+&lt;p&gt;Reference:
+&lt;a href=&#34;http://octopress.org/docs/blogging/&#34;&gt;http://octopress.org/docs/blogging/&lt;/a&gt;
+&lt;a href=&#34;http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/&#34;&gt;http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>my first octopress</title>
+      <link>http://example.org/posts/2013-11-19-my-first-octopress/</link>
+      <pubDate>Tue, 19 Nov 2013 21:08:03 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2013-11-19-my-first-octopress/</guid>
+      <description>&lt;p&gt;this page uses the &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; syntax. (or refer: &lt;a href=&#34;https://help.github.com/articles/github-flavored-markdo&#34;&gt;https://help.github.com/articles/github-flavored-markdo&lt;/a&gt;
+wn)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>1st post: setup on Octopress on Github page</title>
+      <link>http://example.org/posts/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid>
+      <description>中文 Hello Octopress World!</description>
+    </item>
+    
+  </channel>
+</rss>

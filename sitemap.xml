@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/posts/2019-04-05-test/</loc>
+    <lastmod>2019-04-05T05:27:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2016-05-06-host-multiple-blog-on-github/</loc>
+    <lastmod>2016-05-06T15:50:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2016-05-05-move-hexo/</loc>
+    <lastmod>2016-05-05T23:00:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2016-05-05-hello-world/</loc>
+    <lastmod>2016-05-05T22:00:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</loc>
+    <lastmod>2016-05-04T22:07:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</loc>
+    <lastmod>2014-03-05T23:57:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</loc>
+    <lastmod>2014-03-01T23:57:04+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2014-01-19-how-to-add-category-list-into-your-octopress/</loc>
+    <lastmod>2014-01-19T23:42:07+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2014-01-10-how-to-add-read-on-more-link/</loc>
+    <lastmod>2014-01-10T21:39:47+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2014-01-01-clone-your-octopress-from-two-machines/</loc>
+    <lastmod>2014-01-01T20:46:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2013-11-19-octopress-from-zero/</loc>
+    <lastmod>2013-11-19T22:07:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2013-11-19-my-first-octopress/</loc>
+    <lastmod>2013-11-19T21:08:03+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/2013-11-16-1st-post-setup-on-octopress-on-github-page/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/blog/</loc>
+    <lastmod>2016-05-06T15:50:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/bluemix/</loc>
+    <lastmod>2014-03-05T23:57:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2016-05-06T15:50:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/hexo/</loc>
+    <lastmod>2016-05-06T15:50:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2019-04-05T05:27:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/liberty/</loc>
+    <lastmod>2014-03-05T23:57:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/markdown/</loc>
+    <lastmod>2016-05-06T15:50:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/octopress/</loc>
+    <lastmod>2016-05-04T22:07:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2019-04-05T05:27:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/worklight/</loc>
+    <lastmod>2014-03-05T23:57:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

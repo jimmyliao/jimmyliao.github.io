@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Octopress on JimmyLiao&#39;s Note</title>
+    <link>http://example.org/categories/octopress/</link>
+    <description>Recent content in Octopress on JimmyLiao&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 May 2016 22:07:46 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/octopress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Re-Setup Octopress on different laptop</title>
+      <link>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</link>
+      <pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016-05-04-resetup-octopress-on-different-machine/</guid>
+      <description>&lt;p&gt;You will learn how to create blog post on different laptop.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to add Category list into your octopress</title>
+      <link>http://example.org/posts/2014-01-19-how-to-add-category-list-into-your-octopress/</link>
+      <pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-01-19-how-to-add-category-list-into-your-octopress/</guid>
+      <description>Following Eddie&amp;rsquo;s blog entry. Thank you, Eddie! :-)
+Steps:
+ Download the categories rb file into octopress plugins directory Modify your _config.yml rake generate; rake deploy  Reference: http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/</description>
+    </item>
+    
+  </channel>
+</rss>

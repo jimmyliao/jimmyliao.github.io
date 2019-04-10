@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Worklight on JimmyLiao&#39;s Note</title>
+    <link>http://example.org/categories/worklight/</link>
+    <description>Recent content in Worklight on JimmyLiao&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Mar 2014 23:57:25 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/worklight/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build a Worklight Application on Bluemix</title>
+      <link>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</link>
+      <pubDate>Wed, 05 Mar 2014 23:57:25 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-03-05-build-a-worklight-application-on-bluemix/</guid>
+      <description>You will learn how to create a sample worklight application on Bluemix stack.</description>
+    </item>
+    
+    <item>
+      <title>Your first Worklight runtime on Bluemix</title>
+      <link>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</link>
+      <pubDate>Sat, 01 Mar 2014 23:57:04 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2014-03-01-your-first-worklight-runtime-on-bluemix/</guid>
+      <description>Based on the previous article, you will know how to add the worklight runtime with liberty on Bluemix stack.</description>
+    </item>
+    
+  </channel>
+</rss>
