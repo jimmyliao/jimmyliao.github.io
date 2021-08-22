@@ -10,6 +10,10 @@
   weight = -108
 [[main]]
   parent = "Links"
+  name = "Medium"
+  url = "https://jimmyliao.medium.com/"
+[[main]]
+  parent = "Links"
   name = "GitHub"
   url = "https://github.com/jimmyliao/"
 [[main]]
