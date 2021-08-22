@@ -1,0 +1,4 @@
+baseURL = 'https://jimmyliao.github.io/'
+languageCode = 'en-us'
+title = 'JimmyLiao Note'
+theme = "ananke"
