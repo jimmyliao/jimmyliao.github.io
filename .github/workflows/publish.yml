@@ -15,8 +15,8 @@ jobs:
           submodules: false  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Create cname file
-        run: echo "demo.gh.jimmyliao.github.io" > static/CNAME
+      # - name: Create cname file
+      #   run: echo "demo.gh.jimmyliao.github.io" > static/CNAME
 
       - name: Update robot.txt
         run: |
@@ -29,7 +29,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify -b https://demo.gh.jimmyliao.github.io
+        run: hugo --minify -b https://jimmyliao.github.io
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
