@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>https://jimmyliao.github.io/post/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 19 Aug 2021 22:27:25 +0000</lastBuildDate><atom:link href="https://jimmyliao.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>New Hugo First Post at 2021!</title><link>https://jimmyliao.github.io/post/2021-08-22-newhugo-first-post/</link><pubDate>Thu, 19 Aug 2021 22:27:25 +0000</pubDate><guid>https://jimmyliao.github.io/post/2021-08-22-newhugo-first-post/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.github.io/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 19 Aug 2021 22:27:25 +0000</lastBuildDate><atom:link href="https://jimmyliao.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>New Hugo First Post at 2021!</title><link>https://jimmyliao.github.io/post/2021-08-22-newhugo-first-post/</link><pubDate>Thu, 19 Aug 2021 22:27:25 +0000</pubDate><guid>https://jimmyliao.github.io/post/2021-08-22-newhugo-first-post/</guid><description>
 &lt;p>Test&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">echo $SHELL
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$SHELL&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
-&lt;p>不同Blog想要放在同個Github Page&amp;hellip;?&lt;/p>
+&lt;p>不同Blog想要放在同個Github Page...?&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>建立Repo. Ex. &lt;a href="https://github.com/jimmyliao/Life.git">https://github.com/jimmyliao/Life.git&lt;/a>&lt;/p>
@@ -18,55 +18,61 @@
 &lt;/ol>
 &lt;p>4.1 clone一份Project repo, 方便起見還是在remote設定gh-pages &amp;amp; source, gh-pages就是最後發布的branch. 請見 Ref #1
 4.2&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ mkdir hexo
-$ cd hexo
-$ hexo init
-INFO Cloning hexo-starter to ~/WebDrive/GitHub/Blogging/Life.git/blog_src
-Cloning into &lt;span style="color:#e6db74">&amp;#39;/Users/jimmyliao/WebDrive/GitHub/Blogging/Life.git/blog_src&amp;#39;&lt;/span>...
-remote: Counting objects: 53, &lt;span style="color:#66d9ef">done&lt;/span>.
-remote: Total &lt;span style="color:#ae81ff">53&lt;/span> &lt;span style="color:#f92672">(&lt;/span>delta 0&lt;span style="color:#f92672">)&lt;/span>, reused &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#f92672">(&lt;/span>delta 0&lt;span style="color:#f92672">)&lt;/span>, pack-reused &lt;span style="color:#ae81ff">53&lt;/span>
-Unpacking objects: 100% &lt;span style="color:#f92672">(&lt;/span>53/53&lt;span style="color:#f92672">)&lt;/span>, &lt;span style="color:#66d9ef">done&lt;/span>.
-Checking connectivity... &lt;span style="color:#66d9ef">done&lt;/span>.
-Submodule &lt;span style="color:#e6db74">&amp;#39;themes/landscape&amp;#39;&lt;/span> &lt;span style="color:#f92672">(&lt;/span>https://github.com/hexojs/hexo-theme-landscape.git&lt;span style="color:#f92672">)&lt;/span> registered &lt;span style="color:#66d9ef">for&lt;/span> path &lt;span style="color:#e6db74">&amp;#39;themes/landscape&amp;#39;&lt;/span>
-Cloning into &lt;span style="color:#e6db74">&amp;#39;themes/landscape&amp;#39;&lt;/span>...
-remote: Counting objects: 730, &lt;span style="color:#66d9ef">done&lt;/span>.
-remote: Total &lt;span style="color:#ae81ff">730&lt;/span> &lt;span style="color:#f92672">(&lt;/span>delta 0&lt;span style="color:#f92672">)&lt;/span>, reused &lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#f92672">(&lt;/span>delta 0&lt;span style="color:#f92672">)&lt;/span>, pack-reused &lt;span style="color:#ae81ff">730&lt;/span>
-Receiving objects: 100% &lt;span style="color:#f92672">(&lt;/span>730/730&lt;span style="color:#f92672">)&lt;/span>, 2.51 MiB | 955.00 KiB/s, &lt;span style="color:#66d9ef">done&lt;/span>.
-Resolving deltas: 100% &lt;span style="color:#f92672">(&lt;/span>384/384&lt;span style="color:#f92672">)&lt;/span>, &lt;span style="color:#66d9ef">done&lt;/span>.
-Checking connectivity... &lt;span style="color:#66d9ef">done&lt;/span>.
-Submodule path &lt;span style="color:#e6db74">&amp;#39;themes/landscape&amp;#39;&lt;/span>: checked out &lt;span style="color:#e6db74">&amp;#39;decdc2d9956776cbe95420ae94bac87e22468d38&amp;#39;&lt;/span>
-INFO Install dependencies
-...
-&lt;span style="color:#e6db74">`&lt;/span>-- serve-static@1.10.2
-+-- escape-html@1.0.3
-&lt;span style="color:#e6db74">`&lt;/span>-- send@0.13.1
-+-- destroy@1.0.4
-+-- etag@1.7.0
-+-- fresh@0.3.0
-+-- http-errors@1.3.1
-+-- range-parser@1.0.3
-&lt;span style="color:#e6db74">`&lt;/span>-- statuses@1.2.1
-INFO Start blogging with Hexo!
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>$ mkdir hexo
+&lt;span class="ln"> 2&lt;/span>$ &lt;span class="nb">cd&lt;/span> hexo
+&lt;span class="ln"> 3&lt;/span>$ hexo init
+&lt;span class="ln"> 4&lt;/span>INFO Cloning hexo-starter to ~/WebDrive/GitHub/Blogging/Life.git/blog_src
+&lt;span class="ln"> 5&lt;/span>Cloning into &lt;span class="s1">&amp;#39;/Users/jimmyliao/WebDrive/GitHub/Blogging/Life.git/blog_src&amp;#39;&lt;/span>...
+&lt;span class="ln"> 6&lt;/span>remote: Counting objects: 53, &lt;span class="k">done&lt;/span>.
+&lt;span class="ln"> 7&lt;/span>remote: Total &lt;span class="m">53&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">53&lt;/span>
+&lt;span class="ln"> 8&lt;/span>Unpacking objects: 100% &lt;span class="o">(&lt;/span>53/53&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
+&lt;span class="ln"> 9&lt;/span>Checking connectivity... &lt;span class="k">done&lt;/span>.
+&lt;span class="ln">10&lt;/span>Submodule &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span> &lt;span class="o">(&lt;/span>https://github.com/hexojs/hexo-theme-landscape.git&lt;span class="o">)&lt;/span> registered &lt;span class="k">for&lt;/span> path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>
+&lt;span class="ln">11&lt;/span>Cloning into &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>...
+&lt;span class="ln">12&lt;/span>remote: Counting objects: 730, &lt;span class="k">done&lt;/span>.
+&lt;span class="ln">13&lt;/span>remote: Total &lt;span class="m">730&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">730&lt;/span>
+&lt;span class="ln">14&lt;/span>Receiving objects: 100% &lt;span class="o">(&lt;/span>730/730&lt;span class="o">)&lt;/span>, 2.51 MiB &lt;span class="p">|&lt;/span> 955.00 KiB/s, &lt;span class="k">done&lt;/span>.
+&lt;span class="ln">15&lt;/span>Resolving deltas: 100% &lt;span class="o">(&lt;/span>384/384&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
+&lt;span class="ln">16&lt;/span>Checking connectivity... &lt;span class="k">done&lt;/span>.
+&lt;span class="ln">17&lt;/span>Submodule path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>: checked out &lt;span class="s1">&amp;#39;decdc2d9956776cbe95420ae94bac87e22468d38&amp;#39;&lt;/span>
+&lt;span class="ln">18&lt;/span>INFO Install dependencies
+&lt;span class="ln">19&lt;/span>...
+&lt;span class="ln">20&lt;/span>
+&lt;span class="ln">21&lt;/span> &lt;span class="sb">`&lt;/span>-- serve-static@1.10.2
+&lt;span class="ln">22&lt;/span> +-- escape-html@1.0.3
+&lt;span class="ln">23&lt;/span> &lt;span class="sb">`&lt;/span>-- send@0.13.1
+&lt;span class="ln">24&lt;/span> +-- destroy@1.0.4
+&lt;span class="ln">25&lt;/span> +-- etag@1.7.0
+&lt;span class="ln">26&lt;/span> +-- fresh@0.3.0
+&lt;span class="ln">27&lt;/span> +-- http-errors@1.3.1
+&lt;span class="ln">28&lt;/span> +-- range-parser@1.0.3
+&lt;span class="ln">29&lt;/span> &lt;span class="sb">`&lt;/span>-- statuses@1.2.1
+&lt;span class="ln">30&lt;/span>INFO Start blogging with Hexo!
+&lt;span class="ln">31&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>產生template之後&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo g
-...
-INFO &lt;span style="color:#ae81ff">28&lt;/span> files generated in &lt;span style="color:#ae81ff">648&lt;/span> ms
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo g
+&lt;span class="ln">2&lt;/span>...
+&lt;span class="ln">3&lt;/span>INFO &lt;span class="m">28&lt;/span> files generated in &lt;span class="m">648&lt;/span> ms
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>記得修改一下_config.yml&lt;/p>
-&lt;pre>&lt;code>url: http://jimmyliao.github.io/Life
-root: /Life/
-...
-deploy:
-type: git
-repo: https://github.com/jimmyliao/Life.git
-branch: gh-pages
-&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ npm install hexo-deployer-git --save &lt;span style="color:#75715e">#裝一下deployer&lt;/span>
-$ npm install hexo-renderer-stylus --save &lt;span style="color:#75715e">#裝一下不然會整個css破掉, hexo issue&lt;/span>
-$ hexo d
-...
-To https://github.com/jimmyliao/Life.git
-+ 541ea14...4eb6485 HEAD -&amp;gt; gh-pages &lt;span style="color:#f92672">(&lt;/span>forced update&lt;span style="color:#f92672">)&lt;/span>
-Branch master set up to track remote branch gh-pages from https://github.com/jimmyliao/Life.git.
-INFO Deploy &lt;span style="color:#66d9ef">done&lt;/span>: git
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>url: http://jimmyliao.github.io/Life
+&lt;span class="ln">2&lt;/span>root: /Life/
+&lt;span class="ln">3&lt;/span>
+&lt;span class="ln">4&lt;/span>...
+&lt;span class="ln">5&lt;/span>deploy:
+&lt;span class="ln">6&lt;/span> type: git
+&lt;span class="ln">7&lt;/span> repo: https://github.com/jimmyliao/Life.git
+&lt;span class="ln">8&lt;/span>branch: gh-pages
+&lt;span class="ln">9&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>$ npm install hexo-deployer-git --save &lt;span class="c1">#裝一下deployer&lt;/span>
+&lt;span class="ln"> 2&lt;/span>$ npm install hexo-renderer-stylus --save &lt;span class="c1">#裝一下不然會整個css破掉, hexo issue&lt;/span>
+&lt;span class="ln"> 3&lt;/span>$ hexo d
+&lt;span class="ln"> 4&lt;/span>...
+&lt;span class="ln"> 5&lt;/span>To https://github.com/jimmyliao/Life.git
+&lt;span class="ln"> 6&lt;/span> + 541ea14...4eb6485 HEAD -&amp;gt; gh-pages &lt;span class="o">(&lt;/span>forced update&lt;span class="o">)&lt;/span>
+&lt;span class="ln"> 7&lt;/span>Branch master &lt;span class="nb">set&lt;/span> up to track remote branch gh-pages from https://github.com/jimmyliao/Life.git.
+&lt;span class="ln"> 8&lt;/span>INFO Deploy &lt;span class="k">done&lt;/span>: git
+&lt;span class="ln"> 9&lt;/span>
+&lt;span class="ln">10&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
 &lt;li>測試.&lt;/li>
 &lt;/ol>
@@ -75,70 +81,72 @@ INFO Deploy &lt;span style="color:#66d9ef">done&lt;/span>: git
 &lt;p>P.S. 不過我開這麼多個，也沒在寫Blog啊&lt;/p>
 &lt;p>Ref.
 #1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
-&lt;p>A new start for blogging&amp;hellip;&lt;/p>
+&lt;p>A new start for blogging...&lt;/p>
 &lt;ol>
 &lt;li>Follow &lt;a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/">this&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo npm install --unsafe-perm --verbose -g hexo
-$ mkdir hexo
-$ cd hexo
-$ hexo init
-$ npm install hexo --no-optional
-$ npm install
-$ hexo g &lt;span style="color:#75715e">#完整是hexo generate 生成靜態頁面&lt;/span>
-$ hexo s &lt;span style="color:#75715e">#完整是hexo server 運行本地服務器&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ sudo npm install --unsafe-perm --verbose -g hexo
+&lt;span class="ln">2&lt;/span>$ mkdir hexo
+&lt;span class="ln">3&lt;/span>$ &lt;span class="nb">cd&lt;/span> hexo
+&lt;span class="ln">4&lt;/span>$ hexo init
+&lt;span class="ln">5&lt;/span>$ npm install hexo --no-optional
+&lt;span class="ln">6&lt;/span>$ npm install
+&lt;span class="ln">7&lt;/span>
+&lt;span class="ln">8&lt;/span>$ hexo g &lt;span class="c1">#完整是hexo generate 生成靜態頁面&lt;/span>
+&lt;span class="ln">9&lt;/span>$ hexo s &lt;span class="c1">#完整是hexo server 運行本地服務器&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>裝git發布插件，運行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ npm install hexo-deployer-git --save
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ npm install hexo-deployer-git --save
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>安裝完成後在Hexo根目錄通過_config.yml對相關參數進行設置，在最後幾行：&lt;/p>
-&lt;pre>&lt;code>deploy:
-type: git
-repo: git@github.com/abc/abc.github.io.git #這裏是你剛獲取的地址
-branch: master
-&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ vim ~/.ssh/config
-&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>host abc.github.com
-HostName github.com
-IdentityFile ~/.ssh/github_rsa
-User git
-&lt;/code>&lt;/pre>&lt;p>保存設置，撰寫新文章，然後生成頁面，最後發布頁面：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo new &lt;span style="color:#f92672">[&lt;/span>layout&lt;span style="color:#f92672">]&lt;/span> &amp;lt;title&amp;gt;
-$ hexo g
-$ hexo d &lt;span style="color:#75715e">#完整是hexo deploy 發布到遠程服務器&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>deploy:
+&lt;span class="ln">2&lt;/span> type: git
+&lt;span class="ln">3&lt;/span> repo: git@github.com/abc/abc.github.io.git #這裏是你剛獲取的地址
+&lt;span class="ln">4&lt;/span>branch: master
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ vim ~/.ssh/config
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>host abc.github.com
+&lt;span class="ln">2&lt;/span> HostName github.com
+&lt;span class="ln">3&lt;/span> IdentityFile ~/.ssh/github_rsa
+&lt;span class="ln">4&lt;/span> User git
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>保存設置，撰寫新文章，然後生成頁面，最後發布頁面：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo new &lt;span class="o">[&lt;/span>layout&lt;span class="o">]&lt;/span> &amp;lt;title&amp;gt;
+&lt;span class="ln">2&lt;/span>$ hexo g
+&lt;span class="ln">3&lt;/span>$ hexo d &lt;span class="c1">#完整是hexo deploy 發布到遠程服務器&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>或是生成頁面和發布頁面用一條命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo d -g
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo d -g
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>P.S. have to hexo clean before hexo g&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo clean
-$ hexo g
-$ hexo d
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo clean
+&lt;span class="ln">2&lt;/span>$ hexo g
+&lt;span class="ln">3&lt;/span>$ hexo d
 &lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
 &lt;li>Follow this instruction to &lt;a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E7%AB%A0">setup local env&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>Update: Following steps are for anther laptop&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git clone your hexo repo &lt;span style="color:#f92672">(&lt;/span>source branch&lt;span style="color:#f92672">)&lt;/span>
-$ npm install hexo --save &lt;span style="color:#75715e">#reinstall if new env does not have hexo cli&lt;/span>
-$ npm install hexo-deployer-git --save
-$ hexo init
-$ git clone https://github.com/iissnan/hexo-theme-next themes/next
-$ hexo g
-$ hexo d
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ git clone your hexo repo &lt;span class="o">(&lt;/span>&lt;span class="nb">source&lt;/span> branch&lt;span class="o">)&lt;/span>
+&lt;span class="ln">2&lt;/span>$ npm install hexo --save &lt;span class="c1">#reinstall if new env does not have hexo cli&lt;/span>
+&lt;span class="ln">3&lt;/span>$ npm install hexo-deployer-git --save
+&lt;span class="ln">4&lt;/span>$ hexo init
+&lt;span class="ln">5&lt;/span>$ git clone https://github.com/iissnan/hexo-theme-next themes/next
+&lt;span class="ln">6&lt;/span>$ hexo g
+&lt;span class="ln">7&lt;/span>$ hexo d
+&lt;span class="ln">8&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
 &lt;p>Another Hello World for Hexo&lt;/p>
 &lt;p>Welcome to &lt;a href="https://hexo.io/">Hexo&lt;/a>! This is your very first post. Check &lt;a href="https://hexo.io/docs/">documentation&lt;/a> for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href="https://hexo.io/docs/troubleshooting.html">troubleshooting&lt;/a> or you can ask me on &lt;a href="https://github.com/hexojs/hexo/issues">GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>
 &lt;h3 id="create-a-new-post">Create a new post&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo new &lt;span style="color:#e6db74">&amp;#34;My New Post&amp;#34;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo new &lt;span class="s2">&amp;#34;My New Post&amp;#34;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/writing.html">Writing&lt;/a>&lt;/p>
 &lt;h3 id="run-server">Run server&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo server
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo server
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/server.html">Server&lt;/a>&lt;/p>
 &lt;h3 id="generate-static-files">Generate static files&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo generate
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo generate
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/generating.html">Generating&lt;/a>&lt;/p>
 &lt;h3 id="deploy-to-remote-sites">Deploy to remote sites&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ hexo deploy
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo deploy
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
 &lt;p>You will learn how to create blog post on different laptop.&lt;/p>
 &lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0000</pubDate><guid>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
-&lt;p>Following Eddie&amp;rsquo;s blog entry. Thank you, Eddie! :-)&lt;/p>
+&lt;p>Following Eddie's blog entry. Thank you, Eddie! :-)&lt;/p>
 &lt;p>Steps:&lt;/p>
 &lt;ol>
 &lt;li>Download the categories rb file into octopress plugins directory&lt;/li>
@@ -147,10 +155,10 @@ $ hexo d
 &lt;/ol>
 &lt;p>Reference:
 &lt;a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/&lt;/a>&lt;/p></description></item><item><title>How to add [Read on] more link</title><link>https://jimmyliao.github.io/post/2014-01-10-how-to-add-read-on-more-link/</link><pubDate>Fri, 10 Jan 2014 21:39:47 +0000</pubDate><guid>https://jimmyliao.github.io/post/2014-01-10-how-to-add-read-on-more-link/</guid><description>
-&lt;p>Simply add &amp;lsquo;more&amp;rsquo; in the &lt;strong>'&lt;!-- raw HTML omitted -->'&lt;/strong> into the post where you want to add the more link. Be sure there has some text before more link except Reference link.&lt;/p>
+&lt;p>Simply add 'more' in the &lt;strong>'&lt;!--'** + **'-->'&lt;/strong> into the post where you want to add the more link. Be sure there has some text before more link except Reference link.&lt;/p>
 &lt;p>Reference:
 &lt;a href="http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502">http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502&lt;/a>&lt;/p></description></item><item><title>clone your octopress from two machines</title><link>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</link><pubDate>Wed, 01 Jan 2014 20:46:15 +0000</pubDate><guid>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</guid><description>
-&lt;p>I used MacBook Pro 09' &amp;amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress&amp;hellip;&lt;/p>
+&lt;p>I used MacBook Pro 09' &amp;amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress...&lt;/p>
 &lt;p>Reference:
 &lt;a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/&lt;/a>&lt;/p></description></item><item><title>octopress from zero</title><link>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</link><pubDate>Tue, 19 Nov 2013 22:07:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</guid><description>
 &lt;p>How to use rake &amp;amp; git with your octopress.&lt;/p>
@@ -161,7 +169,7 @@ $ hexo d
 &lt;li>
 &lt;p>How to new post
 rake new_post
-Enter a title for your post: &amp;ldquo;Octopress from zero&amp;hellip;again!&amp;rdquo;
+Enter a title for your post: &amp;quot;Octopress from zero...again!&amp;quot;
 Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-again.markdown&lt;/p>
 &lt;/li>
 &lt;li>
@@ -176,7 +184,7 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 &lt;li>
 &lt;p>Push &amp;amp; Deploy
 -&amp;gt; git add .
--&amp;gt; git commit -m &amp;ldquo;&amp;hellip;&amp;rdquo;
+-&amp;gt; git commit -m &amp;quot;...&amp;quot;
 -&amp;gt; git push origin master
 -&amp;gt; rake deploy&lt;/p>
 &lt;/li>
@@ -184,16 +192,16 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 &lt;p>this page uses the &lt;a href="http://daringfireball.net/projects/markdown/">Markdown&lt;/a> syntax. (or refer: &lt;a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo&lt;/a>
 wn)&lt;/p>
 &lt;p>#1. /README.md&lt;/p>
-&lt;pre>&lt;code>This file is to describe the myconfig file structure and how to use
-&lt;/code>&lt;/pre>&lt;h1 id="tweaks">Tweaks:&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>This file is to describe the myconfig file structure and how to use
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="tweaks">Tweaks:&lt;/h1>
 &lt;p>&lt;a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress&lt;/a>
 Edit the Rakefile and look for this line:&lt;/p>
-&lt;pre>&lt;code>system &amp;quot;git push origin #{deploy_branch}&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:&lt;/p>
-&lt;pre>&lt;code>system &amp;quot;git push origin +#{deploy_branch}&amp;quot;
-&lt;/code>&lt;/pre>&lt;p>Run the command&lt;/p>
-&lt;pre>&lt;code>rake deploy
-&lt;/code>&lt;/pre>&lt;h2 id="references">References:&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>system &amp;#34;git push origin #{deploy_branch}&amp;#34;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>system &amp;#34;git push origin +#{deploy_branch}&amp;#34;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the command&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>rake deploy
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="references">References:&lt;/h2>
 &lt;p>&lt;a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/&lt;/a>
 &lt;a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/&lt;/a>&lt;/p>
 &lt;p>git pull origin master&lt;/p>
@@ -202,7 +210,7 @@ rake generate
 rake preview&lt;/p>
 &lt;p>[Remember to push&amp;amp;deploy]
 git add .
-git commit -m &amp;ldquo;msg&amp;rdquo;
+git commit -m &amp;quot;msg&amp;quot;
 git push origin master&lt;/p>
 &lt;p>rake deploy&lt;/p></description></item><item><title>1st post: setup on Octopress on Github page</title><link>https://jimmyliao.github.io/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.github.io/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid><description>
 &lt;p>中文
