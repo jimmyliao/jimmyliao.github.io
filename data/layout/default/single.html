@@ -1,0 +1,14 @@
+{{ define "content" -}}
+<article class="post">
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  <div id="comments">
+    {{ with .Params.GHissueID }}
+      {{ partial "comments.html" $ }}
+    {{ else }}
+      {{ template "_internal/disqus.html" . }}
+    {{ end }}
+    </div>  
+</article>
+{{- end }}
