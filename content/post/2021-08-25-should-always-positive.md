@@ -1,5 +1,5 @@
 ---
-title: "2021 08 25 Should Always Positive" # Title of the blog post.
+title: "Should Always Be Positive" # Title of the blog post.
 date: 2021-08-25T22:10:53+08:00 # Date of post creation.
 description: "Keep in touch and be postive" # Description used for search engine.
 featured: true # Sets if post is a featured post, making it appear on the sidebar. A featured post won't be listed on the sidebar if it's the current page
