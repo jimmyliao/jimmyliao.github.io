@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on JimmyLiao Notes</title><link>https://jimmyliao.github.io/categories/hexo/</link><description>Recent content in Hexo on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 06 May 2016 15:50:46 +0000</lastBuildDate><atom:link href="https://jimmyliao.github.io/categories/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on JimmyLiao Notes</title><link>https://jimmyliao.github.io/categories/hexo/</link><description>Recent content in Hexo on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 06 May 2016 15:50:46 +0800</lastBuildDate><atom:link href="https://jimmyliao.github.io/categories/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
 &lt;p>不同Blog想要放在同個Github Page...?&lt;/p>
 &lt;ol>
 &lt;li>
@@ -77,7 +77,7 @@
 &lt;a href="http://jimmyliao.github.io/Life">http://jimmyliao.github.io/Life&lt;/a> -&amp;gt; 利用Project Pages新增的&lt;/p>
 &lt;p>P.S. 不過我開這麼多個，也沒在寫Blog啊&lt;/p>
 &lt;p>Ref.
-#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
+#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
 &lt;p>A new start for blogging...&lt;/p>
 &lt;ol>
 &lt;li>Follow &lt;a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/">this&lt;/a>&lt;/li>
@@ -125,7 +125,7 @@
 &lt;span class="ln">6&lt;/span>$ hexo g
 &lt;span class="ln">7&lt;/span>$ hexo d
 &lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
 &lt;p>Another Hello World for Hexo&lt;/p>
 &lt;p>Welcome to &lt;a href="https://hexo.io/">Hexo&lt;/a>! This is your very first post. Check &lt;a href="https://hexo.io/docs/">documentation&lt;/a> for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href="https://hexo.io/docs/troubleshooting.html">troubleshooting&lt;/a> or you can ask me on &lt;a href="https://github.com/hexojs/hexo/issues">GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>

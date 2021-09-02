@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on JimmyLiao Notes</title><link>https://jimmyliao.github.io/categories/blog/</link><description>Recent content in Blog on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 06 May 2016 15:50:46 +0000</lastBuildDate><atom:link href="https://jimmyliao.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on JimmyLiao Notes</title><link>https://jimmyliao.github.io/categories/blog/</link><description>Recent content in Blog on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 06 May 2016 15:50:46 +0800</lastBuildDate><atom:link href="https://jimmyliao.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
 &lt;p>不同Blog想要放在同個Github Page...?&lt;/p>
 &lt;ol>
 &lt;li>
@@ -77,7 +77,7 @@
 &lt;a href="http://jimmyliao.github.io/Life">http://jimmyliao.github.io/Life&lt;/a> -&amp;gt; 利用Project Pages新增的&lt;/p>
 &lt;p>P.S. 不過我開這麼多個，也沒在寫Blog啊&lt;/p>
 &lt;p>Ref.
-#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
+#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
 &lt;p>A new start for blogging...&lt;/p>
 &lt;ol>
 &lt;li>Follow &lt;a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/">this&lt;/a>&lt;/li>
@@ -125,7 +125,7 @@
 &lt;span class="ln">6&lt;/span>$ hexo g
 &lt;span class="ln">7&lt;/span>$ hexo d
 &lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
 &lt;p>Another Hello World for Hexo&lt;/p>
 &lt;p>Welcome to &lt;a href="https://hexo.io/">Hexo&lt;/a>! This is your very first post. Check &lt;a href="https://hexo.io/docs/">documentation&lt;/a> for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href="https://hexo.io/docs/troubleshooting.html">troubleshooting&lt;/a> or you can ask me on &lt;a href="https://github.com/hexojs/hexo/issues">GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>
@@ -140,9 +140,9 @@
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/generating.html">Generating&lt;/a>&lt;/p>
 &lt;h3 id="deploy-to-remote-sites">Deploy to remote sites&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo deploy
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
 &lt;p>You will learn how to create blog post on different laptop.&lt;/p>
-&lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0000</pubDate><guid>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
+&lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate><guid>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
 &lt;p>Following Eddie's blog entry. Thank you, Eddie! :-)&lt;/p>
 &lt;p>Steps:&lt;/p>
 &lt;ol>
@@ -151,10 +151,10 @@
 &lt;li>rake generate; rake deploy&lt;/li>
 &lt;/ol>
 &lt;p>Reference:
-&lt;a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/&lt;/a>&lt;/p></description></item><item><title>clone your octopress from two machines</title><link>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</link><pubDate>Wed, 01 Jan 2014 20:46:15 +0000</pubDate><guid>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</guid><description>
+&lt;a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/&lt;/a>&lt;/p></description></item><item><title>clone your octopress from two machines</title><link>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</link><pubDate>Wed, 01 Jan 2014 20:46:15 +0800</pubDate><guid>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</guid><description>
 &lt;p>I used MacBook Pro 09' &amp;amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress...&lt;/p>
 &lt;p>Reference:
-&lt;a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/&lt;/a>&lt;/p></description></item><item><title>octopress from zero</title><link>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</link><pubDate>Tue, 19 Nov 2013 22:07:46 +0000</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</guid><description>
+&lt;a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/&lt;/a>&lt;/p></description></item><item><title>octopress from zero</title><link>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</link><pubDate>Tue, 19 Nov 2013 22:07:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</guid><description>
 &lt;p>How to use rake &amp;amp; git with your octopress.&lt;/p>
 &lt;p>Reference:
 &lt;a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/&lt;/a>
@@ -182,7 +182,7 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 -&amp;gt; git push origin master
 -&amp;gt; rake deploy&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>my first octopress</title><link>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</link><pubDate>Tue, 19 Nov 2013 21:08:03 +0000</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</guid><description>
+&lt;/ol></description></item><item><title>my first octopress</title><link>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</link><pubDate>Tue, 19 Nov 2013 21:08:03 +0800</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</guid><description>
 &lt;p>this page uses the &lt;a href="http://daringfireball.net/projects/markdown/">Markdown&lt;/a> syntax. (or refer: &lt;a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo&lt;/a>
 wn)&lt;/p>
 &lt;p>#1. /README.md&lt;/p>
