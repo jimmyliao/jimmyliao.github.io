@@ -1,6 +1,10 @@
+#[[main]]
+#  name = "Home"
+#  url = "/"
+#  weight = -110
 [[main]]
-  name = "Home"
-  url = ""
+  name = "About"
+  url = "about/"
   weight = -110
 
 # Submenus are done this way: parent -> identifier
@@ -25,10 +29,10 @@
   name = "Twitter"
   url = "https://twitter.com/jimmyliao"
 
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
+#[[main]]
+#  name = "About"
+#  url = "about/"
+#  weight = -107
 
 # social menu links
 
