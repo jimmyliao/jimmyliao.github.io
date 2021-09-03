@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "午安，一早重訓到快吐，中午速度調到養生模式"
+title: "跑步日記 2020-09-03"
 date: 2020-09-03T15:29:45+08:00
 description: "Running Diary" # Description used for search engine.
 # featureImage: "/images/2020-09-03-running-stat.jpg" # Sets featured image on blog post.
