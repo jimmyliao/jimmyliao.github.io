@@ -8,26 +8,26 @@
   weight = -110
 
 # Submenus are done this way: parent -> identifier
-[[main]]
-  name = "Links"
-  identifier = "Links"
-  weight = -108
-[[main]]
-  parent = "Links"
-  name = "Medium"
-  url = "https://jimmyliao.medium.com/"
-[[main]]
-  parent = "Links"
-  name = "GitHub"
-  url = "https://github.com/jimmyliao/"
-[[main]]
-  parent = "Links"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/in/jimmyliao/"
-[[main]]
-  parent = "Links"
-  name = "Twitter"
-  url = "https://twitter.com/jimmyliao"
+# [[main]]
+#   name = "Links"
+#   identifier = "Links"
+#   weight = -108
+# [[main]]
+#   parent = "Links"
+#   name = "Medium"
+#   url = "https://jimmyliao.medium.com/"
+# [[main]]
+#   parent = "Links"
+#   name = "GitHub"
+#   url = "https://github.com/jimmyliao/"
+# [[main]]
+#   parent = "Links"
+#   name = "LinkedIn"
+#   url = "https://www.linkedin.com/in/jimmyliao/"
+# [[main]]
+#   parent = "Links"
+#   name = "Twitter"
+#   url = "https://twitter.com/jimmyliao"
 
 #[[main]]
 #  name = "About"
