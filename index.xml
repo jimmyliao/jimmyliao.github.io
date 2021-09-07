@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.github.io/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 07 Sep 2021 17:10:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Logitech M575 軌跡球滑鼠入手</title><link>https://jimmyliao.github.io/post/2021-09-07-m575/</link><pubDate>Tue, 07 Sep 2021 17:10:28 +0800</pubDate><guid>https://jimmyliao.github.io/post/2021-09-07-m575/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 07 Sep 2021 17:10:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Logitech M575 軌跡球滑鼠入手</title><link>https://jimmyliao.net/post/2021-09-07-m575/</link><pubDate>Tue, 07 Sep 2021 17:10:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-07-m575/</guid><description>
 &lt;p>&lt;strong>用習慣中指＋無名指控制的軌跡球 (ELECOM DEFT PRO), 再用 M575 會有種錯亂感.&lt;/strong>&lt;/p>
 &lt;p>不過 M575 的靜音捲動超讚, 這才對嘛.&lt;/p>
-&lt;p>&lt;img src="https://jimmyliao.github.io/images/2021-09-07-m575.jpeg" alt="">&lt;/p></description></item><item><title>如何連到遠端的 MicroK8s 並用 K9S monitoring</title><link>https://jimmyliao.github.io/post/2021-09-01-k9s-microk8s/</link><pubDate>Thu, 02 Sep 2021 22:47:55 +0800</pubDate><guid>https://jimmyliao.github.io/post/2021-09-01-k9s-microk8s/</guid><description>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-07-m575.jpeg" alt="">&lt;/p></description></item><item><title>如何連到遠端的 MicroK8s 並用 K9S monitoring</title><link>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</link><pubDate>Thu, 02 Sep 2021 22:47:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</guid><description>
 &lt;p>&lt;strong>如何連到遠端的 MicroK8s 並用 K9S 快快樂樂的管理 Kubernetes&lt;/strong>&lt;/p>
 &lt;p>使用 kubectl command 管理 Kubernetes Cluter 為工程師基本技能，用久了自然而然就想找些更適合習慣 Terminal 操作但又想有點 hacky 的介面，從強者同事分享的工具集才發現根本是超讚的東西阿！&lt;/p>
 &lt;p>前置作業：
@@ -63,7 +63,7 @@
 &lt;span class="ln">2&lt;/span>NAME STATUS ROLES AGE VERSION
 &lt;span class="ln">3&lt;/span>ip-10-40-0-11 Ready &amp;lt;none&amp;gt; 4d1h v1.19.13-34+939585d5fb6fa7
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>然後就可以快快樂樂的在 laptop 直接監控 Cluster 囉～&lt;/p>
-&lt;p>&lt;img src="https://jimmyliao.github.io/images/2021-09-01-k9s.png" alt="">&lt;/p></description></item><item><title>Be Positive</title><link>https://jimmyliao.github.io/post/2021-08-25-be-positive/</link><pubDate>Wed, 25 Aug 2021 22:10:53 +0800</pubDate><guid>https://jimmyliao.github.io/post/2021-08-25-be-positive/</guid><description>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-01-k9s.png" alt="">&lt;/p></description></item><item><title>Be Positive</title><link>https://jimmyliao.net/post/2021-08-25-be-positive/</link><pubDate>Wed, 25 Aug 2021 22:10:53 +0800</pubDate><guid>https://jimmyliao.net/post/2021-08-25-be-positive/</guid><description>
 &lt;p>&lt;strong>最近累積不少事情，很多觀察到的人事物必須忍住不說，那就說說令人開心的部分好了。&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>一些很久沒聯絡的前同事(這麼多前雇主就不說明是哪幾間)，不問候而已，一問候不是剛結婚，就是求子/女很久，有好消息，紛紛當上新手爸爸或是媽媽！ 聽到好消息當下，感動到快哭 🥰&lt;/li>
@@ -71,17 +71,17 @@
 &lt;li>與共事過的夥伴們保持聯絡，偶有關心 (還有之前參與過專案的 Bug 提問 XD)，心暖暖的。
 疫情逐漸趨緩，希望能趕快恢復，找機會跟大家聚餐吃飯！ 🙂&lt;/li>
 &lt;/ol>
-&lt;p>Post: &lt;a href="https://www.facebook.com/SJLiao/posts/10158375751773367">https://www.facebook.com/SJLiao/posts/10158375751773367&lt;/a>&lt;/p></description></item><item><title>Postman</title><link>https://jimmyliao.github.io/post/2021-08-16-postman/</link><pubDate>Mon, 16 Aug 2021 13:05:26 +0800</pubDate><guid>https://jimmyliao.github.io/post/2021-08-16-postman/</guid><description>
+&lt;p>Post: &lt;a href="https://www.facebook.com/SJLiao/posts/10158375751773367">https://www.facebook.com/SJLiao/posts/10158375751773367&lt;/a>&lt;/p></description></item><item><title>Postman</title><link>https://jimmyliao.net/post/2021-08-16-postman/</link><pubDate>Mon, 16 Aug 2021 13:05:26 +0800</pubDate><guid>https://jimmyliao.net/post/2021-08-16-postman/</guid><description>
 &lt;p>好陣子沒下載 Postman 來用，登入後打後原本 Workspace，怎麼還沒點開，但都還記得裡面的 req/res payload 格式？！🤓 😏
 (突然覺得 Postman AppIcon 好可愛)&lt;/p>
 &lt;p>&lt;img src="https://assets.getpostman.com/common-share/postman-platform-for-api-development-social-card.jpg" alt="">&lt;/p>
-&lt;p>Post: &lt;a href="https://www.facebook.com/SJLiao/posts/10158361487413367">https://www.facebook.com/SJLiao/posts/10158361487413367&lt;/a>&lt;/p></description></item><item><title>JimmyLiao.README (2020/09)</title><link>https://jimmyliao.github.io/post/2020-09-30-jimmyliao-readme-2020-09/</link><pubDate>Wed, 30 Sep 2020 22:27:25 +0800</pubDate><guid>https://jimmyliao.github.io/post/2020-09-30-jimmyliao-readme-2020-09/</guid><description>
+&lt;p>Post: &lt;a href="https://www.facebook.com/SJLiao/posts/10158361487413367">https://www.facebook.com/SJLiao/posts/10158361487413367&lt;/a>&lt;/p></description></item><item><title>JimmyLiao.README (2020/09)</title><link>https://jimmyliao.net/post/2020-09-30-jimmyliao-readme-2020-09/</link><pubDate>Wed, 30 Sep 2020 22:27:25 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-30-jimmyliao-readme-2020-09/</guid><description>
 &lt;p>Original post on &lt;a href="https://jimmyliao.medium.com/jimmyliao-readme-2020-09-5825ff75624a">medium&lt;/a>, decide move back to my own page.&lt;/p>
 &lt;p>After one year later of the post, I came to join Appier AIQUA as Backend and work with lots of talents. As simple Backend Engineer and in charge of Dashboard frontend’s backend components. (Django, REST, MySQL, Mongo, and part of React)&lt;/p>
-&lt;p>&lt;img src="https://jimmyliao.github.io/images/appier_personal_avatar.jpg" alt="">&lt;/p>
-&lt;p>In the leisure time, I completed 2 or 3 full-marathons and has two thousand kilometer running records in 2020.&lt;/p></description></item><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.github.io/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.github.io/post/2020-09-03-running-stat/</guid><description>
+&lt;p>&lt;img src="https://jimmyliao.net/images/appier_personal_avatar.jpg" alt="">&lt;/p>
+&lt;p>In the leisure time, I completed 2 or 3 full-marathons and has two thousand kilometer running records in 2020.&lt;/p></description></item><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.net/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-03-running-stat/</guid><description>
 &lt;p>午安，一早重訓到快吐，中午速度調到養生模式 😞&lt;/p>
-&lt;p>&lt;img src="https://jimmyliao.github.io/images/2020-09-03-running-stat.jpg" alt="">&lt;/p></description></item><item><title>JimmyLiao.README (2019/03)</title><link>https://jimmyliao.github.io/post/2019-03-23-jimmyliao-readme-2019-03/</link><pubDate>Sat, 23 Mar 2019 22:27:25 +0800</pubDate><guid>https://jimmyliao.github.io/post/2019-03-23-jimmyliao-readme-2019-03/</guid><description>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2020-09-03-running-stat.jpg" alt="">&lt;/p></description></item><item><title>JimmyLiao.README (2019/03)</title><link>https://jimmyliao.net/post/2019-03-23-jimmyliao-readme-2019-03/</link><pubDate>Sat, 23 Mar 2019 22:27:25 +0800</pubDate><guid>https://jimmyliao.net/post/2019-03-23-jimmyliao-readme-2019-03/</guid><description>
 &lt;p>Original post on &lt;a href="https://jimmyliao.medium.com/jimmyliao-readme-2019-03-6d755635a5b">medium&lt;/a>, decide move back to my own page.&lt;/p>
 &lt;p>This is the public version for the introduction section if needed.&lt;/p>
 &lt;p>Hi, I’m JimmyLiao, currently as the Technical Director of the Application and Service at Seed Studio Inc. And in charge of all the technical stuff within the company.&lt;/p>
@@ -90,7 +90,7 @@
 &lt;p>I’d working at IBM Taiwan for quite long time (12 years), would split it two phases: internal product development and the customer engagement. I’d working at CDL Taiwan for some coolest Company Mobile Products: IBM Sametime Mobile, Traveler, WEME (WebSphere Everyplace Micro Runtime) when I’re the junior engineer. Switch the role from SQA/Automation Lead/Scrum Master/Developer/L3 support. The second phase would be more customer product development and solution delivery in vary industries (Mobile Banking App, Airport, Cargo, Insurance, Chatbot etc.). I’d glad to join the &lt;a href="https://github.com/project-humix">project-humix&lt;/a> development group before leaving IBM, the cloud brain for the bot (real robot) and IOT and it’s really cool!&lt;/p>
 &lt;p>I’d also joined another start-up IC design house between the IBM career — Action-Micro Electronics, which to build the greatest product I’d ever before: &lt;a href="https://www.ezcast.com/">EZCast&lt;/a>. My job is as the Mobile lead to build up the very first version of Android and the dongle side. I do have a great experience from this team !&lt;/p>
 &lt;p>In the leisure time, I’m also the technical consultant for my brother in law who own his coffee roasting business. I’d also completed 12 times full marathon and still accumulate my personal record. :-)
-Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@jimmyliao.net">jimmyliao@jimmyliao.net&lt;/a>.&lt;/p></description></item><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
+Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@jimmyliao.net">jimmyliao@jimmyliao.net&lt;/a>.&lt;/p></description></item><item><title>Host Multple Blog on one Github Pages</title><link>https://jimmyliao.net/post/2016-05-06-host-multiple-blog-on-github/</link><pubDate>Fri, 06 May 2016 15:50:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-06-host-multiple-blog-on-github/</guid><description>
 &lt;p>不同Blog想要放在同個Github Page...?&lt;/p>
 &lt;ol>
 &lt;li>
@@ -169,7 +169,7 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;a href="http://jimmyliao.github.io/Life">http://jimmyliao.github.io/Life&lt;/a> -&amp;gt; 利用Project Pages新增的&lt;/p>
 &lt;p>P.S. 不過我開這麼多個，也沒在寫Blog啊&lt;/p>
 &lt;p>Ref.
-#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-move-hexo/</guid><description>
+#1. &lt;a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/&lt;/a>&lt;/p></description></item><item><title>Move to Hexo</title><link>https://jimmyliao.net/post/2016-05-05-move-hexo/</link><pubDate>Thu, 05 May 2016 23:00:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-05-move-hexo/</guid><description>
 &lt;p>A new start for blogging...&lt;/p>
 &lt;ol>
 &lt;li>Follow &lt;a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/">this&lt;/a>&lt;/li>
@@ -217,7 +217,7 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;span class="ln">6&lt;/span>$ hexo g
 &lt;span class="ln">7&lt;/span>$ hexo d
 &lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.github.io/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-05-hello-world/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.net/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-05-hello-world/</guid><description>
 &lt;p>Another Hello World for Hexo&lt;/p>
 &lt;p>Welcome to &lt;a href="https://hexo.io/">Hexo&lt;/a>! This is your very first post. Check &lt;a href="https://hexo.io/docs/">documentation&lt;/a> for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href="https://hexo.io/docs/troubleshooting.html">troubleshooting&lt;/a> or you can ask me on &lt;a href="https://github.com/hexojs/hexo/issues">GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>
@@ -232,9 +232,9 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/generating.html">Generating&lt;/a>&lt;/p>
 &lt;h3 id="deploy-to-remote-sites">Deploy to remote sites&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo deploy
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
 &lt;p>You will learn how to create blog post on different laptop.&lt;/p>
-&lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate><guid>https://jimmyliao.github.io/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
+&lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.net/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate><guid>https://jimmyliao.net/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
 &lt;p>Following Eddie's blog entry. Thank you, Eddie! :-)&lt;/p>
 &lt;p>Steps:&lt;/p>
 &lt;ol>
@@ -243,13 +243,13 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;li>rake generate; rake deploy&lt;/li>
 &lt;/ol>
 &lt;p>Reference:
-&lt;a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/&lt;/a>&lt;/p></description></item><item><title>How to add [Read on] more link</title><link>https://jimmyliao.github.io/post/2014-01-10-how-to-add-read-on-more-link/</link><pubDate>Fri, 10 Jan 2014 21:39:47 +0800</pubDate><guid>https://jimmyliao.github.io/post/2014-01-10-how-to-add-read-on-more-link/</guid><description>
+&lt;a href="http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/">http://blog.eddie.com.tw/2011/12/05/add-catetories-to-sidebar-in-octopress/&lt;/a>&lt;/p></description></item><item><title>How to add [Read on] more link</title><link>https://jimmyliao.net/post/2014-01-10-how-to-add-read-on-more-link/</link><pubDate>Fri, 10 Jan 2014 21:39:47 +0800</pubDate><guid>https://jimmyliao.net/post/2014-01-10-how-to-add-read-on-more-link/</guid><description>
 &lt;p>Simply add 'more' in the &lt;strong>'&lt;!--'** + **'-->'&lt;/strong> into the post where you want to add the more link. Be sure there has some text before more link except Reference link.&lt;/p>
 &lt;p>Reference:
-&lt;a href="http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502">http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502&lt;/a>&lt;/p></description></item><item><title>clone your octopress from two machines</title><link>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</link><pubDate>Wed, 01 Jan 2014 20:46:15 +0800</pubDate><guid>https://jimmyliao.github.io/post/2014-01-01-clone-your-octopress-from-two-machines/</guid><description>
+&lt;a href="http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502">http://stackoverflow.com/questions/13538047/octopress-index-page/13552502#13552502&lt;/a>&lt;/p></description></item><item><title>clone your octopress from two machines</title><link>https://jimmyliao.net/post/2014-01-01-clone-your-octopress-from-two-machines/</link><pubDate>Wed, 01 Jan 2014 20:46:15 +0800</pubDate><guid>https://jimmyliao.net/post/2014-01-01-clone-your-octopress-from-two-machines/</guid><description>
 &lt;p>I used MacBook Pro 09' &amp;amp; Thinkpad X220 at work and chromebook at home. Need the solution to work out the blogging with octopress...&lt;/p>
 &lt;p>Reference:
-&lt;a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/&lt;/a>&lt;/p></description></item><item><title>octopress from zero</title><link>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</link><pubDate>Tue, 19 Nov 2013 22:07:46 +0800</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-octopress-from-zero/</guid><description>
+&lt;a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/&lt;/a>&lt;/p></description></item><item><title>octopress from zero</title><link>https://jimmyliao.net/post/2013-11-19-octopress-from-zero/</link><pubDate>Tue, 19 Nov 2013 22:07:46 +0800</pubDate><guid>https://jimmyliao.net/post/2013-11-19-octopress-from-zero/</guid><description>
 &lt;p>How to use rake &amp;amp; git with your octopress.&lt;/p>
 &lt;p>Reference:
 &lt;a href="http://octopress.org/docs/blogging/">http://octopress.org/docs/blogging/&lt;/a>
@@ -277,7 +277,7 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 -&amp;gt; git push origin master
 -&amp;gt; rake deploy&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>my first octopress</title><link>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</link><pubDate>Tue, 19 Nov 2013 21:08:03 +0800</pubDate><guid>https://jimmyliao.github.io/post/2013-11-19-my-first-octopress/</guid><description>
+&lt;/ol></description></item><item><title>my first octopress</title><link>https://jimmyliao.net/post/2013-11-19-my-first-octopress/</link><pubDate>Tue, 19 Nov 2013 21:08:03 +0800</pubDate><guid>https://jimmyliao.net/post/2013-11-19-my-first-octopress/</guid><description>
 &lt;p>this page uses the &lt;a href="http://daringfireball.net/projects/markdown/">Markdown&lt;/a> syntax. (or refer: &lt;a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo&lt;/a>
 wn)&lt;/p>
 &lt;p>#1. /README.md&lt;/p>
@@ -301,6 +301,6 @@ rake preview&lt;/p>
 git add .
 git commit -m &amp;quot;msg&amp;quot;
 git push origin master&lt;/p>
-&lt;p>rake deploy&lt;/p></description></item><item><title>1st post: setup on Octopress on Github page</title><link>https://jimmyliao.github.io/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.github.io/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid><description>
+&lt;p>rake deploy&lt;/p></description></item><item><title>1st post: setup on Octopress on Github page</title><link>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid><description>
 &lt;p>中文
 Hello Octopress World!&lt;/p></description></item></channel></rss>
