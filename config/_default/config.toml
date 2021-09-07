@@ -4,7 +4,7 @@ baseURL = "https://jimmyliao.github.io/"
 # title = "Clarity"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 # canonifyurls = true
-paginate = 10
+paginate = 5
 theme = "hugo-clarity"
 # disqusShortname = "jimmyliao"
 
@@ -12,8 +12,8 @@ DefaultContentLanguage = "en"
 # [languages]
 # config/_default/languages.toml
 
-[menus]
-include = ["config/_default/menus/menu.en.toml"]
+#[menus]
+#include = ["config/_default/menus/menu.en.toml"]
 
 [taxonomies]
 category = "categories"
