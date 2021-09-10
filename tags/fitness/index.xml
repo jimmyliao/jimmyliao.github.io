@@ -1,3 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fitness on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/fitness/</link><description>Recent content in Fitness on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 03 Sep 2020 15:29:45 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/fitness/index.xml" rel="self" type="application/rss+xml"/><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.net/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-03-running-stat/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fitness on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/fitness/</link><description>Recent content in Fitness on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 10 Sep 2021 22:00:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/fitness/index.xml" rel="self" type="application/rss+xml"/><item><title>Daily fitness log with Obsidian</title><link>https://jimmyliao.net/post/2021-09-10-obsidian-tracker/</link><pubDate>Fri, 10 Sep 2021 22:00:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-10-obsidian-tracker/</guid><description>
+&lt;p>&lt;strong>看看用這種方式記錄的習慣，能維持多久&lt;/strong>&lt;/p>
+&lt;p>大多數的 Obsidian 用法都是用來當做 PKM, 還在慢慢把之前散落各地的筆記統整回自己可以備份的 Vault, 今天就來介紹另一種用法：用來當做個人身體指數的記錄。&lt;/p>
+&lt;p>最近睡眠週期相當混亂，頭痛加上眼壓高造成的眼周圍疼痛也快一個禮拜。前兩天在與同事開會時，開始頭昏冒冷汗，習慣性的看一下手錶 (Garmin Fenix 5s)，心率還好 (66)，但是就是一直冒汗，開完會之後覺得還是量一下血壓好了： 149/100 差點沒嚇暈，只能乖乖請假躺著先補眠，然後這兩天調整一下床、燈光、冷氣等等的外在因素，今天總算是恢復不少。&lt;/p>
+&lt;p>前兩週可能也是剛開始研究 Obsidian 記錄體重，想說 5-8 月體重也上升不少，才開始先手動記錄，看來加入監控血壓也是必要。&lt;/p>
+&lt;p>好，目前透過 Obsidian 跟 Tracker plugin，可以達到以上身體數值記錄跟監控目的了。&lt;/p>
+&lt;h3 id="體重">體重&lt;/h3>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-10-weight.png" alt="">&lt;/p>
+&lt;h3 id="血壓">血壓&lt;/h3>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-10-blood.png" alt="">&lt;/p>
+&lt;p>首先先確定 Obsidian 關閉 Safe mode，透過 Community plugin 安裝 Tracker plugin。然後根據 Examples\diary 裡面範例看一下 Blood 相關的 logging，我的紀錄方式是:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>---
+&lt;span class="ln">2&lt;/span>tags: blood
+&lt;span class="ln">3&lt;/span>bp:
+&lt;span class="ln">4&lt;/span> systolic: 149
+&lt;span class="ln">5&lt;/span> diastolic: 100
+&lt;span class="ln">6&lt;/span>heart: 69
+&lt;span class="ln">7&lt;/span>---
+&lt;span class="ln">8&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>圖表的部份:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>searchType: frontmatter
+&lt;span class="ln"> 2&lt;/span>searchTarget: bp.systolic, bp.diastolic
+&lt;span class="ln"> 3&lt;/span>datasetName: systolic, diastolic
+&lt;span class="ln"> 4&lt;/span>folder: log/blood
+&lt;span class="ln"> 5&lt;/span>startDate: 2021-09-03
+&lt;span class="ln"> 6&lt;/span>endDate: 2021-09-10
+&lt;span class="ln"> 7&lt;/span>line:
+&lt;span class="ln"> 8&lt;/span> title: Blood Pressures
+&lt;span class="ln"> 9&lt;/span> yAxisLabel: Systolic, Diastolic
+&lt;span class="ln">10&lt;/span> yAxisUnit: mmHg
+&lt;span class="ln">11&lt;/span> yMin: 110, 80
+&lt;span class="ln">12&lt;/span> yMax: 160, 120
+&lt;span class="ln">13&lt;/span> yAxisLocation: left, right
+&lt;span class="ln">14&lt;/span> yAxisColor: yellow, green
+&lt;span class="ln">15&lt;/span> yAxisLabelColor: yellow, green
+&lt;span class="ln">16&lt;/span> lineColor: yellow, green
+&lt;span class="ln">17&lt;/span> showLegend: true
+&lt;span class="ln">18&lt;/span> legendPosition: right
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>至少今天數值看起來還算安心，也該來早點上床睡覺了。&lt;/p></description></item><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.net/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-03-running-stat/</guid><description>
 &lt;p>午安，一早重訓到快吐，中午速度調到養生模式 😞&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2020-09-03-running-stat.jpg" alt="">&lt;/p></description></item></channel></rss>
