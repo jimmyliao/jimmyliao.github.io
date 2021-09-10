@@ -43,7 +43,7 @@ tags:
 
 前兩週可能也是剛開始研究 Obsidian 記錄體重，想說 5-8 月體重也上升不少，才開始先手動記錄，看來加入監控血壓也是必要。
 
-好，目前透過 Obsidian 跟 Tracker plugin，可以達到以上身體數值記錄跟監控目的了。
+好，目前透過 Obsidian 跟 [Tracker plugin](https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/WeightTracker.md)，可以達到以上身體數值記錄跟監控目的了。
 
 ### 體重
 ![](/images/2021-09-10-weight.png)
@@ -53,7 +53,7 @@ tags:
 ![](/images/2021-09-10-blood.png)
 
 
-首先先確定 Obsidian 關閉 Safe mode，透過 Community plugin 安裝 Tracker plugin。然後根據 Examples\diary 裡面範例看一下 Blood 相關的 logging，我的紀錄方式是:
+首先先確定 Obsidian 關閉 Safe mode，透過 Community plugin 安裝 Tracker plugin。然後根據 Examples\diary 裡面[範例](https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/diary/2021-01-01.md) 看一下 Blood 相關的 logging，我的紀錄方式是:
 
 ```
 ---
