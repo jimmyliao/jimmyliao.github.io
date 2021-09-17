@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 11 Sep 2021 15:20:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>居家運動-深蹲+棒式</title><link>https://jimmyliao.net/post/2021-09-11-plank/</link><pubDate>Sat, 11 Sep 2021 15:20:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-11-plank/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 17 Sep 2021 20:05:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>VIM: mutiple line for indentation for comment</title><link>https://jimmyliao.net/post/2021-09-17-vim-tip-01/</link><pubDate>Fri, 17 Sep 2021 20:05:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-17-vim-tip-01/</guid><description>
+&lt;h3 id="indenting">Indenting&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>On the first line you would like to mark to indent, enter to visual mode: (Press Ctrl+v)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Move cursor down to the last line for indent&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Press &lt;code>&amp;gt;&lt;/code> to indent&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-17-01.gif" alt="">&lt;/p>
+&lt;h3 id="comment-block">Comment Block&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>On the first line you would like to mark to indent, enter to visual mode: (Press Ctrl+v)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Move cursor down to the last line for indent&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Press Shift+i, then Press &lt;code>#&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-17-02.gif" alt="">&lt;/p></description></item><item><title>居家運動-深蹲+棒式</title><link>https://jimmyliao.net/post/2021-09-11-plank/</link><pubDate>Sat, 11 Sep 2021 15:20:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-11-plank/</guid><description>
 &lt;p>&lt;strong>看看用這種方式記錄的習慣，能維持多久&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-11-001.jpeg" alt="">&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-11-002.jpeg" alt="">&lt;/p>
