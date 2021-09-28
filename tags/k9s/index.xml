@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>K9S on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/k9s/</link><description>Recent content in K9S on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 02 Sep 2021 22:47:55 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/k9s/index.xml" rel="self" type="application/rss+xml"/><item><title>如何連到遠端的 MicroK8s 並用 K9S monitoring</title><link>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</link><pubDate>Thu, 02 Sep 2021 22:47:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>K9S on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/k9s/</link><description>Recent content in K9S on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 24 Sep 2021 23:35:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/k9s/index.xml" rel="self" type="application/rss+xml"/><item><title>HOWTO: connect to remote 1-click PrimeHub</title><link>https://jimmyliao.net/post/2021-09-24-primehub-oneclick/</link><pubDate>Fri, 24 Sep 2021 23:35:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-24-primehub-oneclick/</guid><description>
+&lt;p>&lt;strong>How to connect to remote &lt;a href="https://one.primehub.io">1-click PrimeHub&lt;/a> instance&lt;/strong>&lt;/p>
+&lt;p>PrimeHub &lt;a href="https://medium.com/infuseai/whats-new-in-primehub-3-8-40f107035fbc">3.8&lt;/a> 開始提供了 1-click to AWS 的快速部屬 PrimeHub 方式，點下 &lt;code>1-Click Install on AWS&lt;/code> 之後，填入你的 email 並點下 Deploy 之後，就可以先去喝杯咖啡等待郵件通知 PrimeHub on AWS 部屬完成。&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-24-01.png" alt="">&lt;/p>
+&lt;p>不過從系統管理角度，如何透過 kubectl 連到遠端的 1-click PrimeHub 呢？&lt;/p>
+&lt;p>很簡單，在收到的 email 裡面有個連結，會先 redirect 到 AWS CloudFormation 畫面。&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-24-02.png" alt="">&lt;/p>
+&lt;p>裡面有幾個提示，主要把紅色這段複製貼上到 Terminal 即可。(該裝的 AWS cli 跟 credential 什麼的還是要設定一下)&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-24-03.png" alt="">&lt;/p>
+&lt;p>又可以快快樂樂使用 K9S 啦！&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-24-04.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-24-05.png" alt="">&lt;/p></description></item><item><title>如何連到遠端的 MicroK8s 並用 K9S monitoring</title><link>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</link><pubDate>Thu, 02 Sep 2021 22:47:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</guid><description>
 &lt;p>&lt;strong>如何連到遠端的 MicroK8s 並用 K9S 快快樂樂的管理 Kubernetes&lt;/strong>&lt;/p>
 &lt;p>使用 kubectl command 管理 Kubernetes Cluter 為工程師基本技能，用久了自然而然就想找些更適合習慣 Terminal 操作但又想有點 hacky 的介面，從強者同事分享的工具集才發現根本是超讚的東西阿！&lt;/p>
 &lt;p>前置作業：
