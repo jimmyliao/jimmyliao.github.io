@@ -25,7 +25,7 @@ tags:
 
 <!--more-->
 
-PrimeHub [3.8](https://medium.com/infuseai/whats-new-in-primehub-3-8-40f107035fbc) 開始提供了 1-click to AWS 的快速部屬 PrimeHub 方式，點下 `1-Click Install on AWS` 之後，填入你的 email 並點下 Deploy 之後，就可以先去喝杯咖啡等待郵件通知 PrimeHub on AWS 部屬完成。
+PrimeHub [3.8](https://medium.com/infuseai/whats-new-in-primehub-3-8-40f107035fbc) 開始提供了 1-click to AWS 的快速部署 PrimeHub 方式，點下 `1-Click Install on AWS` 之後，填入你的 email 並點下 Deploy 之後，就可以先去喝杯咖啡等待郵件通知 PrimeHub on AWS 部署完成。
 
 ![](/images/2021-09-24-01.png)
 
