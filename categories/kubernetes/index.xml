@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/kubernetes/</link><description>Recent content in Kubernetes on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 06 Nov 2021 10:25:55 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud-Native Observability Series, Part 1: How to monitor PrimeHub 1-Click Install with Portainer</title><link>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</link><pubDate>Sat, 06 Nov 2021 10:25:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/kubernetes/</link><description>Recent content in Kubernetes on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 07 Nov 2021 20:30:55 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>HOWTO: delete the PrimeHub 1-Click Install</title><link>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</link><pubDate>Sun, 07 Nov 2021 20:30:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</guid><description>
+&lt;p>&lt;strong>How to delete the PrimeHub 1-Click Install&lt;/strong>&lt;/p>
+&lt;p>After the &lt;a href="https://one.primehub.io/">1-Click&lt;/a> trial and you're ready to &lt;a href="https://discord.com/invite/CrAxQznedH">explore your business value&lt;/a> with PrimeHub. But hold on, remember to delete the trial instance.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>One the AWS &lt;code>CloudFormation&lt;/code> console, choose the Stack name (&lt;strong>NOT the nested one&lt;/strong>)
+&lt;img src="https://jimmyliao.net/images/2021-11-07-1click-deletion-01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the confirmation prompt
+&lt;img src="https://jimmyliao.net/images/2021-11-07-1click-deletion-02.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Be patient (maybe wait for 30+ mins)
+&lt;img src="https://jimmyliao.net/images/2021-11-07-1click-deletion-03.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>After the &lt;a href="https://one.primehub.io/">1-Click&lt;/a> trial, now start to &lt;a href="mailto:business@infuseai.io">contact InfuseAI&lt;/a> for solution and &lt;a href="https://discord.com/invite/CrAxQznedH">explore your business value&lt;/a> with PrimeHub. :-)&lt;/p></description></item><item><title>Cloud-Native Observability Series, Part 1: How to monitor PrimeHub 1-Click Install with Portainer</title><link>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</link><pubDate>Sat, 06 Nov 2021 10:25:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</guid><description>
 &lt;p>&lt;strong>How to monitor the PrimeHub 1-Click Install with Portainer&lt;/strong>&lt;/p>
 &lt;p>The first step after setting up the PrimeHub 1-Click onto Kubernetes is to find the solutions for observability, including monitoring, logging, and tracing. This article shows the easy way to build it.&lt;/p>
 &lt;p>Previous I introduce &lt;a href="https://jimmyliao.net/post/2021-09-01-k9s-microk8s/">K9S&lt;/a> to monitor the Clusters with &lt;code>~/.kube/config&lt;/code> switch, this post shows the easy way to build with web-based monitoring.&lt;/p>
