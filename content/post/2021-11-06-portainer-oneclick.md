@@ -26,7 +26,7 @@ tags:
 
 **How to monitor the PrimeHub 1-Click Install with Portainer**
 
-The first step after setting up the PrimeHub 1-Click onto Kubernetest is to find the solutions for observability, including monitoring, logging, and tracing. This article shows the easy way to build it.
+The first step after setting up the PrimeHub 1-Click onto Kubernetes is to find the solutions for observability, including monitoring, logging, and tracing. This article shows the easy way to build it.
 
 
 <!--more-->
