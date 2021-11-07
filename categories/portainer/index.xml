@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Portainer on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/portainer/</link><description>Recent content in Portainer on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 06 Nov 2021 10:25:55 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/portainer/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud-Native Observability Series, Part 1: How to monitor PrimeHub 1-Click Install with Portainer</title><link>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</link><pubDate>Sat, 06 Nov 2021 10:25:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</guid><description>
+&lt;p>&lt;strong>How to monitor the PrimeHub 1-Click Install with Portainer&lt;/strong>&lt;/p>
+&lt;p>The first step after setting up the PrimeHub 1-Click onto Kubernetest is to find the solutions for observability, including monitoring, logging, and tracing. This article shows the easy way to build it.&lt;/p>
+&lt;p>Previous I introduce &lt;a href="https://jimmyliao.net/post/2021-09-01-k9s-microk8s/">K9S&lt;/a> to monitor the Clusters with &lt;code>~/.kube/config&lt;/code> switch, this post shows the easy way to build with web-based monitoring.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Follow the &lt;a href="https://docs.portainer.io/v/ce-2.9/start/install">Portainer CE Installation&lt;/a> to setup onto your desktop, or the lab environment, as long as you have the Docker runtime.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>There are two &lt;a href="https://docs.portainer.io/v/ce-2.9/admin/environments/add/kubernetes">deploy methods&lt;/a> onto your clusters: NodePort and Load Balancer. Here I use Load Balancer:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
+&lt;span class="ln"> 2&lt;/span> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
+&lt;span class="ln"> 3&lt;/span>
+&lt;span class="ln"> 4&lt;/span> % Total % Received % Xferd Average Speed Time Time Time Current
+&lt;span class="ln"> 5&lt;/span> Dload Upload Total Spent Left Speed
+&lt;span class="ln"> 6&lt;/span>100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
+&lt;span class="ln"> 7&lt;/span>namespace/portainer created
+&lt;span class="ln"> 8&lt;/span>serviceaccount/portainer-sa-clusteradmin created
+&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
+&lt;span class="ln">10&lt;/span>service/portainer-agent created
+&lt;span class="ln">11&lt;/span>service/portainer-agent-headless created
+&lt;span class="ln">12&lt;/span>deployment.apps/portainer-agent created
+&lt;span class="ln">13&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Check the deploying&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get svc -A
+&lt;span class="ln">2&lt;/span>
+&lt;span class="ln">3&lt;/span>ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
+&lt;span class="ln">4&lt;/span> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
+&lt;span class="ln">5&lt;/span> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
+&lt;span class="ln">6&lt;/span>...
+&lt;span class="ln">7&lt;/span>portainer portainer-agent LoadBalancer
+&lt;span class="ln">8&lt;/span> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
+&lt;span class="ln">9&lt;/span> 9001:30434/TCP 10s
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
+&lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-01.png" alt="">&lt;/p>
+&lt;ol start="4">
+&lt;li>
+&lt;p>Add the environment: check the &lt;code>EXTERNAL-IP&lt;/code> from the step 3. Then fill the &lt;code>Public IP&lt;/code> field with same EXTERNAL-IP; the &lt;code>Environment URL&lt;/code> is &lt;code>Public IP&lt;/code>:9001&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>(Optional) If you want to enable the metrics server of AWS, follow this &lt;a href="https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html">guide&lt;/a> to install onto your cluster.
+&lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-02.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ kubectl apply -f \
+&lt;span class="ln"> 2&lt;/span>https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+&lt;span class="ln"> 3&lt;/span>
+&lt;span class="ln"> 4&lt;/span>serviceaccount/metrics-server created
+&lt;span class="ln"> 5&lt;/span>clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+&lt;span class="ln"> 6&lt;/span>clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+&lt;span class="ln"> 7&lt;/span>rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+&lt;span class="ln"> 8&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+&lt;span class="ln">10&lt;/span>service/metrics-server created
+&lt;span class="ln">11&lt;/span>deployment.apps/metrics-server created
+&lt;span class="ln">12&lt;/span>apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get deployment metrics-server -n kube-system
+&lt;span class="ln">2&lt;/span>
+&lt;span class="ln">3&lt;/span>NAME READY UP-TO-DATE AVAILABLE AGE
+&lt;span class="ln">4&lt;/span>metrics-server 1/1 1 1 38s
+&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;li>Finally to see it on the Portainer Console.
+&lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-03.png" alt="">&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-04.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-05.png" alt="">&lt;/p>
+&lt;p>Enjoy!&lt;/p></description></item></channel></rss>
