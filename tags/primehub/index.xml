@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PrimeHub on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/primehub/</link><description>Recent content in PrimeHub on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 07 Nov 2021 20:30:55 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/primehub/index.xml" rel="self" type="application/rss+xml"/><item><title>HOWTO: delete the PrimeHub 1-Click Install</title><link>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</link><pubDate>Sun, 07 Nov 2021 20:30:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PrimeHub on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/primehub/</link><description>Recent content in PrimeHub on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/primehub/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook</title><link>https://jimmyliao.net/post/2021-11-13-crane-tf241/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-13-crane-tf241/</guid><description>
+&lt;p>&lt;strong>中文版&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://jimmyliao.net/post/2021-11-12-crane-oneclick/">前一篇&lt;/a> 已經介紹如何設定好 Crane 並且成功驗證可以客製一個 Docker Image，這一篇會透過一個使用 PrimeHub 的實際案例：如何從原有的 TensorFlow &lt;a href="https://docs.primehub.io/docs/guide_manual/images-list">2.4.1 Notebook Image&lt;/a> (裡面包括 Keras 2.3.1)，更新 Keras 版本到較新的版本 &lt;a href="https://pypi.org/project/keras/2.4.3/">2.4.3&lt;/a>。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>打開 Crane，直接選取 &lt;code>tensorflow-notebook-v2-4-1&lt;/code> 這個版本，或是從這個列表選取 Image URL&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在 pip 裡面直接填入 &lt;code>keras==2.4.3&lt;/code>，點下 &lt;code>Build&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Build 完之後，直接在 &lt;code>REMOTE REPOSITORIES&lt;/code> 點選 &lt;code>ADD&lt;/code> to PrimeHub&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>填入預計在 PrimeHub Image 需要的資訊，點下 &lt;code>Create&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-02.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-03.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>切到 PrimeHub User Portal，確認已經新增成功
+&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-04.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>透過 Start Notebook Server，可以透過 Terminal 確認一下安裝的版本&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ env | grep JUPYTER_IMAGE_SPEC
+&lt;span class="ln">2&lt;/span>
+&lt;span class="ln">3&lt;/span>$ pip list | grep Keras
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-05.png" alt="">&lt;/p>
+&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Using Crane to Build Custom Image with 1-Click PrimeHub</title><link>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</link><pubDate>Fri, 12 Nov 2021 23:50:16 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</guid><description>
+&lt;p>&lt;strong>先快速來個中文版&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://medium.com/infuseai/crane-the-minimalist-container-image-builder-68253722be8c">Crane&lt;/a> 是 InfuseAI 剛推出的&lt;a href="https://github.com/InfuseAI/crane"> Open Source Project&lt;/a>，簡言之就是可以在已經&lt;a href="https://docs.docker.com/engine/install/">裝好 Docker&lt;/a> 的電腦上，免除撰寫 Dockerfile ，也免除透過 Command 方式編譯 Docker Image。另外也提供快速把自己在 Docker Hub 編譯好的 Image 加入 PrimeHub 環境裡，以下的範例，就以之前介紹的 &lt;a href="http://localhost:1313/post/2021-09-24-primehub-oneclick/">1-Click 環境&lt;/a>，&lt;a href="https://docs.primehub.io/docs/guide_manual/admin-image#build-custom-image">客製化 Docker Image&lt;/a>，裡面包含 PrimeHub 新推出的 &lt;a href="https://github.com/InfuseAI/primehub-python-sdk">SDK&lt;/a> 。來看看吧～&lt;/p>
+&lt;p>&lt;a href="https://github.com/InfuseAI/crane/releases/tag/v1.0.0">下載 Crane&lt;/a> 安裝之後，有兩個資訊需要先準備：&lt;/p>
+&lt;ul>
+&lt;li>Docker Hub 的登入帳號/密碼&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-12-001.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>PrimeHub 的 &lt;code>API TOKEN&lt;/code> (總之就是點下 &lt;code>Request API Token&lt;/code> 並且另外記錄下來，因為只會出現一次)
+&lt;img src="https://jimmyliao.net/images/2021-11-12-002.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>打開裝好的 Crane，點選設定圖示，分別設定 Docker Hub 以及 1-Click PrimeHub 的資訊。如果還沒有用過 &lt;a href="https://one.primehub.io/">1-Click&lt;/a>，這邊也還有按鈕可以快速新增！
+&lt;img src="https://jimmyliao.net/images/2021-11-12-003.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>點選新增，開始建立 Image，因為 Docker Hub 可以 push 的權限是以自己的 username，這邊記得填 &lt;code>&amp;lt;docker_username&amp;gt;/&amp;lt;image-name&amp;gt;&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2021-11-12-003-2.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>點 &lt;code>Build&lt;/code> 成功之後，會在 &lt;code>Images&lt;/code> &amp;gt; &lt;code>LOCAL&lt;/code> 底下看到
+&lt;img src="https://jimmyliao.net/images/2021-11-12-004.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在 &lt;code>REMOTE REPOSITORIES&lt;/code>，記得點選左方的 &lt;code>+&lt;/code> 展開，點選 &lt;code>ADD&lt;/code>，就可以快速新增剛剛建好的 Image 到 PrimeHub 環境。
+&lt;img src="https://jimmyliao.net/images/2021-11-12-005.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>設定在 PrimeHub 裡面會看到的 Image Description (群組/名稱/支援 CPU/GPU/Universal)
+&lt;img src="https://jimmyliao.net/images/2021-11-12-006.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>點選 &lt;code>Create&lt;/code> 之後，如果成功會看到這個。
+&lt;img src="https://jimmyliao.net/images/2021-11-12-007.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>接著切換到 PrimeHub 介面，確認已經透過 Crane 新增 Image 成功！
+&lt;img src="https://jimmyliao.net/images/2021-11-12-008.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>打開 Notebook 確認一下～
+&lt;img src="https://jimmyliao.net/images/2021-11-12-009.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>HOWTO: delete the PrimeHub 1-Click Install</title><link>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</link><pubDate>Sun, 07 Nov 2021 20:30:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</guid><description>
 &lt;p>&lt;strong>How to delete the PrimeHub 1-Click Install&lt;/strong>&lt;/p>
 &lt;p>After the &lt;a href="https://one.primehub.io/">1-Click&lt;/a> trial and you're ready to &lt;a href="https://discord.com/invite/CrAxQznedH">explore your business value&lt;/a> with PrimeHub. But hold on, remember to delete the trial instance.&lt;/p>
 &lt;ol>

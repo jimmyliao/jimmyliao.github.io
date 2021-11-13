@@ -1,6 +1,6 @@
-<!doctype html><html lang=en data-figures>
+<!doctype html><html lang=en data-figures=true class=page>
 <head>
-<title>Kubernetes | JimmyLiao Notes</title>
+<title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook | JimmyLiao Notes</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv=x-ua-compatible content="IE=edge">
@@ -8,24 +8,23 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-Z8GF80P8LB')</script>
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
-<meta name=description content>
+<meta name=description content="Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook">
 <meta name=twitter:card content="summary">
 <meta name=twitter:creator content="@jimmyliao">
-<meta name=twitter:title content="Kubernetes">
-<meta property="og:url" content="https://jimmyliao.net/tags/kubernetes/">
-<meta property="og:title" content="Kubernetes">
-<meta property="og:description" content>
-<meta property="og:image" content="https://jimmyliao.net/logos/logo.png">
+<meta name=twitter:title content="Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook">
+<meta property="og:url" content="https://jimmyliao.net/post/2021-11-13-crane-tf241/">
+<meta property="og:title" content="Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook">
+<meta property="og:description" content="Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook">
+<meta property="og:image" content="https://raw.githubusercontent.com/InfuseAI/primehub/master/docs/media/logo.png">
 <link rel=apple-touch-icon sizes=180x180 href=https://jimmyliao.net/icons/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=https://jimmyliao.net/icons/favicon-32x32.png>
 <link rel=manifest href=https://jimmyliao.net/icons/site.webmanifest>
-<link rel=canonical href=https://jimmyliao.net/tags/kubernetes/>
-<link rel=alternate type=application/rss+xml href=https://jimmyliao.net/tags/kubernetes/index.xml title="JimmyLiao Notes">
+<link rel=canonical href=https://jimmyliao.net/post/2021-11-13-crane-tf241/>
 <link rel=preload href=https://jimmyliao.net/css/styles.d6b027c22f42725b13d5bafff05232cee0f8006ccba38be041f7d699ed2ca3c3dde7f41a86ab5db17af2efd2e35697380bb70ea0f3da4e5cbabfa0e3482f9d82.css integrity="sha512-1rAnwi9CclsT1br/8FIyzuD4AGzLo4vgQffWme0so8Pd5/QahqtdsXry79LjVpc4C7cOoPPaTly6v6DjSC+dgg==" as=style crossorigin=anonymous>
 <link rel=preload href=https://jimmyliao.net/js/bundle.min.d14fbcd65c3ba32e60cab81f8bbe7aa9b7f8b95ff8290e437fb26ff9ab7f7ea0c928db2dca60aac91f192db906f2d90678f83907e4e3994f6ff9fdb5bdea3369.js as=script integrity="sha512-0U+81lw7oy5gyrgfi756qbf4uV/4KQ5Df7Jv+at/fqDJKNstymCqyR8ZLbkG8tkGePg5B+TjmU9v+f21veozaQ==" crossorigin=anonymous>
 <link rel=stylesheet type=text/css href=https://jimmyliao.net/css/styles.d6b027c22f42725b13d5bafff05232cee0f8006ccba38be041f7d699ed2ca3c3dde7f41a86ab5db17af2efd2e35697380bb70ea0f3da4e5cbabfa0e3482f9d82.css integrity="sha512-1rAnwi9CclsT1br/8FIyzuD4AGzLo4vgQffWme0so8Pd5/QahqtdsXry79LjVpc4C7cOoPPaTly6v6DjSC+dgg==" crossorigin=anonymous>
 </head>
-<body data-code=7 data-lines=false id=documentTop>
+<body data-code=10 data-lines=false id=documentTop>
 <header class=nav_header>
 <nav class=nav><a href=https://jimmyliao.net class="nav_brand nav_item" title="JimmyLiao Notes">
 <img src=https://jimmyliao.net/logos/logo.png class=logo alt="JimmyLiao Notes">
@@ -63,71 +62,63 @@
 </header>
 <main>
 <div class="grid-inverse wrap content">
-<ul class=posts id=posts>
-<li class=post_item>
-<div class=excerpt>
-<div class=excerpt_header>
-<h3 class=post_link>
-<a href=https://jimmyliao.net/post/2021-09-01-k9s-microk8s/ title="如何連到遠端的 MicroK8s 並用 K9S monitoring">如何連到遠端的 MicroK8s 並用 K9S monitoring</a>
-</h3>
+<article class=post_content>
+<h1 class=post_title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook</h1>
 <div class=post_meta>
 <span><svg class="icon"><use xlink:href="#calendar"/></svg></span>
 <span class=post_date>
-Sep 2, 2021</span>
-<span class=post_time> · 2 min read</span><span>&nbsp;· <a href=https://jimmyliao.net/tags/kubernetes title=Kubernetes class="post_tag button button_translucent">Kubernetes
-</a><a href=https://jimmyliao.net/tags/k9s title=K9S class="post_tag button button_translucent">K9S
-</a><a href=https://jimmyliao.net/tags/microk8s title=MicroK8s class="post_tag button button_translucent">MicroK8s
+Nov 13, 2021</span>
+<span class=post_time> · 1 min read</span><span>&nbsp;· <a href=https://jimmyliao.net/tags/primehub title=PrimeHub class="post_tag button button_translucent">PrimeHub
+</a><a href=https://jimmyliao.net/tags/crane title=Crane class="post_tag button button_translucent">Crane
 </a>
 </span>
 <span class=page_only>&nbsp;·
 <div class=post_share>
 Share on:
-<a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e9%80%a3%e5%88%b0%e9%81%a0%e7%ab%af%e7%9a%84%20MicroK8s%20%e4%b8%a6%e7%94%a8%20K9S%20monitoring&url=https%3a%2f%2fjimmyliao.net%2fpost%2f2021-09-01-k9s-microk8s%2f&tw_p=tweetbutton" class=twitter title="Share on Twitter" target=_blank rel=nofollow><svg class="icon"><use xlink:href="#twitter"/></svg>
+<a href="https://twitter.com/intent/tweet?text=Using%20Crane%20to%20Build%20Custom%20Image%20part%202%3a%20Update%20Keras%20version%20of%20TF%202.4.1%20Notebook&url=https%3a%2f%2fjimmyliao.net%2fpost%2f2021-11-13-crane-tf241%2f&tw_p=tweetbutton" class=twitter title="Share on Twitter" target=_blank rel=nofollow><svg class="icon"><use xlink:href="#twitter"/></svg>
 </a>
-<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjimmyliao.net%2fpost%2f2021-09-01-k9s-microk8s%2f&t=%e5%a6%82%e4%bd%95%e9%80%a3%e5%88%b0%e9%81%a0%e7%ab%af%e7%9a%84%20MicroK8s%20%e4%b8%a6%e7%94%a8%20K9S%20monitoring" class=facebook title="Share on Facebook" target=_blank rel=nofollow><svg class="icon"><use xlink:href="#facebook"/></svg>
+<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjimmyliao.net%2fpost%2f2021-11-13-crane-tf241%2f&t=Using%20Crane%20to%20Build%20Custom%20Image%20part%202%3a%20Update%20Keras%20version%20of%20TF%202.4.1%20Notebook" class=facebook title="Share on Facebook" target=_blank rel=nofollow><svg class="icon"><use xlink:href="#facebook"/></svg>
 </a>
 <a href=#linkedinshare id=linkedinshare class=linkedin title="Share on LinkedIn" rel=nofollow><svg class="icon"><use xlink:href="#linkedin"/></svg>
 </a>
-<a href=https://jimmyliao.net/post/2021-09-01-k9s-microk8s/ title="Copy Link" class="link link_yank"><svg class="icon"><use xlink:href="#copy"/></svg>
+<a href=https://jimmyliao.net/post/2021-11-13-crane-tf241/ title="Copy Link" class="link link_yank"><svg class="icon"><use xlink:href="#copy"/></svg>
 </a>
 </div>
 </span>
 </div>
-</div>
-<div class=excerpt_footer>
-<div>
-<p class=pale>
-<p><strong>如何連到遠端的 MicroK8s 並用 K9S 快快樂樂的管理 Kubernetes</strong></p>
-<p>使用 kubectl command 管理 Kubernetes Cluter 為工程師基本技能，用久了自然而然就想找些更適合習慣 Terminal 操作但又想有點 hacky 的介面，從強者同事分享的工具集才發現根本是超讚的東西阿！</p>
-</p>
-<a href=https://jimmyliao.net/post/2021-09-01-k9s-microk8s/ title="Read More" class="excerpt_more button">Read More</a>
-</div>
-</div>
-</div>
+<img src=https://raw.githubusercontent.com/InfuseAI/primehub/master/docs/media/logo.png class=image_featured alt="Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook">
+<p><strong>中文版</strong></p>
+<p><a href=https://jimmyliao.net/post/2021-11-12-crane-oneclick/>前一篇</a> 已經介紹如何設定好 Crane 並且成功驗證可以客製一個 Docker Image，這一篇會透過一個使用 PrimeHub 的實際案例：如何從原有的 TensorFlow <a href=https://docs.primehub.io/docs/guide_manual/images-list>2.4.1 Notebook Image</a> (裡面包括 Keras 2.3.1)，更新 Keras 版本到較新的版本 <a href=https://pypi.org/project/keras/2.4.3/>2.4.3</a>。</p>
+<ul>
+<li>
+<p>打開 Crane，直接選取 <code>tensorflow-notebook-v2-4-1</code> 這個版本，或是從這個列表選取 Image URL</p>
 </li>
 <li>
-<ul class="pagination pagination-default">
-<li class=page-item>
-<a href=/tags/kubernetes/ aria-label=First class=page-link role=button><span aria-hidden=true>&#171;&#171;</span></a>
+<p>在 pip 裡面直接填入 <code>keras==2.4.3</code>，點下 <code>Build</code>
+<img src=/images/2021-11-13-crane-tf-01.png alt></p>
 </li>
-<li class=page-item>
-<a href=/tags/kubernetes/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a>
+<li>
+<p>Build 完之後，直接在 <code>REMOTE REPOSITORIES</code> 點選 <code>ADD</code> to PrimeHub</p>
 </li>
-<li class=page-item>
-<a href=/tags/kubernetes/ aria-label="Page 1" class=page-link role=button>1</a>
+<li>
+<p>填入預計在 PrimeHub Image 需要的資訊，點下 <code>Create</code>
+<img src=/images/2021-11-13-crane-tf-02.png alt>
+<img src=/images/2021-11-13-crane-tf-03.png alt></p>
 </li>
-<li class="page-item active">
-<a href=# aria-current=page aria-label="Page 2" class=page-link role=button>2</a>
+<li>
+<p>切到 PrimeHub User Portal，確認已經新增成功
+<img src=/images/2021-11-13-crane-tf-04.png alt></p>
 </li>
-<li class="page-item disabled">
-<a href=# aria-disabled=true aria-label=Next class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;</span></a>
-</li>
-<li class="page-item disabled">
-<a href=# aria-disabled=true aria-label=Last class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;&#187;</span></a>
-</li>
-</ul>
+<li>
+<p>透過 Start Notebook Server，可以透過 Terminal 確認一下安裝的版本</p>
 </li>
 </ul>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=ln>1</span>$ env | grep JUPYTER_IMAGE_SPEC
+<span class=ln>2</span>
+<span class=ln>3</span>$ pip list | grep Keras
+</code></pre></div><p><img src=/images/2021-11-13-crane-tf-05.png alt></p>
+<p><strong>Enjoy!</strong></p>
+</article>
 <aside class=sidebar>
 <section class=sidebar_inner>
 <div class=author_header>
@@ -205,7 +196,11 @@ MARKDOWN
 </a>
 <a href=https://jimmyliao.net/categories/kubernetes/ class="post_tag button button_translucent" title=kubernetes>
 KUBERNETES
-<span class=button_tally>6</span>
+<span class=button_tally>5</span>
+</a>
+<a href=https://jimmyliao.net/categories/primehub/ class="post_tag button button_translucent" title=primehub>
+PRIMEHUB
+<span class=button_tally>4</span>
 </a>
 <a href=https://jimmyliao.net/categories/hexo/ class="post_tag button button_translucent" title=hexo>
 HEXO
@@ -215,12 +210,12 @@ HEXO
 ABOUT
 <span class=button_tally>2</span>
 </a>
-<a href=https://jimmyliao.net/categories/fitness/ class="post_tag button button_translucent" title=fitness>
-FITNESS
+<a href=https://jimmyliao.net/categories/crane/ class="post_tag button button_translucent" title=crane>
+CRANE
 <span class=button_tally>2</span>
 </a>
-<a href=https://jimmyliao.net/categories/linux/ class="post_tag button button_translucent" title=linux>
-LINUX
+<a href=https://jimmyliao.net/categories/fitness/ class="post_tag button button_translucent" title=fitness>
+FITNESS
 <span class=button_tally>2</span>
 </a>
 <a href=https://jimmyliao.net/categories/obsidian/ class="post_tag button button_translucent" title=obsidian>
@@ -229,10 +224,6 @@ OBSIDIAN
 </a>
 <a href=https://jimmyliao.net/categories/octopress/ class="post_tag button button_translucent" title=octopress>
 OCTOPRESS
-<span class=button_tally>2</span>
-</a>
-<a href=https://jimmyliao.net/categories/primehub/ class="post_tag button button_translucent" title=primehub>
-PRIMEHUB
 <span class=button_tally>2</span>
 </a>
 <a href=https://jimmyliao.net/categories/tracker/ class="post_tag button button_translucent" title=tracker>
@@ -265,13 +256,15 @@ CLOUDNATIVE
 </a>
 <a href=https://jimmyliao.net/categories/cloudnative/ class="post_tag button button_translucent" data-position=1 title=cloudnative>CLOUDNATIVE<span class=button_tally>1</span>
 </a>
+<a href=https://jimmyliao.net/categories/crane/ class="post_tag button button_translucent" data-position=2 title=crane>CRANE<span class=button_tally>2</span>
+</a>
 <a href=https://jimmyliao.net/categories/fitness/ class="post_tag button button_translucent" data-position=2 title=fitness>FITNESS<span class=button_tally>2</span>
 </a>
 <a href=https://jimmyliao.net/categories/hexo/ class="post_tag button button_translucent" data-position=3 title=hexo>HEXO<span class=button_tally>3</span>
 </a>
-<a href=https://jimmyliao.net/categories/kubernetes/ class="post_tag button button_translucent" data-position=6 title=kubernetes>KUBERNETES<span class=button_tally>6</span>
+<a href=https://jimmyliao.net/categories/kubernetes/ class="post_tag button button_translucent" data-position=5 title=kubernetes>KUBERNETES<span class=button_tally>5</span>
 </a>
-<a href=https://jimmyliao.net/categories/linux/ class="post_tag button button_translucent" data-position=2 title=linux>LINUX<span class=button_tally>2</span>
+<a href=https://jimmyliao.net/categories/linux/ class="post_tag button button_translucent" data-position=1 title=linux>LINUX<span class=button_tally>1</span>
 </a>
 <a href=https://jimmyliao.net/categories/markdown/ class="post_tag button button_translucent" data-position=8 title=markdown>MARKDOWN<span class=button_tally>8</span>
 </a>
@@ -283,7 +276,7 @@ CLOUDNATIVE
 </a>
 <a href=https://jimmyliao.net/categories/portainer/ class="post_tag button button_translucent" data-position=1 title=portainer>PORTAINER<span class=button_tally>1</span>
 </a>
-<a href=https://jimmyliao.net/categories/primehub/ class="post_tag button button_translucent" data-position=2 title=primehub>PRIMEHUB<span class=button_tally>2</span>
+<a href=https://jimmyliao.net/categories/primehub/ class="post_tag button button_translucent" data-position=4 title=primehub>PRIMEHUB<span class=button_tally>4</span>
 </a>
 <a href=https://jimmyliao.net/categories/running/ class="post_tag button button_translucent" data-position=1 title=running>RUNNING<span class=button_tally>1</span>
 </a>
@@ -307,18 +300,22 @@ CLOUDNATIVE
 <nav class=tags_nav>
 <a href=https://jimmyliao.net/tags/kubernetes/ class="post_tag button button_translucent" title=kubernetes>
 KUBERNETES
-<span class=button_tally>6</span>
+<span class=button_tally>5</span>
+</a>
+<a href=https://jimmyliao.net/tags/primehub/ class="post_tag button button_translucent" title=primehub>
+PRIMEHUB
+<span class=button_tally>4</span>
 </a>
 <a href=https://jimmyliao.net/tags/fitness/ class="post_tag button button_translucent" title=fitness>
 FITNESS
 <span class=button_tally>3</span>
 </a>
-<a href=https://jimmyliao.net/tags/k9s/ class="post_tag button button_translucent" title=k9s>
-K9S
+<a href=https://jimmyliao.net/tags/crane/ class="post_tag button button_translucent" title=crane>
+CRANE
 <span class=button_tally>2</span>
 </a>
-<a href=https://jimmyliao.net/tags/linux/ class="post_tag button button_translucent" title=linux>
-LINUX
+<a href=https://jimmyliao.net/tags/k9s/ class="post_tag button button_translucent" title=k9s>
+K9S
 <span class=button_tally>2</span>
 </a>
 <a href=https://jimmyliao.net/tags/microk8s/ class="post_tag button button_translucent" title=microk8s>
@@ -327,10 +324,6 @@ MICROK8S
 </a>
 <a href=https://jimmyliao.net/tags/obsidian/ class="post_tag button button_translucent" title=obsidian>
 OBSIDIAN
-<span class=button_tally>2</span>
-</a>
-<a href=https://jimmyliao.net/tags/primehub/ class="post_tag button button_translucent" title=primehub>
-PRIMEHUB
 <span class=button_tally>2</span>
 </a>
 <a href=https://jimmyliao.net/tags/tracker/ class="post_tag button button_translucent" title=tracker>
@@ -357,8 +350,8 @@ BASH
 CLOUDNATIVE
 <span class=button_tally>1</span>
 </a>
-<a href=https://jimmyliao.net/tags/observability/ class="post_tag button button_translucent" title=observability>
-OBSERVABILITY
+<a href=https://jimmyliao.net/tags/linux/ class="post_tag button button_translucent" title=linux>
+LINUX
 <span class=button_tally>1</span>
 </a>
 <br>
@@ -375,13 +368,15 @@ OBSERVABILITY
 </a>
 <a href=https://jimmyliao.net/tags/cloudnative/ class="post_tag button button_translucent" data-position=1 title=cloudnative>CLOUDNATIVE<span class=button_tally>1</span>
 </a>
+<a href=https://jimmyliao.net/tags/crane/ class="post_tag button button_translucent" data-position=2 title=crane>CRANE<span class=button_tally>2</span>
+</a>
 <a href=https://jimmyliao.net/tags/fitness/ class="post_tag button button_translucent" data-position=3 title=fitness>FITNESS<span class=button_tally>3</span>
 </a>
 <a href=https://jimmyliao.net/tags/k9s/ class="post_tag button button_translucent" data-position=2 title=k9s>K9S<span class=button_tally>2</span>
 </a>
-<a href=https://jimmyliao.net/tags/kubernetes/ class="post_tag button button_translucent" data-position=6 title=kubernetes>KUBERNETES<span class=button_tally>6</span>
+<a href=https://jimmyliao.net/tags/kubernetes/ class="post_tag button button_translucent" data-position=5 title=kubernetes>KUBERNETES<span class=button_tally>5</span>
 </a>
-<a href=https://jimmyliao.net/tags/linux/ class="post_tag button button_translucent" data-position=2 title=linux>LINUX<span class=button_tally>2</span>
+<a href=https://jimmyliao.net/tags/linux/ class="post_tag button button_translucent" data-position=1 title=linux>LINUX<span class=button_tally>1</span>
 </a>
 <a href=https://jimmyliao.net/tags/microk8s/ class="post_tag button button_translucent" data-position=2 title=microk8s>MICROK8S<span class=button_tally>2</span>
 </a>
@@ -393,7 +388,7 @@ OBSERVABILITY
 </a>
 <a href=https://jimmyliao.net/tags/postman/ class="post_tag button button_translucent" data-position=1 title=postman>POSTMAN<span class=button_tally>1</span>
 </a>
-<a href=https://jimmyliao.net/tags/primehub/ class="post_tag button button_translucent" data-position=2 title=primehub>PRIMEHUB<span class=button_tally>2</span>
+<a href=https://jimmyliao.net/tags/primehub/ class="post_tag button button_translucent" data-position=4 title=primehub>PRIMEHUB<span class=button_tally>4</span>
 </a>
 <a href=https://jimmyliao.net/tags/run365/ class="post_tag button button_translucent" data-position=1 title=run365>RUN365<span class=button_tally>1</span>
 </a>
