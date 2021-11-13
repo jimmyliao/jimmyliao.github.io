@@ -13,11 +13,11 @@ codeMaxLines: 10
 codeLineNumbers: false
 figurePositionShow: true
 categories:
-  - Kubernetes
-  - Linux
+  - PrimeHub
+  - Crane
 tags:
-  - Kubernetes
-  - Linux
+  - PrimeHub
+  - Crane
 ---
 
 **先快速來個中文版**
