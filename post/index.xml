@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook</title><link>https://jimmyliao.net/post/2021-11-13-crane-tf241/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-13-crane-tf241/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM Plex Mono</title><link>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</guid><description>
+&lt;p>Going to use IBM Plex Mono for daily work (Terminal, Sublime, VSCode, Chrome).&lt;/p>
+&lt;p>Some notes for my personal setup cross-laptop (osx, kubuntu, windows)&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Download from &lt;a href="https://fonts.google.com/specimen/IBM+Plex+Mono#standard-styles">Google Fonts&lt;/a>
+&lt;img src="https://jimmyliao.net/images/2021-11-14-01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Install via Font Book app
+&lt;img src="https://jimmyliao.net/images/2021-11-14-02.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-03.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-04.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-05.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Download powerline patch font - &lt;a href="https://github.com/phoikoi/perplexed">perplexed&lt;/a> and install via Font Book app, too.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Specify the font onto each application.
+&lt;img src="https://jimmyliao.net/images/2021-11-14-06.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook</title><link>https://jimmyliao.net/post/2021-11-13-crane-tf241/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-13-crane-tf241/</guid><description>
 &lt;p>&lt;strong>中文版&lt;/strong>&lt;/p>
 &lt;p>&lt;a href="https://jimmyliao.net/post/2021-11-12-crane-oneclick/">前一篇&lt;/a> 已經介紹如何設定好 Crane 並且成功驗證可以客製一個 Docker Image，這一篇會透過一個使用 PrimeHub 的實際案例：如何從原有的 TensorFlow &lt;a href="https://docs.primehub.io/docs/guide_manual/images-list">2.4.1 Notebook Image&lt;/a> (裡面包括 Keras 2.3.1)，更新 Keras 版本到較新的版本 &lt;a href="https://pypi.org/project/keras/2.4.3/">2.4.3&lt;/a>。&lt;/p>
 &lt;ul>
