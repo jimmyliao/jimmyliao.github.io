@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AWS on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/aws/</link><description>Recent content in AWS on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 16 Nov 2021 22:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/aws/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon EC2 AMI Locator for Ubuntu</title><link>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</link><pubDate>Tue, 16 Nov 2021 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</guid><description>
+&lt;p>今天在找對應的 Ubuntu 官方支援 EC2 的 AMI-ID，記錄一下找的方式。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>首先, &lt;a href="https://cloud-images.ubuntu.com/locator/ec2/">Ubuntu 官網&lt;/a> 就有提到在各個 region 提供的 AMI，目標是要找到 Ubuntu 20.04 LTS
+。 Version 就先選到 &lt;code>20.04 LTS&lt;/code>，結果出現先筆記一下 AMI: &lt;code>ami-036d0684fc96830ca&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2021-11-16-ami.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>用以上的 AMI 來確定 Ubuntu Cloud Account id:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>aws ec2 describe-images --region ap-northeast-1 --image-ids ami-036d0684fc96830ca
+&lt;span class="ln"> 2&lt;/span>
+&lt;span class="ln"> 3&lt;/span>{
+&lt;span class="ln"> 4&lt;/span> &amp;#34;Images&amp;#34;: [
+&lt;span class="ln"> 5&lt;/span> {
+&lt;span class="ln"> 6&lt;/span> &amp;#34;Architecture&amp;#34;: &amp;#34;x86_64&amp;#34;,
+&lt;span class="ln"> 7&lt;/span> &amp;#34;CreationDate&amp;#34;: &amp;#34;2021-10-22T00:40:31.000Z&amp;#34;,
+&lt;span class="ln"> 8&lt;/span> &amp;#34;ImageId&amp;#34;: &amp;#34;ami-036d0684fc96830ca&amp;#34;,
+&lt;span class="ln"> 9&lt;/span> &amp;#34;ImageLocation&amp;#34;: &amp;#34;099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021&amp;#34;,
+&lt;span class="ln">10&lt;/span> &amp;#34;ImageType&amp;#34;: &amp;#34;machine&amp;#34;,
+&lt;span class="ln">11&lt;/span> &amp;#34;Public&amp;#34;: true,
+&lt;span class="ln">12&lt;/span> &amp;#34;OwnerId&amp;#34;: &amp;#34;099720109477&amp;#34;,
+&lt;span class="ln">13&lt;/span> &amp;#34;PlatformDetails&amp;#34;: &amp;#34;Linux/UNIX&amp;#34;,
+&lt;span class="ln">14&lt;/span> &amp;#34;UsageOperation&amp;#34;: &amp;#34;RunInstances&amp;#34;,
+&lt;span class="ln">15&lt;/span> &amp;#34;State&amp;#34;: &amp;#34;available&amp;#34;,
+&lt;span class="ln">16&lt;/span> &amp;#34;BlockDeviceMappings&amp;#34;: [
+&lt;span class="ln">17&lt;/span> ...
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;quot;OwnerId&amp;quot;: &amp;quot;099720109477&amp;quot;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>接著透過以下方式找最新的前十個&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>aws ec2 describe-images --owners 099720109477 \
+&lt;span class="ln">2&lt;/span> --region ap-northeast-1 --output table \
+&lt;span class="ln">3&lt;/span> --filters &amp;#34;Name=name,Values=*ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server*&amp;#34; \
+&lt;span class="ln">4&lt;/span> --query &amp;#39;reverse(sort_by(Images,&amp;amp;CreationDate))[:10].[ImageId,Name,CreationDate]&amp;#39;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>結果:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>-------------------------------------------------------------------------------------------------------------------------
+&lt;span class="ln"> 2&lt;/span>| DescribeImages |
+&lt;span class="ln"> 3&lt;/span>+-----------------------+------------------------------------------------------------------+----------------------------+
+&lt;span class="ln"> 4&lt;/span>| ami-0b3882952fc4fae89| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211115 | 2021-11-16T00:17:22.000Z |
+&lt;span class="ln"> 5&lt;/span>| ami-036d0684fc96830ca| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021 | 2021-10-22T00:40:31.000Z |
+&lt;span class="ln"> 6&lt;/span>| ami-0adcb4f170c975f15| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211015 | 2021-10-16T00:09:34.000Z |
+&lt;span class="ln"> 7&lt;/span>| ami-074d4d6a02df638da| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211001 | 2021-10-01T22:12:45.000Z |
+&lt;span class="ln"> 8&lt;/span>| ami-02a56e430b32bc0ba| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210927 | 2021-09-28T00:25:26.000Z |
+&lt;span class="ln"> 9&lt;/span>| ami-09ac3ab1b7a1e9444| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210907 | 2021-09-08T01:40:47.000Z |
+&lt;span class="ln">10&lt;/span>| ami-0b75e38f5a56ada82| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210825 | 2021-08-25T23:54:47.000Z |
+&lt;span class="ln">11&lt;/span>| ami-025e3bcccb9d8d2b4| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210820 | 2021-08-21T00:03:37.000Z |
+&lt;span class="ln">12&lt;/span>| ami-0647fa5c7c07a3385| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210816 | 2021-08-18T17:08:40.000Z |
+&lt;span class="ln">13&lt;/span>| ami-0b0ccc06abc611fa0| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210720 | 2021-07-21T13:27:05.000Z |
+&lt;span class="ln">14&lt;/span>+-----------------------+------------------------------------------------------------------+----------------------------+
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item></channel></rss>
