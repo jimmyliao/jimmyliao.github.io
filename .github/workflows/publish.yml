@@ -32,11 +32,11 @@ jobs:
         run: hugo --minify -b https://jimmyliao.net
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.7.3
+        uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
-          github_token: ${{ secrets.GHPAGES_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
-          user_name: <jimmyliao>
-          user_email: <jimmyliao@jimmyliao.net>
+          # user_name: <jimmyliao>
+          # user_email: <jimmyliao@jimmyliao.net>
           publish_branch: gh-pages
