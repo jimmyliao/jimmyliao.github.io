@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/ubuntu/</link><description>Recent content in Ubuntu on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 02 Jan 2022 22:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Change the default python to Python3.8 on Ubuntu 20.04 fresh install</title><link>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</link><pubDate>Sun, 02 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/ubuntu/</link><description>Recent content in Ubuntu on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 06 Jan 2022 22:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup amd64 Ubuntu on Mac</title><link>https://jimmyliao.net/post/2022-01-06-utm-mac/</link><pubDate>Thu, 06 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-06-utm-mac/</guid><description>
+&lt;p>This should be applied to Intel/Apple Silicon Mac.&lt;/p>
+&lt;p>Follow &lt;a href="https://levelup.gitconnected.com/running-amd64-linux-on-apple-m1-with-qemu-utm-64d67cccd6f8">this tutorial&lt;/a> should help to install required lib (qemu and utm)&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Create new VM Configuration from scratch, select Architecture to x86_64, and System to &lt;code>Standard PC&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2022-01-06-UTM01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>New Drive for Hard Disk and Import Drive to select Ubuntu installation ISO image.
+&lt;img src="https://jimmyliao.net/images/2022-01-06-UTM02.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Enjoy!&lt;/strong>
+&lt;img src="https://jimmyliao.net/images/2022-01-06-UTM03.png" alt="">&lt;/p></description></item><item><title>Change the default python to Python3.8 on Ubuntu 20.04 fresh install</title><link>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</link><pubDate>Sun, 02 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</guid><description>
 &lt;p>Just realized there is a specific package to resolve.&lt;/p>
 &lt;p>When got the fresh installed Ubuntu Focal Fossa server edition, you can use python3 but the default python has not set yet.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>ubuntu@prime:~$ python
