@@ -18,7 +18,7 @@ tags:
   - Git
 ---
 
-To signoff the previous commit, use amend option.
+To signoff the previous commit, use amend option. 
 
 <!--more-->
 ```
