@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 06 Jan 2022 22:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup amd64 Ubuntu VM on Mac</title><link>https://jimmyliao.net/post/2022-01-06-utm-mac/</link><pubDate>Thu, 06 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-06-utm-mac/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 11 Jan 2022 03:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Sign-off for previous git commit</title><link>https://jimmyliao.net/post/2022-01-11-git-signoff/</link><pubDate>Tue, 11 Jan 2022 03:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-11-git-signoff/</guid><description>
+&lt;p>To signoff the previous commit, use amend option.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">git commit --amend --no-edit --signoff
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">git push --force-with-lease origin &amp;lt;your-feature-branch&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Setup amd64 Ubuntu VM on Mac</title><link>https://jimmyliao.net/post/2022-01-06-utm-mac/</link><pubDate>Thu, 06 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-06-utm-mac/</guid><description>
 &lt;p>This should be applied to Intel/Apple Silicon Mac.&lt;/p>
 &lt;p>Follow &lt;a href="https://levelup.gitconnected.com/running-amd64-linux-on-apple-m1-with-qemu-utm-64d67cccd6f8">this tutorial&lt;/a> should help to install required lib (qemu and utm)&lt;/p>
 &lt;ol>
@@ -15,34 +19,31 @@
 &lt;img src="https://jimmyliao.net/images/2022-01-06-UTM03.png" alt="">&lt;/p></description></item><item><title>Change the default python to Python3.8 on Ubuntu 20.04 fresh install</title><link>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</link><pubDate>Sun, 02 Jan 2022 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-01-02-pyhton-is-python3/</guid><description>
 &lt;p>Just realized there is a specific package to resolve.&lt;/p>
 &lt;p>When got the fresh installed Ubuntu Focal Fossa server edition, you can use python3 but the default python has not set yet.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>ubuntu@prime:~$ python
-&lt;span class="ln"> 2&lt;/span>
-&lt;span class="ln"> 3&lt;/span>Command &amp;#39;python&amp;#39; not found, did you mean:
-&lt;span class="ln"> 4&lt;/span>
-&lt;span class="ln"> 5&lt;/span> command &amp;#39;python3&amp;#39; from deb python3
-&lt;span class="ln"> 6&lt;/span> command &amp;#39;python&amp;#39; from deb python-is-python3
-&lt;span class="ln"> 7&lt;/span>
-&lt;span class="ln"> 8&lt;/span>ubuntu@prime:~$ python3
-&lt;span class="ln"> 9&lt;/span>Python 3.8.10 (default, Nov 26 2021, 20:14:08)
-&lt;span class="ln">10&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the official doc to &lt;code>update-alternatives&lt;/code> then got this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>ubuntu@prime:~$ sudo update-alternatives --set python /usr/bin/python3.8
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>update-alternatives: error: no alternatives for python
-&lt;span class="ln">4&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are two methods to resolve:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ubuntu@prime:~$ python
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">Command &amp;#39;python&amp;#39; not found, did you mean:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> command &amp;#39;python3&amp;#39; from deb python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> command &amp;#39;python&amp;#39; from deb python-is-python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">ubuntu@prime:~$ python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl">Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the official doc to &lt;code>update-alternatives&lt;/code> then got this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ubuntu@prime:~$ sudo update-alternatives --set python /usr/bin/python3.8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">update-alternatives: error: no alternatives for python
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>There are two methods to resolve:&lt;/p>
 &lt;p>Method 1:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>ubuntu@prime:~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>ubuntu@prime:~$ sudo update-alternatives --config python
-&lt;span class="ln">4&lt;/span>There is only one alternative in link group python (providing /usr/bin/python): /usr/bin/python3
-&lt;span class="ln">5&lt;/span>Nothing to configure.
-&lt;span class="ln">6&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Method 2: use the &lt;code>python-is-python3&lt;/code> package&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>ubuntu@prime:~$ sudo apt install -y python-is-python3
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>ubuntu@prime:~$ python -V
-&lt;span class="ln">2&lt;/span>Python 3.8.10
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Amazon EC2 AMI Locator for Ubuntu</title><link>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</link><pubDate>Tue, 16 Nov 2021 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ubuntu@prime:~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ubuntu@prime:~$ sudo update-alternatives --config python
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">There is only one alternative in link group python (providing /usr/bin/python): /usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">Nothing to configure.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Method 2: use the &lt;code>python-is-python3&lt;/code> package&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ubuntu@prime:~$ sudo apt install -y python-is-python3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ubuntu@prime:~$ python -V
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">Python 3.8.10
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Amazon EC2 AMI Locator for Ubuntu</title><link>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</link><pubDate>Tue, 16 Nov 2021 22:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</guid><description>
 &lt;p>今天在找對應的 Ubuntu 官方支援 EC2 的 AMI-ID，記錄一下找的方式。&lt;/p>
 &lt;ul>
 &lt;li>
@@ -52,49 +53,49 @@
 &lt;/li>
 &lt;li>
 &lt;p>用以上的 AMI 來確定 Ubuntu Cloud Account id:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>aws ec2 describe-images --region ap-northeast-1 --image-ids ami-036d0684fc96830ca
-&lt;span class="ln"> 2&lt;/span>
-&lt;span class="ln"> 3&lt;/span>{
-&lt;span class="ln"> 4&lt;/span> &amp;#34;Images&amp;#34;: [
-&lt;span class="ln"> 5&lt;/span> {
-&lt;span class="ln"> 6&lt;/span> &amp;#34;Architecture&amp;#34;: &amp;#34;x86_64&amp;#34;,
-&lt;span class="ln"> 7&lt;/span> &amp;#34;CreationDate&amp;#34;: &amp;#34;2021-10-22T00:40:31.000Z&amp;#34;,
-&lt;span class="ln"> 8&lt;/span> &amp;#34;ImageId&amp;#34;: &amp;#34;ami-036d0684fc96830ca&amp;#34;,
-&lt;span class="ln"> 9&lt;/span> &amp;#34;ImageLocation&amp;#34;: &amp;#34;099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021&amp;#34;,
-&lt;span class="ln">10&lt;/span> &amp;#34;ImageType&amp;#34;: &amp;#34;machine&amp;#34;,
-&lt;span class="ln">11&lt;/span> &amp;#34;Public&amp;#34;: true,
-&lt;span class="ln">12&lt;/span> &amp;#34;OwnerId&amp;#34;: &amp;#34;099720109477&amp;#34;,
-&lt;span class="ln">13&lt;/span> &amp;#34;PlatformDetails&amp;#34;: &amp;#34;Linux/UNIX&amp;#34;,
-&lt;span class="ln">14&lt;/span> &amp;#34;UsageOperation&amp;#34;: &amp;#34;RunInstances&amp;#34;,
-&lt;span class="ln">15&lt;/span> &amp;#34;State&amp;#34;: &amp;#34;available&amp;#34;,
-&lt;span class="ln">16&lt;/span> &amp;#34;BlockDeviceMappings&amp;#34;: [
-&lt;span class="ln">17&lt;/span> ...
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;quot;OwnerId&amp;quot;: &amp;quot;099720109477&amp;quot;&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">aws ec2 describe-images --region ap-northeast-1 --image-ids ami-036d0684fc96830ca
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &amp;#34;Images&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &amp;#34;Architecture&amp;#34;: &amp;#34;x86_64&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &amp;#34;CreationDate&amp;#34;: &amp;#34;2021-10-22T00:40:31.000Z&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &amp;#34;ImageId&amp;#34;: &amp;#34;ami-036d0684fc96830ca&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &amp;#34;ImageLocation&amp;#34;: &amp;#34;099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &amp;#34;ImageType&amp;#34;: &amp;#34;machine&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &amp;#34;Public&amp;#34;: true,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &amp;#34;OwnerId&amp;#34;: &amp;#34;099720109477&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &amp;#34;PlatformDetails&amp;#34;: &amp;#34;Linux/UNIX&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &amp;#34;UsageOperation&amp;#34;: &amp;#34;RunInstances&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &amp;#34;State&amp;#34;: &amp;#34;available&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &amp;#34;BlockDeviceMappings&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;quot;OwnerId&amp;quot;: &amp;quot;099720109477&amp;quot;&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>接著透過以下方式找最新的前十個&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>aws ec2 describe-images --owners 099720109477 \
-&lt;span class="ln">2&lt;/span> --region ap-northeast-1 --output table \
-&lt;span class="ln">3&lt;/span> --filters &amp;#34;Name=name,Values=*ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server*&amp;#34; \
-&lt;span class="ln">4&lt;/span> --query &amp;#39;reverse(sort_by(Images,&amp;amp;CreationDate))[:10].[ImageId,Name,CreationDate]&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>結果:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">aws ec2 describe-images --owners 099720109477 \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> --region ap-northeast-1 --output table \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> --filters &amp;#34;Name=name,Values=*ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server*&amp;#34; \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> --query &amp;#39;reverse(sort_by(Images,&amp;amp;CreationDate))[:10].[ImageId,Name,CreationDate]&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>結果:&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>-------------------------------------------------------------------------------------------------------------------------
-&lt;span class="ln"> 2&lt;/span>| DescribeImages |
-&lt;span class="ln"> 3&lt;/span>+-----------------------+------------------------------------------------------------------+----------------------------+
-&lt;span class="ln"> 4&lt;/span>| ami-0b3882952fc4fae89| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211115 | 2021-11-16T00:17:22.000Z |
-&lt;span class="ln"> 5&lt;/span>| ami-036d0684fc96830ca| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021 | 2021-10-22T00:40:31.000Z |
-&lt;span class="ln"> 6&lt;/span>| ami-0adcb4f170c975f15| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211015 | 2021-10-16T00:09:34.000Z |
-&lt;span class="ln"> 7&lt;/span>| ami-074d4d6a02df638da| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211001 | 2021-10-01T22:12:45.000Z |
-&lt;span class="ln"> 8&lt;/span>| ami-02a56e430b32bc0ba| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210927 | 2021-09-28T00:25:26.000Z |
-&lt;span class="ln"> 9&lt;/span>| ami-09ac3ab1b7a1e9444| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210907 | 2021-09-08T01:40:47.000Z |
-&lt;span class="ln">10&lt;/span>| ami-0b75e38f5a56ada82| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210825 | 2021-08-25T23:54:47.000Z |
-&lt;span class="ln">11&lt;/span>| ami-025e3bcccb9d8d2b4| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210820 | 2021-08-21T00:03:37.000Z |
-&lt;span class="ln">12&lt;/span>| ami-0647fa5c7c07a3385| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210816 | 2021-08-18T17:08:40.000Z |
-&lt;span class="ln">13&lt;/span>| ami-0b0ccc06abc611fa0| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210720 | 2021-07-21T13:27:05.000Z |
-&lt;span class="ln">14&lt;/span>+-----------------------+------------------------------------------------------------------+----------------------------+
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>IBM Plex Mono</title><link>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">-------------------------------------------------------------------------------------------------------------------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">| DescribeImages |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">+-----------------------+------------------------------------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">| ami-0b3882952fc4fae89| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211115 | 2021-11-16T00:17:22.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">| ami-036d0684fc96830ca| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211021 | 2021-10-22T00:40:31.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">| ami-0adcb4f170c975f15| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211015 | 2021-10-16T00:09:34.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">| ami-074d4d6a02df638da| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211001 | 2021-10-01T22:12:45.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">| ami-02a56e430b32bc0ba| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210927 | 2021-09-28T00:25:26.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">| ami-09ac3ab1b7a1e9444| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210907 | 2021-09-08T01:40:47.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">| ami-0b75e38f5a56ada82| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210825 | 2021-08-25T23:54:47.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">| ami-025e3bcccb9d8d2b4| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210820 | 2021-08-21T00:03:37.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">| ami-0647fa5c7c07a3385| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210816 | 2021-08-18T17:08:40.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">| ami-0b0ccc06abc611fa0| ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210720 | 2021-07-21T13:27:05.000Z |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">+-----------------------+------------------------------------------------------------------+----------------------------+
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>IBM Plex Mono</title><link>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-14-ibmplexmono/</guid><description>
 &lt;p>Going to use IBM Plex Mono for daily work (Terminal, Sublime, VSCode, Chrome).&lt;/p>
 &lt;p>Some notes for my personal setup cross-laptop (osx, kubuntu, windows)&lt;/p>
 &lt;ul>
@@ -144,10 +145,10 @@
 &lt;p>透過 Start Notebook Server，可以透過 Terminal 確認一下安裝的版本&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ env | grep JUPYTER_IMAGE_SPEC
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>$ pip list | grep Keras
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-05.png" alt="">&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ env | grep JUPYTER_IMAGE_SPEC
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ pip list | grep Keras
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-05.png" alt="">&lt;/p>
 &lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Using Crane to Build Custom Image with 1-Click PrimeHub</title><link>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</link><pubDate>Fri, 12 Nov 2021 23:50:16 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</guid><description>
 &lt;p>&lt;strong>先快速來個中文版&lt;/strong>&lt;/p>
 &lt;p>&lt;a href="https://medium.com/infuseai/crane-the-minimalist-container-image-builder-68253722be8c">Crane&lt;/a> 是 InfuseAI 剛推出的&lt;a href="https://github.com/InfuseAI/crane"> Open Source Project&lt;/a>，簡言之就是可以在已經&lt;a href="https://docs.docker.com/engine/install/">裝好 Docker&lt;/a> 的電腦上，免除撰寫 Dockerfile ，也免除透過 Command 方式編譯 Docker Image。另外也提供快速把自己在 Docker Hub 編譯好的 Image 加入 PrimeHub 環境裡，以下的範例，就以之前介紹的 &lt;a href="http://localhost:1313/post/2021-09-24-primehub-oneclick/">1-Click 環境&lt;/a>，&lt;a href="https://docs.primehub.io/docs/guide_manual/admin-image#build-custom-image">客製化 Docker Image&lt;/a>，裡面包含 PrimeHub 新推出的 &lt;a href="https://github.com/InfuseAI/primehub-python-sdk">SDK&lt;/a> 。來看看吧～&lt;/p>
@@ -199,17 +200,16 @@
 &lt;ol>
 &lt;li>
 &lt;p>You have to check the pod status by checking log, but the pod NAME may not be identical.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY STATUS RESTARTS AGE
-&lt;span class="ln">4&lt;/span>primehub-bootstrap-c9dng 1/1 Running 0 21h
-&lt;span class="ln">5&lt;/span>
-&lt;span class="ln">6&lt;/span>$ kubectl -n hub logs primehub-bootstrap-c9dng
-&lt;span class="ln">7&lt;/span>...
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
-&lt;span class="ln">2&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY STATUS RESTARTS AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">primehub-bootstrap-c9dng 1/1 Running 0 21h
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">$ kubectl -n hub logs primehub-bootstrap-c9dng
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>kubectl&lt;/code> has &lt;code>--no-headers&lt;/code> option to output without header column&lt;/li>
 &lt;li>&lt;code>cut -d' ' -f&lt;/code> to get the first column after trimming spaces&lt;/li>
 &lt;li>the last pipeline pass &lt;code>xargs&lt;/code> strings &lt;code>X&lt;/code> to the &lt;code>kubectl -n hub logs X&lt;/code> last parameter&lt;/li>
@@ -217,16 +217,16 @@
 &lt;/li>
 &lt;li>
 &lt;p>You may have several Custom Resources, would like to delete them all.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
-&lt;span class="ln">4&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
-&lt;span class="ln">5&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>You want to dump the pod which is not Running/Completed.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>grep &lt;code>-v&lt;/code> for inverse-match, &lt;code>-e&lt;/code> for pattern&lt;/li>
 &lt;li>&lt;code>bash -c&lt;/code> means the commands are read from &lt;code>string&lt;/code>&lt;/li>
 &lt;/ul>
@@ -260,32 +260,31 @@
 &lt;p>There are two &lt;a href="https://docs.portainer.io/v/ce-2.9/admin/environments/add/kubernetes">deploy methods&lt;/a> onto your clusters: NodePort and Load Balancer. Here I use Load Balancer:&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
-&lt;span class="ln"> 2&lt;/span> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span> % Total % Received % Xferd Average Speed Time Time Time Current
-&lt;span class="ln"> 5&lt;/span> Dload Upload Total Spent Left Speed
-&lt;span class="ln"> 6&lt;/span>100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
-&lt;span class="ln"> 7&lt;/span>namespace/portainer created
-&lt;span class="ln"> 8&lt;/span>serviceaccount/portainer-sa-clusteradmin created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
-&lt;span class="ln">10&lt;/span>service/portainer-agent created
-&lt;span class="ln">11&lt;/span>service/portainer-agent-headless created
-&lt;span class="ln">12&lt;/span>deployment.apps/portainer-agent created
-&lt;span class="ln">13&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> % Total % Received % Xferd Average Speed Time Time Time Current
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> Dload Upload Total Spent Left Speed
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">namespace/portainer created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">serviceaccount/portainer-sa-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/portainer-agent created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">service/portainer-agent-headless created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">deployment.apps/portainer-agent created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
 &lt;li>Check the deploying&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get svc -A
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
-&lt;span class="ln">4&lt;/span> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
-&lt;span class="ln">5&lt;/span> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
-&lt;span class="ln">6&lt;/span>...
-&lt;span class="ln">7&lt;/span>portainer portainer-agent LoadBalancer
-&lt;span class="ln">8&lt;/span> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
-&lt;span class="ln">9&lt;/span> 9001:30434/TCP 10s
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get svc -A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">portainer portainer-agent LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> 9001:30434/TCP 10s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-01.png" alt="">&lt;/p>
 &lt;ol start="4">
 &lt;li>
@@ -296,23 +295,23 @@
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-02.png" alt="">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ kubectl apply -f \
-&lt;span class="ln"> 2&lt;/span>https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span>serviceaccount/metrics-server created
-&lt;span class="ln"> 5&lt;/span>clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
-&lt;span class="ln"> 6&lt;/span>clusterrole.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln"> 7&lt;/span>rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
-&lt;span class="ln"> 8&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln">10&lt;/span>service/metrics-server created
-&lt;span class="ln">11&lt;/span>deployment.apps/metrics-server created
-&lt;span class="ln">12&lt;/span>apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get deployment metrics-server -n kube-system
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY UP-TO-DATE AVAILABLE AGE
-&lt;span class="ln">4&lt;/span>metrics-server 1/1 1 1 38s
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ kubectl apply -f \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">serviceaccount/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">deployment.apps/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get deployment metrics-server -n kube-system
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY UP-TO-DATE AVAILABLE AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">metrics-server 1/1 1 1 38s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
 &lt;li>Finally to see it on the Portainer Console.
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-03.png" alt="">&lt;/li>
 &lt;/ol>
@@ -321,13 +320,13 @@
 &lt;p>Enjoy!&lt;/p></description></item><item><title>Combine TMUX and Bash history</title><link>https://jimmyliao.net/post/2021-10-15-tmux-tip-01/</link><pubDate>Fri, 15 Oct 2021 22:50:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-10-15-tmux-tip-01/</guid><description>
 &lt;p>&lt;strong>Note if you're working with multiple sessions and would save command onto history&lt;/strong>&lt;/p>
 &lt;h3 id="edit-bashrc">Edit &lt;code>.bashrc&lt;/code>&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>export HISTFILE=~/.bash_history
-&lt;span class="ln">2&lt;/span>export HISTSIZE=100000 # big big history
-&lt;span class="ln">3&lt;/span>export HISTFILESIZE=100000 # big big history
-&lt;span class="ln">4&lt;/span>shopt -s histappend # append to history, don&amp;#39;t overwrite it
-&lt;span class="ln">5&lt;/span>unset PROMPT_COMMAND
-&lt;span class="ln">6&lt;/span>export PROMPT_COMMAND=&amp;#34;history -n;history -w;history -c;history -r;$PROMPT_COMMAND&amp;#34;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then this will preserve bash history from multiple sessions.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">export HISTFILE=~/.bash_history
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">export HISTSIZE=100000 # big big history
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">export HISTFILESIZE=100000 # big big history
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">shopt -s histappend # append to history, don&amp;#39;t overwrite it
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">unset PROMPT_COMMAND
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">export PROMPT_COMMAND=&amp;#34;history -n;history -w;history -c;history -r;$PROMPT_COMMAND&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then this will preserve bash history from multiple sessions.&lt;/p>
 &lt;p>Reference: &lt;a href="http://experimentswithlinuxrelatedtech.blogspot.com/2014/07/combine-bash-history-across-multiple.html">http://experimentswithlinuxrelatedtech.blogspot.com/2014/07/combine-bash-history-across-multiple.html&lt;/a>&lt;/p></description></item><item><title>HOWTO: connect to remote 1-click PrimeHub</title><link>https://jimmyliao.net/post/2021-09-24-primehub-oneclick/</link><pubDate>Fri, 24 Sep 2021 23:35:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-24-primehub-oneclick/</guid><description>
 &lt;p>&lt;strong>How to connect to remote &lt;a href="https://one.primehub.io">1-click PrimeHub&lt;/a> instance&lt;/strong>&lt;/p>
 &lt;p>PrimeHub &lt;a href="https://medium.com/infuseai/whats-new-in-primehub-3-8-40f107035fbc">3.8&lt;/a> 開始提供了 1-click to AWS 的快速部署 PrimeHub 方式，點下 &lt;code>1-Click Install on AWS&lt;/code> 之後，填入你的 email 並點下 Deploy 之後，就可以先去喝杯咖啡等待郵件通知 PrimeHub on AWS 部署完成。&lt;/p>
@@ -380,34 +379,33 @@
 &lt;h3 id="血壓">血壓&lt;/h3>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-10-blood.png" alt="">&lt;/p>
 &lt;p>首先先確定 Obsidian 關閉 Safe mode，透過 Community plugin 安裝 Tracker plugin。然後根據 Examples\diary 裡面&lt;a href="https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/diary/2021-01-01.md">範例&lt;/a> 看一下 Blood 相關的 logging，我的紀錄方式是:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>---
-&lt;span class="ln">2&lt;/span>tags: blood
-&lt;span class="ln">3&lt;/span>bp:
-&lt;span class="ln">4&lt;/span> systolic: 149
-&lt;span class="ln">5&lt;/span> diastolic: 100
-&lt;span class="ln">6&lt;/span>heart: 69
-&lt;span class="ln">7&lt;/span>---
-&lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>圖表的部份:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>searchType: frontmatter
-&lt;span class="ln"> 2&lt;/span>searchTarget: bp.systolic, bp.diastolic
-&lt;span class="ln"> 3&lt;/span>datasetName: systolic, diastolic
-&lt;span class="ln"> 4&lt;/span>folder: log/blood
-&lt;span class="ln"> 5&lt;/span>startDate: 2021-09-03
-&lt;span class="ln"> 6&lt;/span>endDate: 2021-09-10
-&lt;span class="ln"> 7&lt;/span>line:
-&lt;span class="ln"> 8&lt;/span> title: Blood Pressures
-&lt;span class="ln"> 9&lt;/span> yAxisLabel: Systolic, Diastolic
-&lt;span class="ln">10&lt;/span> yAxisUnit: mmHg
-&lt;span class="ln">11&lt;/span> yMin: 110, 80
-&lt;span class="ln">12&lt;/span> yMax: 160, 120
-&lt;span class="ln">13&lt;/span> yAxisLocation: left, right
-&lt;span class="ln">14&lt;/span> yAxisColor: yellow, green
-&lt;span class="ln">15&lt;/span> yAxisLabelColor: yellow, green
-&lt;span class="ln">16&lt;/span> lineColor: yellow, green
-&lt;span class="ln">17&lt;/span> showLegend: true
-&lt;span class="ln">18&lt;/span> legendPosition: right
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>至少今天數值看起來還算安心，也該來早點上床睡覺了。&lt;/p></description></item><item><title>Logitech M575 軌跡球滑鼠入手</title><link>https://jimmyliao.net/post/2021-09-07-m575/</link><pubDate>Tue, 07 Sep 2021 17:10:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-07-m575/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">tags: blood
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">bp:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> systolic: 149
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> diastolic: 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">heart: 69
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>圖表的部份:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">searchType: frontmatter
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">searchTarget: bp.systolic, bp.diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">datasetName: systolic, diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">folder: log/blood
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">startDate: 2021-09-03
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">endDate: 2021-09-10
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">line:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> title: Blood Pressures
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> yAxisLabel: Systolic, Diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> yAxisUnit: mmHg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> yMin: 110, 80
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> yMax: 160, 120
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> yAxisLocation: left, right
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> yAxisColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> yAxisLabelColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> lineColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> showLegend: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> legendPosition: right
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>至少今天數值看起來還算安心，也該來早點上床睡覺了。&lt;/p></description></item><item><title>Logitech M575 軌跡球滑鼠入手</title><link>https://jimmyliao.net/post/2021-09-07-m575/</link><pubDate>Tue, 07 Sep 2021 17:10:28 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-07-m575/</guid><description>
 &lt;p>&lt;strong>用習慣中指＋無名指控制的軌跡球 (ELECOM DEFT PRO), 再用 M575 會有種錯亂感.&lt;/strong>&lt;/p>
 &lt;p>不過 M575 的靜音捲動超讚, 這才對嘛.&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-07-m575.jpeg" alt="">&lt;/p></description></item><item><title>如何連到遠端的 MicroK8s 並用 K9S monitoring</title><link>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</link><pubDate>Thu, 02 Sep 2021 22:47:55 +0800</pubDate><guid>https://jimmyliao.net/post/2021-09-01-k9s-microk8s/</guid><description>
@@ -420,58 +418,58 @@
 &lt;p>驗證在該台主機上可以透過 K9S 看到 Cluster 資訊沒問題！&lt;/p>
 &lt;p>接著來到這篇的主題：透過 laptop 連到遠端的主機&lt;/p>
 &lt;p>首先，你會發現即使你知道主機的 public IP，嘗試透過 &lt;code>~/.kube/config&lt;/code> 並放到 laptop 的 kube config&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>~$ cat ~/.kube/config
-&lt;span class="ln"> 2&lt;/span>apiVersion: v1
-&lt;span class="ln"> 3&lt;/span>clusters:
-&lt;span class="ln"> 4&lt;/span>- cluster:
-&lt;span class="ln"> 5&lt;/span> certificate-authority-data: &amp;lt;YOUR_CERT_DATA&amp;gt;
-&lt;span class="ln"> 6&lt;/span> server: https://127.0.0.1:16443
-&lt;span class="ln"> 7&lt;/span> name: microk8s-cluster
-&lt;span class="ln"> 8&lt;/span>contexts:
-&lt;span class="ln"> 9&lt;/span>- context:
-&lt;span class="ln">10&lt;/span> cluster: microk8s-cluster
-&lt;span class="ln">11&lt;/span> user: admin
-&lt;span class="ln">12&lt;/span> name: microk8s
-&lt;span class="ln">13&lt;/span>current-context: microk8s
-&lt;span class="ln">14&lt;/span>kind: Config
-&lt;span class="ln">15&lt;/span>preferences: &lt;span class="o">{}&lt;/span>
-&lt;span class="ln">16&lt;/span>users:
-&lt;span class="ln">17&lt;/span>- name: admin
-&lt;span class="ln">18&lt;/span> user:
-&lt;span class="ln">19&lt;/span> token: &amp;lt;YOUR_-_TOKEN&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改對應的 &lt;code>server: https://&amp;lt;EC2_PUBLIC_IP&amp;gt;:16443&lt;/code> ，也打開 EC2 上的 &lt;code>16443&lt;/code> port&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">~$ cat ~/.kube/config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">apiVersion: v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">clusters:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">- cluster:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> certificate-authority-data: &amp;lt;YOUR_CERT_DATA&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> server: https://127.0.0.1:16443
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> name: microk8s-cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">contexts:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">- context:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> cluster: microk8s-cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> user: admin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> name: microk8s
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">current-context: microk8s
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">kind: Config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">preferences: &lt;span class="o">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">users:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">- name: admin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> user:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> token: &amp;lt;YOUR_-_TOKEN&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改對應的 &lt;code>server: https://&amp;lt;EC2_PUBLIC_IP&amp;gt;:16443&lt;/code> ，也打開 EC2 上的 &lt;code>16443&lt;/code> port&lt;/p>
 &lt;p>發現怎麼在打 &lt;code>kubectl get node&lt;/code> 時找不到&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>Unable to connect to the server: x509: certificate is valid &lt;span class="k">for&lt;/span> 127.0.0.1, 10.152.183.1, 192.168.1.123, not &amp;lt;EC2_PUBLIC_IP&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得先檢查 MicroK8s 的 metrics-server 有沒有 enabled。有 enabled 的話才不會在 K9S 上面看到 CPU/MEM 是 n/a&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>~$ microk8s status
-&lt;span class="ln"> 2&lt;/span>microk8s is running
-&lt;span class="ln"> 3&lt;/span>high-availability: no
-&lt;span class="ln"> 4&lt;/span> datastore master nodes: 127.0.0.1:19001
-&lt;span class="ln"> 5&lt;/span> datastore standby nodes: none
-&lt;span class="ln"> 6&lt;/span>addons:
-&lt;span class="ln"> 7&lt;/span> enabled:
-&lt;span class="ln"> 8&lt;/span> dns &lt;span class="c1"># CoreDNS&lt;/span>
-&lt;span class="ln"> 9&lt;/span> ha-cluster &lt;span class="c1"># Configure high availability on the current node&lt;/span>
-&lt;span class="ln">10&lt;/span> metrics-server &lt;span class="c1"># K8s Metrics Server for API access to service metrics&lt;/span>
-&lt;span class="ln">11&lt;/span> rbac &lt;span class="c1"># Role-Based Access Control for authorisation&lt;/span>
-&lt;span class="ln">12&lt;/span> storage &lt;span class="c1"># Storage class; allocates storage from host directory&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後找了一些文件，有一說是在kube-apiserver設定檔案，新增 &lt;code>--bind-address&lt;/code>，像是&lt;a href="https://microk8s.io/docs/external-lma">這個&lt;/a> 跟 &lt;a href="https://discuss.kubernetes.io/t/microk8s-with-an-external-lma/13595">這個&lt;/a>。重啟 MicroK8s 之後沒什麼幫助。直到我找到 &lt;a href="https://discuss.kubernetes.io/t/is-there-a-way-to-access-microk8s-using-kubectl-outside-the-local-network/15488">這篇&lt;/a>，內容大意是說，像是 EC2 這種 instance 的 Public IP 並沒有實際在 network interface 指定，而是透過 EC2 方式給定一組 Public IP 指定給這個 instance，就需要在 &lt;code>/var/snap/microk8s/current/certs/csr.conf.template&lt;/code> 裡面新增一個 IP&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>&lt;span class="o">[&lt;/span> alt_names &lt;span class="o">]&lt;/span>
-&lt;span class="ln"> 2&lt;/span>DNS.1 &lt;span class="o">=&lt;/span> kubernetes
-&lt;span class="ln"> 3&lt;/span>DNS.2 &lt;span class="o">=&lt;/span> kubernetes.default
-&lt;span class="ln"> 4&lt;/span>DNS.3 &lt;span class="o">=&lt;/span> kubernetes.default.svc
-&lt;span class="ln"> 5&lt;/span>DNS.4 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster
-&lt;span class="ln"> 6&lt;/span>DNS.5 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster.local
-&lt;span class="ln"> 7&lt;/span>IP.1 &lt;span class="o">=&lt;/span> 127.0.0.1
-&lt;span class="ln"> 8&lt;/span>IP.2 &lt;span class="o">=&lt;/span> 10.152.183.1
-&lt;span class="ln"> 9&lt;/span>IP.99 &lt;span class="o">=&lt;/span> &amp;lt;EC2_PUBLIC_IP&amp;gt;
-&lt;span class="ln">10&lt;/span>&lt;span class="c1">#MOREIPS&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得這裡千萬別自認為要直接指定 &lt;code>IP.3&lt;/code> ，而是要指定從 &lt;code>IP.100&lt;/code> 或是往下遞減，這邊先給個 &lt;code>IP.99&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">Unable to connect to the server: x509: certificate is valid &lt;span class="k">for&lt;/span> 127.0.0.1, 10.152.183.1, 192.168.1.123, not &amp;lt;EC2_PUBLIC_IP&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得先檢查 MicroK8s 的 metrics-server 有沒有 enabled。有 enabled 的話才不會在 K9S 上面看到 CPU/MEM 是 n/a&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">~$ microk8s status
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">microk8s is running
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">high-availability: no
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> datastore master nodes: 127.0.0.1:19001
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> datastore standby nodes: none
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">addons:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> enabled:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> dns &lt;span class="c1"># CoreDNS&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> ha-cluster &lt;span class="c1"># Configure high availability on the current node&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> metrics-server &lt;span class="c1"># K8s Metrics Server for API access to service metrics&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> rbac &lt;span class="c1"># Role-Based Access Control for authorisation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> storage &lt;span class="c1"># Storage class; allocates storage from host directory&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後找了一些文件，有一說是在kube-apiserver設定檔案，新增 &lt;code>--bind-address&lt;/code>，像是&lt;a href="https://microk8s.io/docs/external-lma">這個&lt;/a> 跟 &lt;a href="https://discuss.kubernetes.io/t/microk8s-with-an-external-lma/13595">這個&lt;/a>。重啟 MicroK8s 之後沒什麼幫助。直到我找到 &lt;a href="https://discuss.kubernetes.io/t/is-there-a-way-to-access-microk8s-using-kubectl-outside-the-local-network/15488">這篇&lt;/a>，內容大意是說，像是 EC2 這種 instance 的 Public IP 並沒有實際在 network interface 指定，而是透過 EC2 方式給定一組 Public IP 指定給這個 instance，就需要在 &lt;code>/var/snap/microk8s/current/certs/csr.conf.template&lt;/code> 裡面新增一個 IP&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="o">[&lt;/span> alt_names &lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">DNS.1 &lt;span class="o">=&lt;/span> kubernetes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">DNS.2 &lt;span class="o">=&lt;/span> kubernetes.default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">DNS.3 &lt;span class="o">=&lt;/span> kubernetes.default.svc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">DNS.4 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">DNS.5 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster.local
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">IP.1 &lt;span class="o">=&lt;/span> 127.0.0.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">IP.2 &lt;span class="o">=&lt;/span> 10.152.183.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">IP.99 &lt;span class="o">=&lt;/span> &amp;lt;EC2_PUBLIC_IP&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c1">#MOREIPS&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得這裡千萬別自認為要直接指定 &lt;code>IP.3&lt;/code> ，而是要指定從 &lt;code>IP.100&lt;/code> 或是往下遞減，這邊先給個 &lt;code>IP.99&lt;/code>。&lt;/p>
 &lt;p>改好並 restart microk8s 之後就可以遠端執行 &lt;code>kubectl&lt;/code> 啦！&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>~$ kubectl get node
-&lt;span class="ln">2&lt;/span>NAME STATUS ROLES AGE VERSION
-&lt;span class="ln">3&lt;/span>ip-10-40-0-11 Ready &amp;lt;none&amp;gt; 4d1h v1.19.13-34+939585d5fb6fa7
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後就可以快快樂樂的在 laptop 直接監控 Cluster 囉～&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">~$ kubectl get node
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">NAME STATUS ROLES AGE VERSION
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ip-10-40-0-11 Ready &amp;lt;none&amp;gt; 4d1h v1.19.13-34+939585d5fb6fa7
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後就可以快快樂樂的在 laptop 直接監控 Cluster 囉～&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-01-k9s.png" alt="">&lt;/p></description></item><item><title>Be Positive</title><link>https://jimmyliao.net/post/2021-08-25-be-positive/</link><pubDate>Wed, 25 Aug 2021 22:10:53 +0800</pubDate><guid>https://jimmyliao.net/post/2021-08-25-be-positive/</guid><description>
 &lt;p>&lt;strong>最近累積不少事情，很多觀察到的人事物必須忍住不說，那就說說令人開心的部分好了。&lt;/strong>&lt;/p>
 &lt;ol>
@@ -514,62 +512,58 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;/li>
 &lt;li>&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>$ mkdir hexo
-&lt;span class="ln"> 2&lt;/span>$ &lt;span class="nb">cd&lt;/span> hexo
-&lt;span class="ln"> 3&lt;/span>$ hexo init
-&lt;span class="ln"> 4&lt;/span>INFO Cloning hexo-starter to ~/WebDrive/GitHub/Blogging/Life.git/blog_src
-&lt;span class="ln"> 5&lt;/span>Cloning into &lt;span class="s1">&amp;#39;/Users/jimmyliao/WebDrive/GitHub/Blogging/Life.git/blog_src&amp;#39;&lt;/span>...
-&lt;span class="ln"> 6&lt;/span>remote: Counting objects: 53, &lt;span class="k">done&lt;/span>.
-&lt;span class="ln"> 7&lt;/span>remote: Total &lt;span class="m">53&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">53&lt;/span>
-&lt;span class="ln"> 8&lt;/span>Unpacking objects: 100% &lt;span class="o">(&lt;/span>53/53&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
-&lt;span class="ln"> 9&lt;/span>Checking connectivity... &lt;span class="k">done&lt;/span>.
-&lt;span class="ln">10&lt;/span>Submodule &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span> &lt;span class="o">(&lt;/span>https://github.com/hexojs/hexo-theme-landscape.git&lt;span class="o">)&lt;/span> registered &lt;span class="k">for&lt;/span> path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>
-&lt;span class="ln">11&lt;/span>Cloning into &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>...
-&lt;span class="ln">12&lt;/span>remote: Counting objects: 730, &lt;span class="k">done&lt;/span>.
-&lt;span class="ln">13&lt;/span>remote: Total &lt;span class="m">730&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">730&lt;/span>
-&lt;span class="ln">14&lt;/span>Receiving objects: 100% &lt;span class="o">(&lt;/span>730/730&lt;span class="o">)&lt;/span>, 2.51 MiB &lt;span class="p">|&lt;/span> 955.00 KiB/s, &lt;span class="k">done&lt;/span>.
-&lt;span class="ln">15&lt;/span>Resolving deltas: 100% &lt;span class="o">(&lt;/span>384/384&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
-&lt;span class="ln">16&lt;/span>Checking connectivity... &lt;span class="k">done&lt;/span>.
-&lt;span class="ln">17&lt;/span>Submodule path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>: checked out &lt;span class="s1">&amp;#39;decdc2d9956776cbe95420ae94bac87e22468d38&amp;#39;&lt;/span>
-&lt;span class="ln">18&lt;/span>INFO Install dependencies
-&lt;span class="ln">19&lt;/span>...
-&lt;span class="ln">20&lt;/span>
-&lt;span class="ln">21&lt;/span> &lt;span class="sb">`&lt;/span>-- serve-static@1.10.2
-&lt;span class="ln">22&lt;/span> +-- escape-html@1.0.3
-&lt;span class="ln">23&lt;/span> &lt;span class="sb">`&lt;/span>-- send@0.13.1
-&lt;span class="ln">24&lt;/span> +-- destroy@1.0.4
-&lt;span class="ln">25&lt;/span> +-- etag@1.7.0
-&lt;span class="ln">26&lt;/span> +-- fresh@0.3.0
-&lt;span class="ln">27&lt;/span> +-- http-errors@1.3.1
-&lt;span class="ln">28&lt;/span> +-- range-parser@1.0.3
-&lt;span class="ln">29&lt;/span> &lt;span class="sb">`&lt;/span>-- statuses@1.2.1
-&lt;span class="ln">30&lt;/span>INFO Start blogging with Hexo!
-&lt;span class="ln">31&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>產生template之後&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo g
-&lt;span class="ln">2&lt;/span>...
-&lt;span class="ln">3&lt;/span>INFO &lt;span class="m">28&lt;/span> files generated in &lt;span class="m">648&lt;/span> ms
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得修改一下_config.yml&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>url: http://jimmyliao.github.io/Life
-&lt;span class="ln">2&lt;/span>root: /Life/
-&lt;span class="ln">3&lt;/span>
-&lt;span class="ln">4&lt;/span>...
-&lt;span class="ln">5&lt;/span>deploy:
-&lt;span class="ln">6&lt;/span> type: git
-&lt;span class="ln">7&lt;/span> repo: https://github.com/jimmyliao/Life.git
-&lt;span class="ln">8&lt;/span>branch: gh-pages
-&lt;span class="ln">9&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>$ npm install hexo-deployer-git --save &lt;span class="c1">#裝一下deployer&lt;/span>
-&lt;span class="ln"> 2&lt;/span>$ npm install hexo-renderer-stylus --save &lt;span class="c1">#裝一下不然會整個css破掉, hexo issue&lt;/span>
-&lt;span class="ln"> 3&lt;/span>$ hexo d
-&lt;span class="ln"> 4&lt;/span>...
-&lt;span class="ln"> 5&lt;/span>To https://github.com/jimmyliao/Life.git
-&lt;span class="ln"> 6&lt;/span> + 541ea14...4eb6485 HEAD -&amp;gt; gh-pages &lt;span class="o">(&lt;/span>forced update&lt;span class="o">)&lt;/span>
-&lt;span class="ln"> 7&lt;/span>Branch master &lt;span class="nb">set&lt;/span> up to track remote branch gh-pages from https://github.com/jimmyliao/Life.git.
-&lt;span class="ln"> 8&lt;/span>INFO Deploy &lt;span class="k">done&lt;/span>: git
-&lt;span class="ln"> 9&lt;/span>
-&lt;span class="ln">10&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ mkdir hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">$ &lt;span class="nb">cd&lt;/span> hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">$ hexo init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">INFO Cloning hexo-starter to ~/WebDrive/GitHub/Blogging/Life.git/blog_src
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">Cloning into &lt;span class="s1">&amp;#39;/Users/jimmyliao/WebDrive/GitHub/Blogging/Life.git/blog_src&amp;#39;&lt;/span>...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">remote: Counting objects: 53, &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">remote: Total &lt;span class="m">53&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">53&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">Unpacking objects: 100% &lt;span class="o">(&lt;/span>53/53&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">Checking connectivity... &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">Submodule &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span> &lt;span class="o">(&lt;/span>https://github.com/hexojs/hexo-theme-landscape.git&lt;span class="o">)&lt;/span> registered &lt;span class="k">for&lt;/span> path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">Cloning into &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">remote: Counting objects: 730, &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">remote: Total &lt;span class="m">730&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, reused &lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>delta 0&lt;span class="o">)&lt;/span>, pack-reused &lt;span class="m">730&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">Receiving objects: 100% &lt;span class="o">(&lt;/span>730/730&lt;span class="o">)&lt;/span>, 2.51 MiB &lt;span class="p">|&lt;/span> 955.00 KiB/s, &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">Resolving deltas: 100% &lt;span class="o">(&lt;/span>384/384&lt;span class="o">)&lt;/span>, &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">Checking connectivity... &lt;span class="k">done&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">Submodule path &lt;span class="s1">&amp;#39;themes/landscape&amp;#39;&lt;/span>: checked out &lt;span class="s1">&amp;#39;decdc2d9956776cbe95420ae94bac87e22468d38&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">INFO Install dependencies
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="sb">`&lt;/span>-- serve-static@1.10.2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> +-- escape-html@1.0.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="sb">`&lt;/span>-- send@0.13.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> +-- destroy@1.0.4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl"> +-- etag@1.7.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> +-- fresh@0.3.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> +-- http-errors@1.3.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> +-- range-parser@1.0.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> &lt;span class="sb">`&lt;/span>-- statuses@1.2.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl">INFO Start blogging with Hexo!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>產生template之後&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo g
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">INFO &lt;span class="m">28&lt;/span> files generated in &lt;span class="m">648&lt;/span> ms
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得修改一下_config.yml&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">url: http://jimmyliao.github.io/Life
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">root: /Life/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">deploy:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> type: git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl"> repo: https://github.com/jimmyliao/Life.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">branch: gh-pages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ npm install hexo-deployer-git --save &lt;span class="c1">#裝一下deployer&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">$ npm install hexo-renderer-stylus --save &lt;span class="c1">#裝一下不然會整個css破掉, hexo issue&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ hexo d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">To https://github.com/jimmyliao/Life.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> + 541ea14...4eb6485 HEAD -&amp;gt; gh-pages &lt;span class="o">(&lt;/span>forced update&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">Branch master &lt;span class="nb">set&lt;/span> up to track remote branch gh-pages from https://github.com/jimmyliao/Life.git.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">INFO Deploy &lt;span class="k">done&lt;/span>: git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
 &lt;li>測試.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;a href="http://jimmyliao.github.io">http://jimmyliao.github.io&lt;/a> -&amp;gt; 主站
@@ -581,65 +575,64 @@ Please free to drop the message if you need me at &lt;a href="mailto:jimmyliao@j
 &lt;ol>
 &lt;li>Follow &lt;a href="http://www.aprilzephyr.com/blog/07262015/%E5%B0%87Blog%E5%BE%9EOctopress%E9%81%B7%E7%A7%BB%E8%87%B3Hexo/">this&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ sudo npm install --unsafe-perm --verbose -g hexo
-&lt;span class="ln">2&lt;/span>$ mkdir hexo
-&lt;span class="ln">3&lt;/span>$ &lt;span class="nb">cd&lt;/span> hexo
-&lt;span class="ln">4&lt;/span>$ hexo init
-&lt;span class="ln">5&lt;/span>$ npm install hexo --no-optional
-&lt;span class="ln">6&lt;/span>$ npm install
-&lt;span class="ln">7&lt;/span>
-&lt;span class="ln">8&lt;/span>$ hexo g &lt;span class="c1">#完整是hexo generate 生成靜態頁面&lt;/span>
-&lt;span class="ln">9&lt;/span>$ hexo s &lt;span class="c1">#完整是hexo server 運行本地服務器&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>裝git發布插件，運行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ npm install hexo-deployer-git --save
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>安裝完成後在Hexo根目錄通過_config.yml對相關參數進行設置，在最後幾行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>deploy:
-&lt;span class="ln">2&lt;/span> type: git
-&lt;span class="ln">3&lt;/span> repo: git@github.com/abc/abc.github.io.git #這裏是你剛獲取的地址
-&lt;span class="ln">4&lt;/span>branch: master
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ vim ~/.ssh/config
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>host abc.github.com
-&lt;span class="ln">2&lt;/span> HostName github.com
-&lt;span class="ln">3&lt;/span> IdentityFile ~/.ssh/github_rsa
-&lt;span class="ln">4&lt;/span> User git
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>保存設置，撰寫新文章，然後生成頁面，最後發布頁面：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo new &lt;span class="o">[&lt;/span>layout&lt;span class="o">]&lt;/span> &amp;lt;title&amp;gt;
-&lt;span class="ln">2&lt;/span>$ hexo g
-&lt;span class="ln">3&lt;/span>$ hexo d &lt;span class="c1">#完整是hexo deploy 發布到遠程服務器&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>或是生成頁面和發布頁面用一條命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo d -g
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>P.S. have to hexo clean before hexo g&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo clean
-&lt;span class="ln">2&lt;/span>$ hexo g
-&lt;span class="ln">3&lt;/span>$ hexo d
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ sudo npm install --unsafe-perm --verbose -g hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">$ mkdir hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ &lt;span class="nb">cd&lt;/span> hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">$ hexo init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">$ npm install hexo --no-optional
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">$ npm install
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">$ hexo g &lt;span class="c1">#完整是hexo generate 生成靜態頁面&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl">$ hexo s &lt;span class="c1">#完整是hexo server 運行本地服務器&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>裝git發布插件，運行：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ npm install hexo-deployer-git --save
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>安裝完成後在Hexo根目錄通過_config.yml對相關參數進行設置，在最後幾行：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">deploy:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> type: git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> repo: git@github.com/abc/abc.github.io.git #這裏是你剛獲取的地址
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">branch: master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ vim ~/.ssh/config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">host abc.github.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> HostName github.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> IdentityFile ~/.ssh/github_rsa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> User git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>保存設置，撰寫新文章，然後生成頁面，最後發布頁面：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo new &lt;span class="o">[&lt;/span>layout&lt;span class="o">]&lt;/span> &amp;lt;title&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">$ hexo g
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ hexo d &lt;span class="c1">#完整是hexo deploy 發布到遠程服務器&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或是生成頁面和發布頁面用一條命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo d -g
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>P.S. have to hexo clean before hexo g&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo clean
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">$ hexo g
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ hexo d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
 &lt;li>Follow this instruction to &lt;a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E7%AB%A0">setup local env&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>Update: Following steps are for anther laptop&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ git clone your hexo repo &lt;span class="o">(&lt;/span>&lt;span class="nb">source&lt;/span> branch&lt;span class="o">)&lt;/span>
-&lt;span class="ln">2&lt;/span>$ npm install hexo --save &lt;span class="c1">#reinstall if new env does not have hexo cli&lt;/span>
-&lt;span class="ln">3&lt;/span>$ npm install hexo-deployer-git --save
-&lt;span class="ln">4&lt;/span>$ hexo init
-&lt;span class="ln">5&lt;/span>$ git clone https://github.com/iissnan/hexo-theme-next themes/next
-&lt;span class="ln">6&lt;/span>$ hexo g
-&lt;span class="ln">7&lt;/span>$ hexo d
-&lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.net/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-05-hello-world/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ git clone your hexo repo &lt;span class="o">(&lt;/span>&lt;span class="nb">source&lt;/span> branch&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">$ npm install hexo --save &lt;span class="c1">#reinstall if new env does not have hexo cli&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ npm install hexo-deployer-git --save
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">$ hexo init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">$ git clone https://github.com/iissnan/hexo-theme-next themes/next
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">$ hexo g
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">$ hexo d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hello World</title><link>https://jimmyliao.net/post/2016-05-05-hello-world/</link><pubDate>Thu, 05 May 2016 22:00:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-05-hello-world/</guid><description>
 &lt;p>Another Hello World for Hexo&lt;/p>
 &lt;p>Welcome to &lt;a href="https://hexo.io/">Hexo&lt;/a>! This is your very first post. Check &lt;a href="https://hexo.io/docs/">documentation&lt;/a> for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href="https://hexo.io/docs/troubleshooting.html">troubleshooting&lt;/a> or you can ask me on &lt;a href="https://github.com/hexojs/hexo/issues">GitHub&lt;/a>.&lt;/p>
 &lt;h2 id="quick-start">Quick Start&lt;/h2>
 &lt;h3 id="create-a-new-post">Create a new post&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo new &lt;span class="s2">&amp;#34;My New Post&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/writing.html">Writing&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo new &lt;span class="s2">&amp;#34;My New Post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/writing.html">Writing&lt;/a>&lt;/p>
 &lt;h3 id="run-server">Run server&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo server
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/server.html">Server&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/server.html">Server&lt;/a>&lt;/p>
 &lt;h3 id="generate-static-files">Generate static files&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo generate
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/generating.html">Generating&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo generate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/generating.html">Generating&lt;/a>&lt;/p>
 &lt;h3 id="deploy-to-remote-sites">Deploy to remote sites&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>$ hexo deploy
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ hexo deploy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>More info: &lt;a href="https://hexo.io/docs/deployment.html">Deployment&lt;/a>&lt;/p></description></item><item><title>Re-Setup Octopress on different laptop</title><link>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</link><pubDate>Wed, 04 May 2016 22:07:46 +0800</pubDate><guid>https://jimmyliao.net/post/2016-05-04-resetup-octopress-on-different-machine/</guid><description>
 &lt;p>You will learn how to create blog post on different laptop.&lt;/p>
 &lt;p>Note: I break my old octopress system, give up to restore and move to hexo since I wrote Node.JS for some projects.&lt;/p></description></item><item><title>How to add Category list into your octopress</title><link>https://jimmyliao.net/post/2014-01-19-how-to-add-category-list-into-your-octopress/</link><pubDate>Sun, 19 Jan 2014 23:42:07 +0800</pubDate><guid>https://jimmyliao.net/post/2014-01-19-how-to-add-category-list-into-your-octopress/</guid><description>
 &lt;p>Following Eddie's blog entry. Thank you, Eddie! :-)&lt;/p>
@@ -688,16 +681,16 @@ Creating new post: source/_posts/2014-03-15-octopress-from-zero-dot-dot-dot-agai
 &lt;p>this page uses the &lt;a href="http://daringfireball.net/projects/markdown/">Markdown&lt;/a> syntax. (or refer: &lt;a href="https://help.github.com/articles/github-flavored-markdo">https://help.github.com/articles/github-flavored-markdo&lt;/a>
 wn)&lt;/p>
 &lt;p>#1. /README.md&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>This file is to describe the myconfig file structure and how to use
-&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="tweaks">Tweaks:&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">This file is to describe the myconfig file structure and how to use
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="tweaks">Tweaks:&lt;/h1>
 &lt;p>&lt;a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress&lt;/a>
 Edit the Rakefile and look for this line:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>system &amp;#34;git push origin #{deploy_branch}&amp;#34;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>system &amp;#34;git push origin +#{deploy_branch}&amp;#34;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the command&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>rake deploy
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="references">References:&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">system &amp;#34;git push origin #{deploy_branch}&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alter the line by adding a plus (+) before the #{deploy_branch} tag:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">system &amp;#34;git push origin +#{deploy_branch}&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the command&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">rake deploy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="references">References:&lt;/h2>
 &lt;p>&lt;a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">http://zespia.tw/blog/2012/01/14/hello-octopress/&lt;/a>
 &lt;a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/&lt;/a>&lt;/p>
 &lt;p>git pull origin master&lt;/p>

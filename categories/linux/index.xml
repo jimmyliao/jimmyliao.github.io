@@ -3,17 +3,16 @@
 &lt;ol>
 &lt;li>
 &lt;p>You have to check the pod status by checking log, but the pod NAME may not be identical.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY STATUS RESTARTS AGE
-&lt;span class="ln">4&lt;/span>primehub-bootstrap-c9dng 1/1 Running 0 21h
-&lt;span class="ln">5&lt;/span>
-&lt;span class="ln">6&lt;/span>$ kubectl -n hub logs primehub-bootstrap-c9dng
-&lt;span class="ln">7&lt;/span>...
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
-&lt;span class="ln">2&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY STATUS RESTARTS AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">primehub-bootstrap-c9dng 1/1 Running 0 21h
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">$ kubectl -n hub logs primehub-bootstrap-c9dng
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>kubectl&lt;/code> has &lt;code>--no-headers&lt;/code> option to output without header column&lt;/li>
 &lt;li>&lt;code>cut -d' ' -f&lt;/code> to get the first column after trimming spaces&lt;/li>
 &lt;li>the last pipeline pass &lt;code>xargs&lt;/code> strings &lt;code>X&lt;/code> to the &lt;code>kubectl -n hub logs X&lt;/code> last parameter&lt;/li>
@@ -21,16 +20,16 @@
 &lt;/li>
 &lt;li>
 &lt;p>You may have several Custom Resources, would like to delete them all.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
-&lt;span class="ln">4&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
-&lt;span class="ln">5&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>You want to dump the pod which is not Running/Completed.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>grep &lt;code>-v&lt;/code> for inverse-match, &lt;code>-e&lt;/code> for pattern&lt;/li>
 &lt;li>&lt;code>bash -c&lt;/code> means the commands are read from &lt;code>string&lt;/code>&lt;/li>
 &lt;/ul>

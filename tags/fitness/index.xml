@@ -13,33 +13,32 @@
 &lt;h3 id="血壓">血壓&lt;/h3>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-10-blood.png" alt="">&lt;/p>
 &lt;p>首先先確定 Obsidian 關閉 Safe mode，透過 Community plugin 安裝 Tracker plugin。然後根據 Examples\diary 裡面&lt;a href="https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/diary/2021-01-01.md">範例&lt;/a> 看一下 Blood 相關的 logging，我的紀錄方式是:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>---
-&lt;span class="ln">2&lt;/span>tags: blood
-&lt;span class="ln">3&lt;/span>bp:
-&lt;span class="ln">4&lt;/span> systolic: 149
-&lt;span class="ln">5&lt;/span> diastolic: 100
-&lt;span class="ln">6&lt;/span>heart: 69
-&lt;span class="ln">7&lt;/span>---
-&lt;span class="ln">8&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>圖表的部份:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>searchType: frontmatter
-&lt;span class="ln"> 2&lt;/span>searchTarget: bp.systolic, bp.diastolic
-&lt;span class="ln"> 3&lt;/span>datasetName: systolic, diastolic
-&lt;span class="ln"> 4&lt;/span>folder: log/blood
-&lt;span class="ln"> 5&lt;/span>startDate: 2021-09-03
-&lt;span class="ln"> 6&lt;/span>endDate: 2021-09-10
-&lt;span class="ln"> 7&lt;/span>line:
-&lt;span class="ln"> 8&lt;/span> title: Blood Pressures
-&lt;span class="ln"> 9&lt;/span> yAxisLabel: Systolic, Diastolic
-&lt;span class="ln">10&lt;/span> yAxisUnit: mmHg
-&lt;span class="ln">11&lt;/span> yMin: 110, 80
-&lt;span class="ln">12&lt;/span> yMax: 160, 120
-&lt;span class="ln">13&lt;/span> yAxisLocation: left, right
-&lt;span class="ln">14&lt;/span> yAxisColor: yellow, green
-&lt;span class="ln">15&lt;/span> yAxisLabelColor: yellow, green
-&lt;span class="ln">16&lt;/span> lineColor: yellow, green
-&lt;span class="ln">17&lt;/span> showLegend: true
-&lt;span class="ln">18&lt;/span> legendPosition: right
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>至少今天數值看起來還算安心，也該來早點上床睡覺了。&lt;/p></description></item><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.net/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-03-running-stat/</guid><description>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">tags: blood
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">bp:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> systolic: 149
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> diastolic: 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">heart: 69
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>圖表的部份:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">searchType: frontmatter
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">searchTarget: bp.systolic, bp.diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">datasetName: systolic, diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">folder: log/blood
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">startDate: 2021-09-03
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">endDate: 2021-09-10
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">line:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> title: Blood Pressures
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> yAxisLabel: Systolic, Diastolic
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> yAxisUnit: mmHg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> yMin: 110, 80
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> yMax: 160, 120
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> yAxisLocation: left, right
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> yAxisColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> yAxisLabelColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> lineColor: yellow, green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> showLegend: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> legendPosition: right
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>至少今天數值看起來還算安心，也該來早點上床睡覺了。&lt;/p></description></item><item><title>跑步日記 2020-09-03</title><link>https://jimmyliao.net/post/2020-09-03-running-stat/</link><pubDate>Thu, 03 Sep 2020 15:29:45 +0800</pubDate><guid>https://jimmyliao.net/post/2020-09-03-running-stat/</guid><description>
 &lt;p>午安，一早重訓到快吐，中午速度調到養生模式 😞&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2020-09-03-running-stat.jpg" alt="">&lt;/p></description></item></channel></rss>

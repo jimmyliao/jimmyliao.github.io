@@ -3,17 +3,16 @@
 &lt;ol>
 &lt;li>
 &lt;p>You have to check the pod status by checking log, but the pod NAME may not be identical.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY STATUS RESTARTS AGE
-&lt;span class="ln">4&lt;/span>primehub-bootstrap-c9dng 1/1 Running 0 21h
-&lt;span class="ln">5&lt;/span>
-&lt;span class="ln">6&lt;/span>$ kubectl -n hub logs primehub-bootstrap-c9dng
-&lt;span class="ln">7&lt;/span>...
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
-&lt;span class="ln">2&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY STATUS RESTARTS AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">primehub-bootstrap-c9dng 1/1 Running 0 21h
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">$ kubectl -n hub logs primehub-bootstrap-c9dng
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>so you can just use like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n hub get pod --no-headers | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl -n hub logs
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>kubectl&lt;/code> has &lt;code>--no-headers&lt;/code> option to output without header column&lt;/li>
 &lt;li>&lt;code>cut -d' ' -f&lt;/code> to get the first column after trimming spaces&lt;/li>
 &lt;li>the last pipeline pass &lt;code>xargs&lt;/code> strings &lt;code>X&lt;/code> to the &lt;code>kubectl -n hub logs X&lt;/code> last parameter&lt;/li>
@@ -21,16 +20,16 @@
 &lt;/li>
 &lt;li>
 &lt;p>You may have several Custom Resources, would like to delete them all.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
-&lt;span class="ln">4&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
-&lt;span class="ln">5&lt;/span>customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get crd | grep primehub | cut -d&amp;#39; &amp;#39; -f1 | xargs kubectl delete crd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;datasets.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;images.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">customresourcedefinition.apiextensions.k8s.io &amp;#34;instancetypes.primehub.io&amp;#34; deleted
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>You want to dump the pod which is not Running/Completed.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl -n kube-system get pod --no-headers | grep -v -e Running -e Completed | cut -d&amp;#39; &amp;#39; -f1 | xargs -I {} bash -c &amp;#39;kubectl -n kube-system get pod {} -o yaml &amp;gt; {}.yaml&amp;#39;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>grep &lt;code>-v&lt;/code> for inverse-match, &lt;code>-e&lt;/code> for pattern&lt;/li>
 &lt;li>&lt;code>bash -c&lt;/code> means the commands are read from &lt;code>string&lt;/code>&lt;/li>
 &lt;/ul>
@@ -64,32 +63,31 @@
 &lt;p>There are two &lt;a href="https://docs.portainer.io/v/ce-2.9/admin/environments/add/kubernetes">deploy methods&lt;/a> onto your clusters: NodePort and Load Balancer. Here I use Load Balancer:&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
-&lt;span class="ln"> 2&lt;/span> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span> % Total % Received % Xferd Average Speed Time Time Time Current
-&lt;span class="ln"> 5&lt;/span> Dload Upload Total Spent Left Speed
-&lt;span class="ln"> 6&lt;/span>100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
-&lt;span class="ln"> 7&lt;/span>namespace/portainer created
-&lt;span class="ln"> 8&lt;/span>serviceaccount/portainer-sa-clusteradmin created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
-&lt;span class="ln">10&lt;/span>service/portainer-agent created
-&lt;span class="ln">11&lt;/span>service/portainer-agent-headless created
-&lt;span class="ln">12&lt;/span>deployment.apps/portainer-agent created
-&lt;span class="ln">13&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> % Total % Received % Xferd Average Speed Time Time Time Current
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> Dload Upload Total Spent Left Speed
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">namespace/portainer created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">serviceaccount/portainer-sa-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/portainer-agent created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">service/portainer-agent-headless created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">deployment.apps/portainer-agent created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
 &lt;li>Check the deploying&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get svc -A
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
-&lt;span class="ln">4&lt;/span> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
-&lt;span class="ln">5&lt;/span> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
-&lt;span class="ln">6&lt;/span>...
-&lt;span class="ln">7&lt;/span>portainer portainer-agent LoadBalancer
-&lt;span class="ln">8&lt;/span> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
-&lt;span class="ln">9&lt;/span> 9001:30434/TCP 10s
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get svc -A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">portainer portainer-agent LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> 9001:30434/TCP 10s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-01.png" alt="">&lt;/p>
 &lt;ol start="4">
 &lt;li>
@@ -100,23 +98,23 @@
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-02.png" alt="">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ kubectl apply -f \
-&lt;span class="ln"> 2&lt;/span>https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span>serviceaccount/metrics-server created
-&lt;span class="ln"> 5&lt;/span>clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
-&lt;span class="ln"> 6&lt;/span>clusterrole.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln"> 7&lt;/span>rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
-&lt;span class="ln"> 8&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln">10&lt;/span>service/metrics-server created
-&lt;span class="ln">11&lt;/span>deployment.apps/metrics-server created
-&lt;span class="ln">12&lt;/span>apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get deployment metrics-server -n kube-system
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY UP-TO-DATE AVAILABLE AGE
-&lt;span class="ln">4&lt;/span>metrics-server 1/1 1 1 38s
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ kubectl apply -f \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">serviceaccount/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">deployment.apps/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get deployment metrics-server -n kube-system
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY UP-TO-DATE AVAILABLE AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">metrics-server 1/1 1 1 38s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
 &lt;li>Finally to see it on the Portainer Console.
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-03.png" alt="">&lt;/li>
 &lt;/ol>
@@ -143,56 +141,56 @@
 &lt;p>驗證在該台主機上可以透過 K9S 看到 Cluster 資訊沒問題！&lt;/p>
 &lt;p>接著來到這篇的主題：透過 laptop 連到遠端的主機&lt;/p>
 &lt;p>首先，你會發現即使你知道主機的 public IP，嘗試透過 &lt;code>~/.kube/config&lt;/code> 並放到 laptop 的 kube config&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>~$ cat ~/.kube/config
-&lt;span class="ln"> 2&lt;/span>apiVersion: v1
-&lt;span class="ln"> 3&lt;/span>clusters:
-&lt;span class="ln"> 4&lt;/span>- cluster:
-&lt;span class="ln"> 5&lt;/span> certificate-authority-data: &amp;lt;YOUR_CERT_DATA&amp;gt;
-&lt;span class="ln"> 6&lt;/span> server: https://127.0.0.1:16443
-&lt;span class="ln"> 7&lt;/span> name: microk8s-cluster
-&lt;span class="ln"> 8&lt;/span>contexts:
-&lt;span class="ln"> 9&lt;/span>- context:
-&lt;span class="ln">10&lt;/span> cluster: microk8s-cluster
-&lt;span class="ln">11&lt;/span> user: admin
-&lt;span class="ln">12&lt;/span> name: microk8s
-&lt;span class="ln">13&lt;/span>current-context: microk8s
-&lt;span class="ln">14&lt;/span>kind: Config
-&lt;span class="ln">15&lt;/span>preferences: &lt;span class="o">{}&lt;/span>
-&lt;span class="ln">16&lt;/span>users:
-&lt;span class="ln">17&lt;/span>- name: admin
-&lt;span class="ln">18&lt;/span> user:
-&lt;span class="ln">19&lt;/span> token: &amp;lt;YOUR_-_TOKEN&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改對應的 &lt;code>server: https://&amp;lt;EC2_PUBLIC_IP&amp;gt;:16443&lt;/code> ，也打開 EC2 上的 &lt;code>16443&lt;/code> port&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">~$ cat ~/.kube/config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">apiVersion: v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">clusters:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">- cluster:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> certificate-authority-data: &amp;lt;YOUR_CERT_DATA&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> server: https://127.0.0.1:16443
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> name: microk8s-cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">contexts:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">- context:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> cluster: microk8s-cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> user: admin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> name: microk8s
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">current-context: microk8s
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">kind: Config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">preferences: &lt;span class="o">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">users:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">- name: admin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> user:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> token: &amp;lt;YOUR_-_TOKEN&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改對應的 &lt;code>server: https://&amp;lt;EC2_PUBLIC_IP&amp;gt;:16443&lt;/code> ，也打開 EC2 上的 &lt;code>16443&lt;/code> port&lt;/p>
 &lt;p>發現怎麼在打 &lt;code>kubectl get node&lt;/code> 時找不到&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>Unable to connect to the server: x509: certificate is valid &lt;span class="k">for&lt;/span> 127.0.0.1, 10.152.183.1, 192.168.1.123, not &amp;lt;EC2_PUBLIC_IP&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得先檢查 MicroK8s 的 metrics-server 有沒有 enabled。有 enabled 的話才不會在 K9S 上面看到 CPU/MEM 是 n/a&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>~$ microk8s status
-&lt;span class="ln"> 2&lt;/span>microk8s is running
-&lt;span class="ln"> 3&lt;/span>high-availability: no
-&lt;span class="ln"> 4&lt;/span> datastore master nodes: 127.0.0.1:19001
-&lt;span class="ln"> 5&lt;/span> datastore standby nodes: none
-&lt;span class="ln"> 6&lt;/span>addons:
-&lt;span class="ln"> 7&lt;/span> enabled:
-&lt;span class="ln"> 8&lt;/span> dns &lt;span class="c1"># CoreDNS&lt;/span>
-&lt;span class="ln"> 9&lt;/span> ha-cluster &lt;span class="c1"># Configure high availability on the current node&lt;/span>
-&lt;span class="ln">10&lt;/span> metrics-server &lt;span class="c1"># K8s Metrics Server for API access to service metrics&lt;/span>
-&lt;span class="ln">11&lt;/span> rbac &lt;span class="c1"># Role-Based Access Control for authorisation&lt;/span>
-&lt;span class="ln">12&lt;/span> storage &lt;span class="c1"># Storage class; allocates storage from host directory&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後找了一些文件，有一說是在kube-apiserver設定檔案，新增 &lt;code>--bind-address&lt;/code>，像是&lt;a href="https://microk8s.io/docs/external-lma">這個&lt;/a> 跟 &lt;a href="https://discuss.kubernetes.io/t/microk8s-with-an-external-lma/13595">這個&lt;/a>。重啟 MicroK8s 之後沒什麼幫助。直到我找到 &lt;a href="https://discuss.kubernetes.io/t/is-there-a-way-to-access-microk8s-using-kubectl-outside-the-local-network/15488">這篇&lt;/a>，內容大意是說，像是 EC2 這種 instance 的 Public IP 並沒有實際在 network interface 指定，而是透過 EC2 方式給定一組 Public IP 指定給這個 instance，就需要在 &lt;code>/var/snap/microk8s/current/certs/csr.conf.template&lt;/code> 裡面新增一個 IP&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln"> 1&lt;/span>&lt;span class="o">[&lt;/span> alt_names &lt;span class="o">]&lt;/span>
-&lt;span class="ln"> 2&lt;/span>DNS.1 &lt;span class="o">=&lt;/span> kubernetes
-&lt;span class="ln"> 3&lt;/span>DNS.2 &lt;span class="o">=&lt;/span> kubernetes.default
-&lt;span class="ln"> 4&lt;/span>DNS.3 &lt;span class="o">=&lt;/span> kubernetes.default.svc
-&lt;span class="ln"> 5&lt;/span>DNS.4 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster
-&lt;span class="ln"> 6&lt;/span>DNS.5 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster.local
-&lt;span class="ln"> 7&lt;/span>IP.1 &lt;span class="o">=&lt;/span> 127.0.0.1
-&lt;span class="ln"> 8&lt;/span>IP.2 &lt;span class="o">=&lt;/span> 10.152.183.1
-&lt;span class="ln"> 9&lt;/span>IP.99 &lt;span class="o">=&lt;/span> &amp;lt;EC2_PUBLIC_IP&amp;gt;
-&lt;span class="ln">10&lt;/span>&lt;span class="c1">#MOREIPS&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得這裡千萬別自認為要直接指定 &lt;code>IP.3&lt;/code> ，而是要指定從 &lt;code>IP.100&lt;/code> 或是往下遞減，這邊先給個 &lt;code>IP.99&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">Unable to connect to the server: x509: certificate is valid &lt;span class="k">for&lt;/span> 127.0.0.1, 10.152.183.1, 192.168.1.123, not &amp;lt;EC2_PUBLIC_IP&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得先檢查 MicroK8s 的 metrics-server 有沒有 enabled。有 enabled 的話才不會在 K9S 上面看到 CPU/MEM 是 n/a&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">~$ microk8s status
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">microk8s is running
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">high-availability: no
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> datastore master nodes: 127.0.0.1:19001
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> datastore standby nodes: none
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">addons:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> enabled:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> dns &lt;span class="c1"># CoreDNS&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> ha-cluster &lt;span class="c1"># Configure high availability on the current node&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> metrics-server &lt;span class="c1"># K8s Metrics Server for API access to service metrics&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> rbac &lt;span class="c1"># Role-Based Access Control for authorisation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> storage &lt;span class="c1"># Storage class; allocates storage from host directory&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後找了一些文件，有一說是在kube-apiserver設定檔案，新增 &lt;code>--bind-address&lt;/code>，像是&lt;a href="https://microk8s.io/docs/external-lma">這個&lt;/a> 跟 &lt;a href="https://discuss.kubernetes.io/t/microk8s-with-an-external-lma/13595">這個&lt;/a>。重啟 MicroK8s 之後沒什麼幫助。直到我找到 &lt;a href="https://discuss.kubernetes.io/t/is-there-a-way-to-access-microk8s-using-kubectl-outside-the-local-network/15488">這篇&lt;/a>，內容大意是說，像是 EC2 這種 instance 的 Public IP 並沒有實際在 network interface 指定，而是透過 EC2 方式給定一組 Public IP 指定給這個 instance，就需要在 &lt;code>/var/snap/microk8s/current/certs/csr.conf.template&lt;/code> 裡面新增一個 IP&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="o">[&lt;/span> alt_names &lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">DNS.1 &lt;span class="o">=&lt;/span> kubernetes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">DNS.2 &lt;span class="o">=&lt;/span> kubernetes.default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">DNS.3 &lt;span class="o">=&lt;/span> kubernetes.default.svc
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">DNS.4 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">DNS.5 &lt;span class="o">=&lt;/span> kubernetes.default.svc.cluster.local
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">IP.1 &lt;span class="o">=&lt;/span> 127.0.0.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">IP.2 &lt;span class="o">=&lt;/span> 10.152.183.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">IP.99 &lt;span class="o">=&lt;/span> &amp;lt;EC2_PUBLIC_IP&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="c1">#MOREIPS&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>記得這裡千萬別自認為要直接指定 &lt;code>IP.3&lt;/code> ，而是要指定從 &lt;code>IP.100&lt;/code> 或是往下遞減，這邊先給個 &lt;code>IP.99&lt;/code>。&lt;/p>
 &lt;p>改好並 restart microk8s 之後就可以遠端執行 &lt;code>kubectl&lt;/code> 啦！&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="ln">1&lt;/span>~$ kubectl get node
-&lt;span class="ln">2&lt;/span>NAME STATUS ROLES AGE VERSION
-&lt;span class="ln">3&lt;/span>ip-10-40-0-11 Ready &amp;lt;none&amp;gt; 4d1h v1.19.13-34+939585d5fb6fa7
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後就可以快快樂樂的在 laptop 直接監控 Cluster 囉～&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">~$ kubectl get node
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">NAME STATUS ROLES AGE VERSION
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ip-10-40-0-11 Ready &amp;lt;none&amp;gt; 4d1h v1.19.13-34+939585d5fb6fa7
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然後就可以快快樂樂的在 laptop 直接監控 Cluster 囉～&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2021-09-01-k9s.png" alt="">&lt;/p></description></item></channel></rss>

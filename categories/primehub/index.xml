@@ -25,10 +25,10 @@
 &lt;p>透過 Start Notebook Server，可以透過 Terminal 確認一下安裝的版本&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ env | grep JUPYTER_IMAGE_SPEC
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>$ pip list | grep Keras
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-05.png" alt="">&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ env | grep JUPYTER_IMAGE_SPEC
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">$ pip list | grep Keras
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://jimmyliao.net/images/2021-11-13-crane-tf-05.png" alt="">&lt;/p>
 &lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item><item><title>Using Crane to Build Custom Image with 1-Click PrimeHub</title><link>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</link><pubDate>Fri, 12 Nov 2021 23:50:16 +0800</pubDate><guid>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</guid><description>
 &lt;p>&lt;strong>先快速來個中文版&lt;/strong>&lt;/p>
 &lt;p>&lt;a href="https://medium.com/infuseai/crane-the-minimalist-container-image-builder-68253722be8c">Crane&lt;/a> 是 InfuseAI 剛推出的&lt;a href="https://github.com/InfuseAI/crane"> Open Source Project&lt;/a>，簡言之就是可以在已經&lt;a href="https://docs.docker.com/engine/install/">裝好 Docker&lt;/a> 的電腦上，免除撰寫 Dockerfile ，也免除透過 Command 方式編譯 Docker Image。另外也提供快速把自己在 Docker Hub 編譯好的 Image 加入 PrimeHub 環境裡，以下的範例，就以之前介紹的 &lt;a href="http://localhost:1313/post/2021-09-24-primehub-oneclick/">1-Click 環境&lt;/a>，&lt;a href="https://docs.primehub.io/docs/guide_manual/admin-image#build-custom-image">客製化 Docker Image&lt;/a>，裡面包含 PrimeHub 新推出的 &lt;a href="https://github.com/InfuseAI/primehub-python-sdk">SDK&lt;/a> 。來看看吧～&lt;/p>
@@ -104,32 +104,31 @@
 &lt;p>There are two &lt;a href="https://docs.portainer.io/v/ce-2.9/admin/environments/add/kubernetes">deploy methods&lt;/a> onto your clusters: NodePort and Load Balancer. Here I use Load Balancer:&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
-&lt;span class="ln"> 2&lt;/span> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span> % Total % Received % Xferd Average Speed Time Time Time Current
-&lt;span class="ln"> 5&lt;/span> Dload Upload Total Spent Left Speed
-&lt;span class="ln"> 6&lt;/span>100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
-&lt;span class="ln"> 7&lt;/span>namespace/portainer created
-&lt;span class="ln"> 8&lt;/span>serviceaccount/portainer-sa-clusteradmin created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
-&lt;span class="ln">10&lt;/span>service/portainer-agent created
-&lt;span class="ln">11&lt;/span>service/portainer-agent-headless created
-&lt;span class="ln">12&lt;/span>deployment.apps/portainer-agent created
-&lt;span class="ln">13&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ curl -L https://downloads.portainer.io/portainer-agent-ce29-k8s-lb.yaml \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> -o portainer-agent-k8s.yaml; kubectl apply -f portainer-agent-k8s.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> % Total % Received % Xferd Average Speed Time Time Time Current
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> Dload Upload Total Spent Left Speed
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">100 1593 100 1593 0 0 2482 0 --:--:-- --:--:-- --:--:-- 2532
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">namespace/portainer created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">serviceaccount/portainer-sa-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/portainer-crb-clusteradmin created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/portainer-agent created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">service/portainer-agent-headless created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">deployment.apps/portainer-agent created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
 &lt;li>Check the deploying&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get svc -A
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
-&lt;span class="ln">4&lt;/span> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
-&lt;span class="ln">5&lt;/span> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
-&lt;span class="ln">6&lt;/span>...
-&lt;span class="ln">7&lt;/span>portainer portainer-agent LoadBalancer
-&lt;span class="ln">8&lt;/span> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
-&lt;span class="ln">9&lt;/span> 9001:30434/TCP 10s
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get svc -A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">ingress-nginx nginx-ingress-ingress-nginx-controller LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> 172.20.239.95 xxxx-xxxxxxxxxxxxxxxx.elb.us-east-1.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> 80:31297/TCP,443:31105/TCP,2222:30602/TCP 35m
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">portainer portainer-agent LoadBalancer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> 172.20.127.46 xxx-1518996078.us-east-1.elb.amazonaws.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> 9001:30434/TCP 10s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>and this
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-01.png" alt="">&lt;/p>
 &lt;ol start="4">
 &lt;li>
@@ -140,23 +139,23 @@
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-02.png" alt="">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln"> 1&lt;/span>$ kubectl apply -f \
-&lt;span class="ln"> 2&lt;/span>https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-&lt;span class="ln"> 3&lt;/span>
-&lt;span class="ln"> 4&lt;/span>serviceaccount/metrics-server created
-&lt;span class="ln"> 5&lt;/span>clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
-&lt;span class="ln"> 6&lt;/span>clusterrole.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln"> 7&lt;/span>rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
-&lt;span class="ln"> 8&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
-&lt;span class="ln"> 9&lt;/span>clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
-&lt;span class="ln">10&lt;/span>service/metrics-server created
-&lt;span class="ln">11&lt;/span>deployment.apps/metrics-server created
-&lt;span class="ln">12&lt;/span>apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="ln">1&lt;/span>$ kubectl get deployment metrics-server -n kube-system
-&lt;span class="ln">2&lt;/span>
-&lt;span class="ln">3&lt;/span>NAME READY UP-TO-DATE AVAILABLE AGE
-&lt;span class="ln">4&lt;/span>metrics-server 1/1 1 1 38s
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">$ kubectl apply -f \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">serviceaccount/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">service/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">deployment.apps/metrics-server created
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">$ kubectl get deployment metrics-server -n kube-system
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">NAME READY UP-TO-DATE AVAILABLE AGE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">metrics-server 1/1 1 1 38s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
 &lt;li>Finally to see it on the Portainer Console.
 &lt;img src="https://jimmyliao.net/images/2021-11-06-portainer-03.png" alt="">&lt;/li>
 &lt;/ol>
