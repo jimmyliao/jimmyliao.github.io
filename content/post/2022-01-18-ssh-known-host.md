@@ -22,14 +22,12 @@ tags:
 
 Got Host key verification failed while SSH
 
-```
-WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
-
-The fingerprint for the ECDSA key sent by the remote host is SHA256:xxx. Please contact your system administrator. 
-Add correct host key in xxx/.ssh/known_hosts to get rid of this message. Offending ECDSA key in xxx/.ssh/known_hosts:12 ECDSA host key for xxx.yyy.zzz.aaa has changed and you have requested strict checking. Host key verification failed.
-```
-
 <!--more-->
+
+ 
+> ```WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! The fingerprint for the ECDSA key sent by the remote host is SHA256:xxx. Please contact your system administrator. Add correct host key in xxx/.ssh/known_hosts to get rid of this message. Offending ECDSA key in xxx/.ssh/known_hosts:12 ECDSA host key for xxx.yyy.zzz.aaa has changed and you have requested strict checking. Host key verification failed.```
+
+Resolution:
 ```
 ssh-keygen -R <YOUR_TARGET_HOST>
 # Host <YOUR_TARGET_HOST> found: line 200
