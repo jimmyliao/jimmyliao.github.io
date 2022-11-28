@@ -37,6 +37,6 @@ jobs:
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
-          # user_name: <jimmyliao>
-          # user_email: <jimmyliao@jimmyliao.net>
+          user_name: <jimmyliao>
+          user_email: <jimmyliao@jimmyliao.net>
           publish_branch: gh-pages
