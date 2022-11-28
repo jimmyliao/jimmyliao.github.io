@@ -17,11 +17,18 @@ tags:
   - About
 ---
 
-Restart the blogging. 用這個 token [expiration](https://jimmyliao.net/post/2022-04-24-hugo-regenerate-token/) 提醒自己每一陣子就要寫點東西.
+提醒自己每一陣子就要寫點東西.
 
-然後才發現 NodeJS 版號已經到 v16 了?!
-https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/
+<!--more-->
 
+1. 用這個 token [expiration](https://jimmyliao.net/post/2022-04-24-hugo-regenerate-token/) 
+
+
+2. 然後才發現 NodeJS 版號已經到 [v16](https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/) 了?!
+
+
+
+Ref:
 https://discourse.julialang.org/t/node-js-12-actions-deprecation-warning-on-github/88718
 
 
