@@ -1,5 +1,5 @@
 ---
-title: "Azure 的五十道...之 Azure ML SDK 版本檢查"
+title: "Azure 的五十個小劇場...之 Azure ML SDK 版本檢查"
 date: 2022-11-25T08:10:36+08:00
 description: "取個自己記得住的連載標題好難 >_<"
 featured: false
