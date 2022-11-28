@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 25 Nov 2022 08:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure 的五十道...之 Azure ML SDK 版本檢查</title><link>https://jimmyliao.net/post/2022-11-25-aml-check-sdk-ver/</link><pubDate>Fri, 25 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-25-aml-check-sdk-ver/</guid><description>
-&lt;p>Azure ML SDK 兩個版本共存，就寫個檢查版號當作 Azure 學習筆記開頭吧。&lt;/p>
-&lt;p>因為要 Demo Azure ML SDK 的環境有 &lt;a href="https://learn.microsoft.com/en-us/azure/machine-learning/v1/introduction">v1&lt;/a> and &lt;a href="https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme?view=azure-python">v2&lt;/a>，為了快速檢查就先弄個 bash shell 。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c1"># Install Azure ML SDK v1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="c1"># pip install -U azureml-core&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="c1"># Install Azure ML SDK v2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">pip install -U azure-ai-ml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">wget https://raw.githubusercontent.com/jimmyliao/amlworkshop/main/util/check_sdk.sh -O ./check_sdk.sh
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">chmod a+x ./check_sdk.sh
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">./check_sdk.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab_checkenv/aml_env_check.ipynb">連結&lt;/a>&lt;/p></description></item><item><title>解決更新到 macOS Monterery 之後 VIM 9.0 出現 YouCompleteMe unavailable 的問題</title><link>https://jimmyliao.net/post/2022-11-28-macos-vim/</link><pubDate>Fri, 25 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-28-macos-vim/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Mon, 28 Nov 2022 08:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>解決更新到 macOS Monterery 之後 VIM 9.0 出現 YouCompleteMe unavailable 的問題</title><link>https://jimmyliao.net/post/2022-11-28-macos-vim/</link><pubDate>Mon, 28 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-28-macos-vim/</guid><description>
 &lt;p>久久沒打開 macbook，想說更新到 12.6.1 可以再度撐一陣子，沒想到打開 VIM 時出現&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&amp;gt; vim
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">YouCompleteMe unavailable: requires Vim compiled with Python &lt;span class="o">(&lt;/span>2.7.1+ or 3.5.1+&lt;span class="o">)&lt;/span> support.
@@ -27,7 +13,21 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&amp;gt; brew install vim
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">...&lt;span class="o">(&lt;/span>coffee &lt;span class="nb">break&lt;/span> time: &lt;span class="m">30&lt;/span> mins?!&lt;span class="o">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>收工！&lt;/p>
-&lt;p>Ref: &lt;a href="https://clay-atlas.com/us/blog/2021/09/04/mac-os-en-install-vim-support-python3/">https://clay-atlas.com/us/blog/2021/09/04/mac-os-en-install-vim-support-python3/&lt;/a>&lt;/p></description></item><item><title>Restart the blogging</title><link>https://jimmyliao.net/post/2022-11-20-restart-blogging/</link><pubDate>Sun, 20 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-20-restart-blogging/</guid><description>
+&lt;p>Ref: &lt;a href="https://clay-atlas.com/us/blog/2021/09/04/mac-os-en-install-vim-support-python3/">https://clay-atlas.com/us/blog/2021/09/04/mac-os-en-install-vim-support-python3/&lt;/a>&lt;/p></description></item><item><title>Azure 的五十道...之 Azure ML SDK 版本檢查</title><link>https://jimmyliao.net/post/2022-11-25-aml-check-sdk-ver/</link><pubDate>Fri, 25 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-25-aml-check-sdk-ver/</guid><description>
+&lt;p>Azure ML SDK 兩個版本共存，就寫個檢查版號當作 Azure 學習筆記開頭吧。&lt;/p>
+&lt;p>因為要 Demo Azure ML SDK 的環境有 &lt;a href="https://learn.microsoft.com/en-us/azure/machine-learning/v1/introduction">v1&lt;/a> and &lt;a href="https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme?view=azure-python">v2&lt;/a>，為了快速檢查就先弄個 bash shell 。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c1"># Install Azure ML SDK v1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="c1"># pip install -U azureml-core&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="c1"># Install Azure ML SDK v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">pip install -U azure-ai-ml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">wget https://raw.githubusercontent.com/jimmyliao/amlworkshop/main/util/check_sdk.sh -O ./check_sdk.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">chmod a+x ./check_sdk.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">./check_sdk.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab_checkenv/aml_env_check.ipynb">連結&lt;/a>&lt;/p></description></item><item><title>Restart the blogging</title><link>https://jimmyliao.net/post/2022-11-20-restart-blogging/</link><pubDate>Sun, 20 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-20-restart-blogging/</guid><description>
 &lt;p>提醒自己每一陣子就要寫點東西.&lt;/p>
 &lt;ol>
 &lt;li>
