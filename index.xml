@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 20 Nov 2022 08:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Restart the blogging</title><link>https://jimmyliao.net/post/2022-11-20-restart-blogging/</link><pubDate>Sun, 20 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-20-restart-blogging/</guid><description>
-&lt;p>Restart the blogging. 用這個 token &lt;a href="https://jimmyliao.net/post/2022-04-24-hugo-regenerate-token/">expiration&lt;/a> 提醒自己每一陣子就要寫點東西.&lt;/p>
-&lt;p>然後才發現 NodeJS 版號已經到 v16 了?!
-&lt;a href="https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/">https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://discourse.julialang.org/t/node-js-12-actions-deprecation-warning-on-github/88718">https://discourse.julialang.org/t/node-js-12-actions-deprecation-warning-on-github/88718&lt;/a>&lt;/p></description></item><item><title>JimmyLiao.README (2022/07) - Cloud Solution Architect @ Microsoft</title><link>https://jimmyliao.net/post/2022-07-06-microsoft/</link><pubDate>Wed, 06 Jul 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-07-06-microsoft/</guid><description>
+&lt;p>提醒自己每一陣子就要寫點東西.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>用這個 token &lt;a href="https://jimmyliao.net/post/2022-04-24-hugo-regenerate-token/">expiration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>然後才發現 NodeJS 版號已經到 &lt;a href="https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/">v16&lt;/a> 了?!&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Ref:
+&lt;a href="https://discourse.julialang.org/t/node-js-12-actions-deprecation-warning-on-github/88718">https://discourse.julialang.org/t/node-js-12-actions-deprecation-warning-on-github/88718&lt;/a>&lt;/p></description></item><item><title>JimmyLiao.README (2022/07) - Cloud Solution Architect @ Microsoft</title><link>https://jimmyliao.net/post/2022-07-06-microsoft/</link><pubDate>Wed, 06 Jul 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-07-06-microsoft/</guid><description>
 &lt;p>This is the README as Cloud Solution Architect / Customer Engineer at &lt;a href="https://www.microsoft.com/">Microsoft&lt;/a>&lt;/p>
 &lt;p>After gap month, I’m happy to share that I’m starting a new position as the Cloud Solution Architect (Engineering) - Data/AI, Customer Success Unit. Will keep updated what I learn during this journey. :-)&lt;/p>
 &lt;p>&lt;img src="https://jimmyliao.net/images/2022/2022-07/2022-07-06-microsoft-01.jpg" alt="">&lt;/p>
