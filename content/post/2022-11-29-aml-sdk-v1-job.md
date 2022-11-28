@@ -19,6 +19,9 @@ tags:
 
 底下透過 SDK v1 的 ScriptRunConfig，來 Submit 一個 training job。另外也透過 Colab 的環境展示一下快速整合 AML SDK。
 
+<!--more-->
+
+
 準備動作：
 - Azure Subscription ID
 - AML Workspace name
