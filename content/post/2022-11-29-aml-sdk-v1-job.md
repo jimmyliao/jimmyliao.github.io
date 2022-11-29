@@ -5,7 +5,9 @@ description: "看看怎麼使用 Azure ML ScriptRunConfig Submit Job"
 featured: false
 draft: false
 toc: false
-shareImage: "/images/fb_share.jpg"
+# shareImage: "/images/fb_share.jpg"
+thumbnail: "https://code.benco.io/icon-collection/other/azure-ml.svg"
+shareImage: "https://code.benco.io/icon-collection/other/azure-ml.svg"
 codeMaxLines: 10
 codeLineNumbers: false
 
