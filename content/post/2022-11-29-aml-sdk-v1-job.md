@@ -1,6 +1,6 @@
 ---
 title: "Azure 的五十個小劇場...之 用 Colab 透過 Azure ML SDK (v1) submit job"
-date: 2022-11-29T08:10:36+08:00
+date: 2022-11-29T00:10:36+08:00
 description: "看看怎麼使用 Azure ML ScriptRunConfig Submit Job"
 featured: false
 draft: false
