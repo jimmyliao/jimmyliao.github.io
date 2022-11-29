@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Mon, 28 Nov 2022 08:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>解決更新到 macOS Monterery 之後 VIM 9.0 出現 YouCompleteMe unavailable 的問題</title><link>https://jimmyliao.net/post/2022-11-28-macos-vim/</link><pubDate>Mon, 28 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-28-macos-vim/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JimmyLiao Notes</title><link>https://jimmyliao.net/</link><description>Recent content on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 29 Nov 2022 00:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure 的五十個小劇場...之 用 Colab 透過 Azure ML SDK (v1) submit job</title><link>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</link><pubDate>Tue, 29 Nov 2022 00:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</guid><description>
+&lt;p>底下透過 SDK v1 的 ScriptRunConfig，來 Submit 一個 training job。另外也透過 Colab 的環境展示一下快速整合 AML SDK。&lt;/p>
+&lt;p>準備動作：&lt;/p>
+&lt;ul>
+&lt;li>Azure Subscription ID&lt;/li>
+&lt;li>AML Workspace name&lt;/li>
+&lt;li>AML Resource group name&lt;/li>
+&lt;/ul>
+&lt;p>過程會需要透過 Azure Device login 取得 credential。&lt;/p>
+&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab01/azureml-sdk-v2.ipynb">連結&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://colab.research.google.com/github/jimmyliao/amlworkshop/blob/main/lab01/azureml-sdk-v2.ipynb">&lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">&lt;/a>&lt;/p></description></item><item><title>解決更新到 macOS Monterery 之後 VIM 9.0 出現 YouCompleteMe unavailable 的問題</title><link>https://jimmyliao.net/post/2022-11-28-macos-vim/</link><pubDate>Mon, 28 Nov 2022 08:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-28-macos-vim/</guid><description>
 &lt;p>久久沒打開 macbook，想說更新到 12.6.1 可以再度撐一陣子，沒想到打開 VIM 時出現&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&amp;gt; vim
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">YouCompleteMe unavailable: requires Vim compiled with Python &lt;span class="o">(&lt;/span>2.7.1+ or 3.5.1+&lt;span class="o">)&lt;/span> support.
