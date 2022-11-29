@@ -7,7 +7,7 @@ draft: false
 toc: false
 # shareImage: "/images/fb_share.jpg"
 thumbnail: "https://code.benco.io/icon-collection/other/azure-ml.svg"
-shareImage: "https://code.benco.io/icon-collection/other/azure-ml.svg"
+shareImage: "https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Azure-Machine-Learning-Service-900x0.png"
 codeMaxLines: 10
 codeLineNumbers: false
 
