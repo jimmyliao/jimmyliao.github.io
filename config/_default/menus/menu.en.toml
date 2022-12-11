@@ -37,6 +37,10 @@
 # social menu links
 
 [[social]]
+  name = "Montaigne for personal Notebook"
+  weight = 3
+  url = "https://jimmyliao.montaigne.io"
+[[social]]
   name = "github"
   type = "social"
   weight = 1
