@@ -29,7 +29,7 @@ Got the expiration for your GitHub Page like
 ![](/images/2022-04-24-01.png)
 
 
-2. Generate and specify the expiration. Remember to copy the hash for next step.
+2. Generate and specify the expiration. Remember to copy the hash for next step. And click `Update token` under bottom of this setting page.
 ![](/images/2022-04-24-02.png)
 
 3. Paste the hash value to `PERSONAL_TOKEN`
