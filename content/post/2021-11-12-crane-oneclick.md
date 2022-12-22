@@ -11,7 +11,7 @@ featureImage: "https://raw.githubusercontent.com/InfuseAI/crane/main/public/imag
 thumbnail: "https://raw.githubusercontent.com/InfuseAI/crane/main/public/images/Logo_hori.png"
 codeMaxLines: 10
 codeLineNumbers: false
-figurePositionShow: true
+figurePositionShow: false
 categories:
   - PrimeHub
   - Crane

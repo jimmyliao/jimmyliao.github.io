@@ -11,7 +11,7 @@ featureImage: "https://media-exp1.licdn.com/dms/image/C5622AQGy4L3zDziIxQ/feedsh
 shareImage: "https://media-exp1.licdn.com/dms/image/C5622AQGy4L3zDziIxQ/feedshare-shrink_2048_1536/0/1631541656531?e=1635984000&v=beta&t=kPWgK-Mq21n6zO1rTJ4lM1S6npq8qyvywNGV2EN4OqU"
 codeMaxLines: 10
 codeLineNumbers: false
-figurePositionShow: true
+figurePositionShow: false
 categories:
   - Kubernetes
 tags:

@@ -12,7 +12,7 @@ thumbnail: "/images/2022-04-17-baseketball.jpeg"
 
 codeMaxLines: 10
 codeLineNumbers: false
-figurePositionShow: true
+figurePositionShow: false
 categories:
   - Family
 tags:
