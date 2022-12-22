@@ -2,7 +2,7 @@
 title: "Using Crane to Build Custom Image with 1-Click PrimeHub"
 date: 2021-11-12T23:50:16+08:00
 description: "Using Crane to Build Custom Image with 1-Click PrimeHub"
-featured: true
+featured: false
 draft: false
 toc: false
 # menu: main
