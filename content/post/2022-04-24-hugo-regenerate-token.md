@@ -2,7 +2,7 @@
 title: "Regenerate token for GitHub Page Actions"
 date: 2022-04-24T09:20:36+08:00
 description: "Regenerate token for GitHub Page Actions"
-featured: false
+featured: true
 draft: false
 toc: false
 shareImage: "/images/fb_share.jpg"
