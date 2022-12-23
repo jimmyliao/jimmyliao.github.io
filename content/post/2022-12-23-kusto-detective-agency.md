@@ -22,6 +22,7 @@ tags:
 ---
 
 之前的案子接觸了 Azure Data Explorer 跟 SDK 開發，想說把之前理解的整理一下，發現這個有趣的 Challenge 可以釐清基本的觀念。
+(先預告一下，接下來會講如何用 SDK 開發。)
 
 <!--more-->
 
