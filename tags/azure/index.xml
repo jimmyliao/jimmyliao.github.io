@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/azure/</link><description>Recent content in Azure on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 29 Nov 2022 00:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure 的五十個小劇場...之 用 Colab 透過 Azure ML SDK (v1) submit job</title><link>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</link><pubDate>Tue, 29 Nov 2022 00:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/azure/</link><description>Recent content in Azure on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 23 Dec 2022 00:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Kusto Detective Agency 2022</title><link>https://jimmyliao.net/post/2022-12-23-kusto-detective-agency/</link><pubDate>Fri, 23 Dec 2022 00:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-12-23-kusto-detective-agency/</guid><description>
+&lt;p>之前的案子接觸了 Azure Data Explorer 跟 SDK 開發，想說把之前理解的整理一下，發現這個有趣的 Challenge 可以釐清基本的觀念。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>先到 &lt;a href="https://detective.kusto.io/">https://detective.kusto.io/&lt;/a> ，點選 Inbox。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>依照指示建立 free cluster
+&lt;a href="https://dataexplorer.azure.com/publicfreecluster">https://dataexplorer.azure.com/publicfreecluster&lt;/a>
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>建立好 free cluster 之後會自動帶到 ADX 畫面，記得將 Cluster URI 複製，待會會填入到 Challenge&lt;/p>
+&lt;p>&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-02.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>將前一個步驟的 Cluster URI 填入
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-03.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>接著依照指示打開 Query 工具，將底下 Onboarding 的 Database 建起來。
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-04.png" alt="">
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-05.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>先用個簡單的 KQL 找 Score 加總吧！
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-06.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>回到 Challenge 畫面填入答案跟你的 free cluster URL.
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-07.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>答案正確的話，會需要你的 Credly 資訊。
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-08.png" alt="">
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-09.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>恭喜！開始你的 Azure Data Explorer (Kusto) 挑戰吧～
+&lt;img src="../../static/images/2022/2022-12/2022-12-23/2022-12-23-10.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Azure 的五十個小劇場...之 用 Colab 透過 Azure ML SDK (v1) submit job</title><link>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</link><pubDate>Tue, 29 Nov 2022 00:10:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-11-29-aml-sdk-v1-job/</guid><description>
 &lt;p>底下透過 SDK v1 的 ScriptRunConfig，來 Submit 一個 training job。另外也透過 Colab 的環境展示一下快速整合 AML SDK。&lt;/p>
 &lt;p>準備動作：&lt;/p>
 &lt;ul>
