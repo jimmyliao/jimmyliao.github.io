@@ -1,5 +1,5 @@
 ---
-title: "Kusto Detective Agency 2022"
+title: "Azure 的五十個小劇場...之 Kusto Detective Agency 2022"
 date: 2022-12-23T00:10:36+08:00
 description: "Kusto Detective Agency 2022"
 featured: true
