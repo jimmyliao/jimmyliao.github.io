@@ -1,7 +1,7 @@
 ---
-title: "Windows Prompt 語系問題"
+title: "Windows Prompt 語系問題 -- 更新：是 WSL 語系問題"
 date: 2022-12-25T00:18:36+08:00
-description: "Windows Prompt 語系問題"
+description: "Windows Prompt 語系問題 -- 更新：是 WSL 語系問題"
 featured: false
 draft: false
 toc: false
@@ -20,6 +20,10 @@ tags:
 ---
 
 有人知道怎麼解這個奇妙問題嗎？ -.-
+
+更新：是 WSL 語系問題 Orz
+
+https://github.com/microsoft/WSL/issues/8857
 
 <!--more-->
 
