@@ -5,8 +5,8 @@ description: "利用 Apple Notes 輕鬆發布部落格"
 featured: false
 draft: false
 toc: false
-shareImage: "/images/2022/2022-12/2022-12-30-montaigne-io/2022-12-30-00.png"
-thumbnail: "/images/2022/2022-12/2022-12-30-montaigne-io/2022-12-30-00.png"
+shareImage: "/images/2022/2022-12/2022-12-30-montaigne/2022-12-30-00.png"
+thumbnail: "/images/2022/2022-12/2022-12-30-montaigne/2022-12-30-00.png"
 codeMaxLines: 10
 codeLineNumbers: false
 
