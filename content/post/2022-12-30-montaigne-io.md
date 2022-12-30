@@ -31,12 +31,12 @@ tags:
 
 1. 在自己的 iPhone/Mac 備忘錄上面建立一個資料夾 
 
-  ![](/images/2022/2022-12/2022-12-30-montaigne-io/2022-12-30-01.png)
+  ![](/images/2022/2022-12/2022-12-30-montaigne/2022-12-30-01.png)
 
 2. 從點選 [Sign up](https://app.montaigne.io/auth/signin)，然後會需要透過 Apple ID 認證，設定你要的 domain。
-  ![](/images/2022/2022-12/2022-12-30-montaigne-io/2022-12-30-02.png)
+  ![](/images/2022/2022-12/2022-12-30-montaigne/2022-12-30-02.png)
 
 3. 在備忘錄建立一些筆記，同步時間需要花點時間，不確定多久... ☕
 
 4. 還有個 QR code 是可以作啥？
-  ![](/images/2022/2022-12/2022-12-30-montaigne-io/2022-12-30-03.png)
+  ![](/images/2022/2022-12/2022-12-30-montaigne/2022-12-30-03.png)
