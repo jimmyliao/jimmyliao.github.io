@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/windows/</link><description>Recent content in Windows on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 25 Dec 2022 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Prompt 語系問題 -- 更新：是 WSL 語系問題</title><link>https://jimmyliao.net/post/2022-12-25-windows-command-prompt/</link><pubDate>Sun, 25 Dec 2022 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-12-25-windows-command-prompt/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/windows/</link><description>Recent content in Windows on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Fri, 30 Dec 2022 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>解決 WSL help prompt 出現自動翻譯的問題</title><link>https://jimmyliao.net/post/2022-12-30-resolve-window-cmd-language/</link><pubDate>Fri, 30 Dec 2022 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-12-30-resolve-window-cmd-language/</guid><description>
+&lt;p>這幾天在 Windows 上面跟 Terminal 和 WSL 套交情，昨天踩了這個&lt;a href="https://jimmyliao.net/post/2022-12-25-windows-command-prompt/">地雷&lt;/a>。後來發現一個 workaround。&lt;/p>
+&lt;p>然後突然發現 Terminal/Powershell 何時開始有內建 Tab 功能了？&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>設定 &amp;gt; 時間與語言 &amp;gt; 語言與地區 &amp;gt; 慣用語言 &amp;gt; &lt;strong>把英文移到第一個&lt;/strong>
+&lt;img src="https://jimmyliao.net/images/2022/2022-12/2022-12-30-wsl/2022-12-30-02.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>成功！
+&lt;img src="https://jimmyliao.net/images/2022/2022-12/2022-12-30-wsl/2022-12-30-03.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Windows Prompt 語系問題 -- 更新：是 WSL 語系問題</title><link>https://jimmyliao.net/post/2022-12-25-windows-command-prompt-copy/</link><pubDate>Sun, 25 Dec 2022 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2022-12-25-windows-command-prompt-copy/</guid><description>
 &lt;p>有人知道怎麼解這個奇妙問題嗎？ -.-&lt;/p>
 &lt;p>更新：是 WSL 語系問題 Orz&lt;/p>
 &lt;p>&lt;a href="https://github.com/microsoft/WSL/issues/8857">https://github.com/microsoft/WSL/issues/8857&lt;/a>&lt;/p>
