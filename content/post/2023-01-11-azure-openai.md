@@ -21,9 +21,7 @@ tags:
   - OpenAI
 ---
 
-最近準備 Model Training Code 的時候, 發現幾個禮拜前的 Code 居然 Failed. 才發現一直沒仔細看 Warninig message. 
-\
-
+最近 OpenAI 因為 ChatGPT 引起更多的關注, 加上今天這個新聞 [傳微軟計劃向 OpenAI 投資 100 億美元](https://technews.tw/2023/01/10/chatgpt-openai-microsoft/), 還有一年多之前這篇: [微軟新推Azure OpenAI服務，企業使用GPT-3的門檻更低了！](https://www.ithome.com.tw/news/147645). 覺得可以介紹如何在 Azure 上結合 OpenAI 服務到原有的企業使用情境. 這篇主要是先介紹 Azure 上針對 OpenAI 管理的工具 : Azure OpenAI Studio (https://oai.azure.com/portal).
 
 <!--more-->
 
