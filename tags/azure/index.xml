@@ -80,7 +80,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="n">model&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">COMPLETIONS_MODEL&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">&lt;span class="p">)[&lt;/span>&lt;span class="s2">&amp;#34;choices&amp;#34;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s2">&amp;#34;text&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">strip&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34; &lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>某種程度也算對...
-&lt;img src="https://jimmyliao.net/images/2023/2023-01/2023-01-11/09.png" alt="">&lt;/p>
+&lt;img src="https://jimmyliao.net/images/2023/2023-01/2023-01-11/10.png" alt="">&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Azure OpenAI Part 1: 初探 OpenAI Studio</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai/</link><pubDate>Wed, 11 Jan 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai/</guid><description>
 &lt;p>最近 OpenAI 因為 ChatGPT 引起更多的關注, 加上今天這個新聞 &lt;a href="https://technews.tw/2023/01/10/chatgpt-openai-microsoft/">傳微軟計劃向 OpenAI 投資 100 億美元&lt;/a>, 還有一年多之前這篇: &lt;a href="https://www.ithome.com.tw/news/147645">微軟新推Azure OpenAI服務，企業使用GPT-3的門檻更低了！&lt;/a>. 覺得可以介紹如何在 Azure 上結合 OpenAI 服務到原有的企業使用情境. 這篇主要是先介紹 Azure 上針對 OpenAI 管理的工具 : Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal)">https://oai.azure.com/portal)&lt;/a>.&lt;/p>
