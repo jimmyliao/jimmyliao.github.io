@@ -1,6 +1,6 @@
 ---
 title: "Azure OpenAI Part 2: Show me the code!"
-date: 2023-01-1T02:18:36+08:00
+date: 2023-01-11T02:18:36+08:00
 description: "Azure OpenAI Part 2: Show me the code!"
 featured: false
 draft: false
