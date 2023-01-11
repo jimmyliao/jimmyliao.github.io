@@ -1139,7 +1139,7 @@ git push origin master&lt;/p>
 &lt;p>rake deploy&lt;/p></description></item><item><title>1st post: setup on Octopress on Github page</title><link>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid><description>
 &lt;p>中文
 Hello Octopress World!&lt;/p></description></item><item><title>Azure OpenAI Part 2: Show me the code!</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</guid><description>
-&lt;p>前一篇介紹申請以及使用 Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal">https://oai.azure.com/portal&lt;/a>) 快速部署 Model, 這篇介紹如何使用 code base 整合進原本的應用程式.&lt;/p>
+&lt;p>&lt;a href="https://jimmyliao.net/post/2023-01-11-azure-openai/">前一篇&lt;/a> 介紹了申請以及使用 Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal">https://oai.azure.com/portal&lt;/a>) 快速部署 Model 以及驗證. 這篇介紹如何使用 code base 整合進原本的應用程式.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>在前一篇最後, 利用 Playground 測試 OpenAI 時, 不知道有沒有發現右上方有 &lt;code>Code View&lt;/code> 這個按鈕?&lt;br>
