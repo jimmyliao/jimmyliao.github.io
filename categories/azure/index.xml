@@ -100,7 +100,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">./check_sdk.sh
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab_checkenv/aml_env_check.ipynb">連結&lt;/a>&lt;/p></description></item><item><title>Azure OpenAI Part 2: Show me the code!</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</guid><description>
-&lt;p>&lt;a href="https://jimmyliao.net/post/2023-01-11-azure-openai/">前一篇&lt;/a> 介紹了申請以及使用 Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal">https://oai.azure.com/portal&lt;/a>) 快速部署 Model 以及驗證. 這篇介紹如何使用 code base 整合進原本的應用程式.&lt;/p>
+&lt;p>&lt;a href="https://jimmyliao.net/post/2023-01-11-azure-openai/">前一篇&lt;/a> 介紹了申請以及使用 Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal">https://oai.azure.com/portal&lt;/a>) 快速部署 Model 以及驗證. 這篇介紹如何使用 Python Code 整合進原本的應用程式.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>在前一篇最後, 利用 Playground 測試 OpenAI 時, 不知道有沒有發現右上方有 &lt;code>Code View&lt;/code> 這個按鈕?&lt;br>
