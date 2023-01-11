@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 10 Jan 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 1: 初探 OpenAI Studio</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai/</link><pubDate>Tue, 10 Jan 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JimmyLiao Notes</title><link>https://jimmyliao.net/post/</link><description>Recent content in Posts on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Wed, 11 Jan 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 1: 初探 OpenAI Studio</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai/</link><pubDate>Wed, 11 Jan 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai/</guid><description>
 &lt;p>最近 OpenAI 因為 ChatGPT 引起更多的關注, 加上今天這個新聞 &lt;a href="https://technews.tw/2023/01/10/chatgpt-openai-microsoft/">傳微軟計劃向 OpenAI 投資 100 億美元&lt;/a>, 還有一年多之前這篇: &lt;a href="https://www.ithome.com.tw/news/147645">微軟新推Azure OpenAI服務，企業使用GPT-3的門檻更低了！&lt;/a>. 覺得可以介紹如何在 Azure 上結合 OpenAI 服務到原有的企業使用情境. 這篇主要是先介紹 Azure 上針對 OpenAI 管理的工具 : Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal)">https://oai.azure.com/portal)&lt;/a>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -1138,4 +1138,88 @@ git commit -m &amp;quot;msg&amp;quot;
 git push origin master&lt;/p>
 &lt;p>rake deploy&lt;/p></description></item><item><title>1st post: setup on Octopress on Github page</title><link>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2013-11-16-1st-post-setup-on-octopress-on-github-page/</guid><description>
 &lt;p>中文
-Hello Octopress World!&lt;/p></description></item></channel></rss>
+Hello Octopress World!&lt;/p></description></item><item><title>Azure OpenAI Part 2: Show me the code!</title><link>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2023-01-11-azure-openai-code/</guid><description>
+&lt;p>前一篇介紹申請以及使用 Azure OpenAI Studio (&lt;a href="https://oai.azure.com/portal">https://oai.azure.com/portal&lt;/a>) 快速部署 Model, 這篇介紹如何使用 code base 整合進原本的應用程式.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>在前一篇最後, 利用 Playground 測試 OpenAI 時, 不知道有沒有發現右上方有 &lt;code>Code View&lt;/code> 這個按鈕?&lt;br>
+&lt;img src="https://jimmyliao.net/images/2023/2023-01/2023-01-11/08.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>比對一下 Azure OpenAI 和 OpenAI 的範例.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Azure OpenAI 的範例&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">openai&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;azure&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://&amp;lt;YOUR-ENDPOINT-NAME&amp;gt;.openai.azure.com/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_version&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;OPENAI-API-VERSION&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getenv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="n">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Completion&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="n">engine&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&amp;lt;MODEL-NAME&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="n">prompt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="n">temperature&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.7&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="n">max_tokens&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">60&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="n">top_p&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="n">frequency_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="n">presence_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="n">stop&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">None&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>OpenAI 官方網站的範例&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">openai&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getenv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="n">start_sequence&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">A:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="n">restart_sequence&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n\n&lt;/span>&lt;span class="s2">Q: &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="n">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Completion&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="n">model&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&amp;lt;MODEL-NAME&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="n">prompt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;...&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="n">temperature&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="n">max_tokens&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">100&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="n">top_p&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="n">frequency_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="n">presence_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> &lt;span class="n">stop&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;p>看起來只需要 &lt;code>OPENAI_API_KEY&lt;/code> 就可以了.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>回到 Azure Cognitive service 畫面, 點選 OpenAI 設定主畫面左方的選單 &lt;code>Keys and Endpoint&lt;/code>. 將 Key1 的值複製作為 &lt;code>OPENAI_API_KEY&lt;/code>
+&lt;img src="https://jimmyliao.net/images/2023/2023-01/2023-01-11/09.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>這次來試試 &lt;code>code-davinci-002&lt;/code> 吧!&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">openai&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;azure&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://&amp;lt;ENDPOIND-NAME&amp;gt;.openai.azure.com/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_version&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;2022-06-01-preview&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">api_key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getenv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;OPENAI_API_KEY&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="n">prompt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Answer the question as truthfully as possible using the provided text, and if the answer is not contained within the text below, say &amp;#34;I don&amp;#39;t know&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="s2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="s2">Q: 幫我產生 ssh tunnel 的 bash script
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="s2">A:&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="n">openai&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Completion&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="n">engine&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;code-davinci-002&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="n">prompt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">prompt&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="n">temperature&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> &lt;span class="n">max_tokens&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">300&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> &lt;span class="n">top_p&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> &lt;span class="n">frequency_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="n">presence_penalty&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="n">model&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">COMPLETIONS_MODEL&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">&lt;span class="p">)[&lt;/span>&lt;span class="s2">&amp;#34;choices&amp;#34;&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="s2">&amp;#34;text&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">strip&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34; &lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>某種程度也算對...
+&lt;img src="https://jimmyliao.net/images/2023/2023-01/2023-01-11/09.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
