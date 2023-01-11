@@ -1,7 +1,7 @@
 ---
 title: "Azure OpenAI Part 1: 初探 OpenAI Studio"
 date: 2023-01-10T00:18:36+08:00
-description: "How to resolve numpy deprecation issue: AttributeError: module 'numpy' has no attribute 'str'. Did you mean: 'std'?"
+description: "Azure OpenAI Part 1: 初探 OpenAI Studio"
 featured: false
 draft: false
 toc: false
