@@ -1,6 +1,6 @@
 ---
 title: "Azure OpenAI Part 1: 初探 OpenAI Studio"
-date: 2023-01-10T00:18:36+08:00
+date: 2023-01-11T00:18:36+08:00
 description: "Azure OpenAI Part 1: 初探 OpenAI Studio"
 featured: false
 draft: false
