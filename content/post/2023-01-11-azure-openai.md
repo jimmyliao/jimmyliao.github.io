@@ -6,8 +6,8 @@ featured: false
 draft: false
 toc: false
 # shareImage: "/images/fb_share.jpg"
-shareImage: "/images/fb_share.jpg"
-#thumbnail: "/images/2023/2023-01/2023-01-05/2023-01-05-wsl-01.png"
+shareImage: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
+thumbnail: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
 codeMaxLines: 10
 codeLineNumbers: false
 
