@@ -21,7 +21,7 @@ tags:
   - OpenAI
 ---
 
-[前一篇](https://jimmyliao.net/post/2023-01-11-azure-openai/) 介紹了申請以及使用 Azure OpenAI Studio (https://oai.azure.com/portal) 快速部署 Model 以及驗證. 這篇介紹如何使用 code base 整合進原本的應用程式.
+[前一篇](https://jimmyliao.net/post/2023-01-11-azure-openai/) 介紹了申請以及使用 Azure OpenAI Studio (https://oai.azure.com/portal) 快速部署 Model 以及驗證. 這篇介紹如何使用 Python Code 整合進原本的應用程式.
 
 <!--more-->
 
