@@ -23,7 +23,7 @@ tags:
   - Streamlit
 ---
 
-[第一篇](https://jimmyliao.net/post/2023-01-11-azure-openai/) Azure OpenAI Studio (https://oai.azure.com/portal) 快速部署 Model 以及驗證. [第二篇] 介紹如何使用程式碼 (Python) 與 OpenAI Model 互動 . 此篇會利用 Streamlit 這可以快速將 Python 轉成 Web App, 並且用 `streamlit_chat` 呈現為 Chatbot 互動. 我終於學會 MS SQL 了!
+[第一篇](https://jimmyliao.net/post/2023-01-11-azure-openai/) 介紹 Azure OpenAI Studio (https://oai.azure.com/portal) 可以快速部署 OpenAI Model 以及驗證. [第二篇](https://jimmyliao.net/post/2023-01-11-azure-openai-code/) 介紹如何使用程式碼 (Python) 與 OpenAI Model 互動 . 此篇會利用 Streamlit 這可以快速將 Python 轉成 Web App, 並且用 `streamlit_chat` 呈現為 Chatbot 互動. 教練, 我終於學會 MS SQL 了 (咦?)
 
 <!--more-->
 
