@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/azure/</link><description>Recent content in Azure on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 11 Feb 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 5: 從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費合理嗎？</title><link>https://jimmyliao.net/post/2023-02-11-openai-pricing/</link><pubDate>Sat, 11 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-11-openai-pricing/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure on JimmyLiao Notes</title><link>https://jimmyliao.net/categories/azure/</link><description>Recent content in Azure on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sun, 12 Feb 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 6: GPT-3 裡面的微調參數 - 溫度 (temperature)</title><link>https://jimmyliao.net/post/2023-02-12-openai-parameters/</link><pubDate>Sun, 12 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-12-openai-parameters/</guid><description>
+&lt;p>上週瞄到某個討論串的內容：(略 1000 字)...「溫度真的有用嗎？」，覺得這個問題不如直接動手實驗看看，順便把結果分享一下。&lt;/p>
+&lt;p>你可以看到 GPT-3 的預設參數是：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;engine&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;davinci&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;prompt&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;This is a test&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;max_tokens&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;temperature&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.9&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;top_p&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;n&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;stream&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;logprobs&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;stop&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;\n&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>從 Azure OpenAI Studio Playground (或是 OpenAI Playgound 也可以) 看到關於 &lt;code>temperature&lt;/code> 的說明：
+簡單來說，&lt;code>temperature&lt;/code> 越高，模型輸出的結果就會越隨機，越低就會越有規律。&lt;/p>
+&lt;p>&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/02.png" alt="">&lt;/p>
+&lt;p>原來這就是虎爛程度產生器的原理嘛(誤)。&lt;/p>
+&lt;p>我們可以把 &lt;code>temperature&lt;/code> 調到 1，看看結果：
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/01.png" alt="">&lt;/p>
+&lt;p>先不論加菲貓是不是屬於貓的品種，這回答重複的答案還有夠多。&lt;/p>
+&lt;p>再把 &lt;code>temperature&lt;/code> 調到 0，看看結果：
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/03.png" alt="">&lt;/p>
+&lt;p>雖然沒有回答到所有答案，但是看起來至少合理而且不重複。&lt;/p>
+&lt;p>另外根據文件， &lt;code>temperature&lt;/code> 跟 &lt;code>top_p&lt;/code> 通常是不建議一起使用的，因為 &lt;code>top_p&lt;/code> 本身就是一種概率分佈，所以 &lt;code>temperature&lt;/code> 會讓分佈更加隨機。&lt;/p>
+&lt;p>總之，利用 OpenAI 的 API 開發時，記得根據你的使用情境，調整 &lt;code>temperature&lt;/code> 的值。&lt;/p>
+&lt;p>附上 ChatGPT 的回答，看起來至少比 GPT-3 原生的模型好一點點，有調整過有差！
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/00.png" alt="">&lt;/p></description></item><item><title>Azure OpenAI Part 5: 從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費合理嗎？</title><link>https://jimmyliao.net/post/2023-02-11-openai-pricing/</link><pubDate>Sat, 11 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-11-openai-pricing/</guid><description>
 &lt;p>今年 (2023) 二月一日時，OpenAI 推出 &lt;a href="https://openai.com/blog/chatgpt-plus/">ChatGPT Plus&lt;/a>，一個月 $20 USD。更在二月十日時推出台灣也可以加入 ChatGPT Plus(有誠意!)，到底這個價格是不是合理？這一篇就從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費到底合不合理。&lt;/p>
 &lt;p>首先先設定一下背景知識：ChatGPT 跟 GPT-3 的差異。&lt;/p>
 &lt;ul>
@@ -295,31 +322,4 @@ USD $20 = 1000,000 token&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">chmod a+x ./check_sdk.sh
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">./check_sdk.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab_checkenv/aml_env_check.ipynb">連結&lt;/a>&lt;/p></description></item><item><title>Azure OpenAI Part 6: GPT-3 裡面的微調參數 - 溫度 (temperature)</title><link>https://jimmyliao.net/post/2023-02-12-openai-parameters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jimmyliao.net/post/2023-02-12-openai-parameters/</guid><description>
-&lt;p>上週瞄到某個討論串的內容：(略 1000 字)...「溫度真的有用嗎？」，覺得這個問題不如直接動手實驗看看，順便把結果分享一下。&lt;/p>
-&lt;p>你可以看到 GPT-3 的預設參數是：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;engine&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;davinci&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;prompt&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;This is a test&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;max_tokens&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;temperature&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.9&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;top_p&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;n&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;stream&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;logprobs&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;stop&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;\n&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>從 Azure OpenAI Studio Playground (或是 OpenAI Playgound 也可以) 看到關於 &lt;code>temperature&lt;/code> 的說明：
-簡單來說，&lt;code>temperature&lt;/code> 越高，模型輸出的結果就會越隨機，越低就會越有規律。&lt;/p>
-&lt;p>&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/02.png" alt="">&lt;/p>
-&lt;p>原來這就是虎爛程度產生器的原理嘛(誤)。&lt;/p>
-&lt;p>我們可以把 &lt;code>temperature&lt;/code> 調到 1，看看結果：
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/01.png" alt="">&lt;/p>
-&lt;p>先不論加菲貓是不是屬於貓的品種，這回答重複的答案還有夠多。&lt;/p>
-&lt;p>再把 &lt;code>temperature&lt;/code> 調到 0，看看結果：
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/03.png" alt="">&lt;/p>
-&lt;p>雖然沒有回答到所有答案，但是看起來至少合理而且不重複。&lt;/p>
-&lt;p>另外根據文件， &lt;code>temperature&lt;/code> 跟 &lt;code>top_p&lt;/code> 通常是不建議一起使用的，因為 &lt;code>top_p&lt;/code> 本身就是一種概率分佈，所以 &lt;code>temperature&lt;/code> 會讓分佈更加隨機。&lt;/p>
-&lt;p>總之，利用 OpenAI 的 API 開發時，記得根據你的使用情境，調整 &lt;code>temperature&lt;/code> 的值。&lt;/p>
-&lt;p>附上 ChatGPT 的回答，看起來至少比 GPT-3 原生的模型好一點點，有調整過有差！
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/00.png" alt="">&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Jupyter Notebook &lt;a href="https://github.com/jimmyliao/amlworkshop/blob/main/lab_checkenv/aml_env_check.ipynb">連結&lt;/a>&lt;/p></description></item></channel></rss>
