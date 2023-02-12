@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenAI on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/openai/</link><description>Recent content in OpenAI on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Wed, 01 Feb 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/openai/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 4: Azure OpenAI 服務申請</title><link>https://jimmyliao.net/post/2023-02-01-azure-openai-intro/</link><pubDate>Wed, 01 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-01-azure-openai-intro/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenAI on JimmyLiao Notes</title><link>https://jimmyliao.net/tags/openai/</link><description>Recent content in OpenAI on JimmyLiao Notes</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Sat, 11 Feb 2023 00:18:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/openai/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure OpenAI Part 5: 從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費合理嗎？</title><link>https://jimmyliao.net/post/2023-02-11-openai-pricing/</link><pubDate>Sat, 11 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-11-openai-pricing/</guid><description>
+&lt;p>今年 (2023) 二月一日時，OpenAI 推出 &lt;a href="https://openai.com/blog/chatgpt-plus/">ChatGPT Plus&lt;/a>，一個月 $20 USD。更在二月十日時推出台灣也可以加入 ChatGPT Plus(有誠意!)，到底這個價格是不是合理？這一篇就從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費到底合不合理。&lt;/p>
+&lt;p>首先先設定一下背景知識：ChatGPT 跟 GPT-3 的差異。&lt;/p>
+&lt;ul>
+&lt;li>GPT-3 則是一個通用的語言模型，可以用來做各種任務，例如：翻譯、搜尋、產生文章、產生程式碼等等，而 ChatGPT 是基於 GPT-3 模型建立的一個專門應用，目的是用聊天機器人的方式展示 GPT-3 的能力。&lt;/li>
+&lt;/ul>
+&lt;p>(問一下 ChatGPT 好了 XD)
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/02.png" alt="">&lt;/p>
+&lt;p>第二個題目就是，原本如果你是直接使用 OpenAI 的 Playground，或是 API 方式串接 GPT-3 模型，你會發現免費額度只有前 100K tokens。之後就是照 &lt;a href="https://openai.com/api/pricing">pricing plan&lt;/a> 以 tokens 單位開始計算。啥？什麼是 tokens？tokens 是 OpenAI 計算 GPT-3 模型使用量的單位，而每個 token 的&lt;a href="https://openai.com/api/pricing/#faq-token">計算方式&lt;/a>是：&lt;/p>
+&lt;ul>
+&lt;li>以英文字來說，每一個 token 約為 4 個字元或 0.75 個單字。&lt;/li>
+&lt;li>以中文字 (DBCS) 來說，每一個 token 約為 2 個字元或 0.5 個單字。&lt;/li>
+&lt;/ul>
+&lt;p>那如果純粹以 ChatGPT Plus: USD $20 反推使用 Inference capacity 最好的 Davinci 模型來看：
+USD $20 = 1000,000 token&lt;/p>
+&lt;ul>
+&lt;li>英文 約有 750,000 英文字&lt;/li>
+&lt;li>中文 (DBCS) 約有 37,500 個單字&lt;/li>
+&lt;/ul>
+&lt;p>另外根據&lt;a href="https://www.linkedin.com/business/learning/blog/career-success-tips/you-speak-at-least-7-000-words-a-day-here-s-how-to-make-them">統計&lt;/a>，一個人一天大約會說 7,000 個單字，也就是說，一個月的單字數應該是 21,000 個單字。由於 Token 計算是提問與回答，所以我們將數量乘以 2，也就是說，約需產生 42,000 個單字，如果中文使用是再 Double 計算 token 用量。單純將 ChatGPT 當作 GPT-3 的 Text-davinci 模型來使用，應該是用不完，而且加上宣稱的尖峰時刻快樂使用、優先使用新功能，還有更快的回應時間，這個價格其實蠻划算的。&lt;/p>
+&lt;p>另外再附上 OpenAI 的 token 計算機，可以讓你自行估算。只需要貼上你的問題與回答，就可以看到字元數，與實際 token 數。
+&lt;a href="https://platform.openai.com/tokenizer">tokenizer&lt;/a>
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/03.png" alt="">&lt;/p>
+&lt;p>那回頭來看看，以開發者的角度來看，如果你是要使用 GPT-3 來做產品，那你應該會考慮使用 &lt;a href="https://openai.com/blog/openai-api/">OpenAI API&lt;/a>，而不是使用 ChatGPT。因為 OpenAI API 可以讓你根據需求，自行設定模型與參數，而且 Pay-as-you-go 的計價方式，可以讓你更精準的控管成本。&lt;/p>
+&lt;p>而且如果以企業級的角度，如何評估 OpenAI 是否與企業原有的服務整合，必須考慮到 compliance、地域性、安全性等等，那你應該會選擇使用 &lt;a href="https://azure.microsoft.com/zh-tw/services/openai/">Azure OpenAI&lt;/a>，這樣你就可以在 Azure 上使用 OpenAI API，並且可以享有 Azure 整合方便。其他關於企業如何評估如何整合雲端服務，請參考 Azure 雲端採用架構 &lt;a href="https://docs.microsoft.com/zh-tw/azure/cloud-adoption-framework/">Cloud Adoption Framework&lt;/a>。&lt;/p></description></item><item><title>Azure OpenAI Part 4: Azure OpenAI 服務申請</title><link>https://jimmyliao.net/post/2023-02-01-azure-openai-intro/</link><pubDate>Wed, 01 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-01-azure-openai-intro/</guid><description>
 &lt;p>隨著微軟官方新聞公告 &lt;a href="https://news.microsoft.com/zh-tw/azure-open-ai/">Azure OpenAI 正式推出 (general availability)&lt;/a>，越來越多人想知道如何申請 Azure OpenAI 服務。這篇分享一下我申請的心得。&lt;/p>
 &lt;p>&lt;strong>快速通道在這 =&amp;gt;&lt;/strong>：&lt;a href="https://aka.ms/oai/access">Azure OpenAI 服務申請&lt;/a>&lt;/p>
 &lt;p>(目前申請量很大，所以可能會有一段時間的等待時間，請耐心等待。)&lt;/p>
