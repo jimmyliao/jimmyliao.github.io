@@ -1,6 +1,6 @@
 ---
 title: "Azure OpenAI Part 6: GPT-3 裡面的微調參數 - 溫度 (temperature)"
-date: 2023-02-1ㄉT00:18:36+08:00
+date: 2023-02-12T00:18:36+08:00
 description: "Azure OpenAI Part 6: GPT-3 裡面的微調參數 - 溫度 (temperature)"
 featured: true
 draft: false
