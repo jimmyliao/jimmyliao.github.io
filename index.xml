@@ -17,15 +17,15 @@
 &lt;p>&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/02.png" alt="">&lt;/p>
 &lt;p>原來這就是虎爛程度產生器的原理嘛(誤)。&lt;/p>
 &lt;p>我們可以把 &lt;code>temperature&lt;/code> 調到 1，看看結果：
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/01.png" alt="">&lt;/p>
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/01.png" alt="">&lt;/p>
 &lt;p>先不論加菲貓是不是屬於貓的品種，這回答重複的答案還有夠多。&lt;/p>
 &lt;p>再把 &lt;code>temperature&lt;/code> 調到 0，看看結果：
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/03.png" alt="">&lt;/p>
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/03.png" alt="">&lt;/p>
 &lt;p>雖然沒有回答到所有答案，但是看起來至少合理而且不重複。&lt;/p>
 &lt;p>另外根據文件， &lt;code>temperature&lt;/code> 跟 &lt;code>top_p&lt;/code> 通常是不建議一起使用的，因為 &lt;code>top_p&lt;/code> 本身就是一種概率分佈，所以 &lt;code>temperature&lt;/code> 會讓分佈更加隨機。&lt;/p>
 &lt;p>總之，利用 OpenAI 的 API 開發時，記得根據你的使用情境，調整 &lt;code>temperature&lt;/code> 的值。&lt;/p>
 &lt;p>附上 ChatGPT 的回答，看起來至少比 GPT-3 原生的模型好一點點，有調整過有差！
-&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-11/00.png" alt="">&lt;/p></description></item><item><title>Azure OpenAI Part 5: 從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費合理嗎？</title><link>https://jimmyliao.net/post/2023-02-11-openai-pricing/</link><pubDate>Sat, 11 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-11-openai-pricing/</guid><description>
+&lt;img src="https://jimmyliao.net/images/2023/2023-02/2023-02-12/00.png" alt="">&lt;/p></description></item><item><title>Azure OpenAI Part 5: 從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費合理嗎？</title><link>https://jimmyliao.net/post/2023-02-11-openai-pricing/</link><pubDate>Sat, 11 Feb 2023 00:18:36 +0800</pubDate><guid>https://jimmyliao.net/post/2023-02-11-openai-pricing/</guid><description>
 &lt;p>今年 (2023) 二月一日時，OpenAI 推出 &lt;a href="https://openai.com/blog/chatgpt-plus/">ChatGPT Plus&lt;/a>，一個月 $20 USD。更在二月十日時推出台灣也可以加入 ChatGPT Plus(有誠意!)，到底這個價格是不是合理？這一篇就從 OpenAI 收費與 Token 計算方式，看看 ChatGPT Plus 的收費到底合不合理。&lt;/p>
 &lt;p>首先先設定一下背景知識：ChatGPT 跟 GPT-3 的差異。&lt;/p>
 &lt;ul>
