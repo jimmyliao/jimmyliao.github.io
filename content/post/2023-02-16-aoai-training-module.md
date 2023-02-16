@@ -5,8 +5,8 @@ description: "Azure OpenAI Part 7: Azure 學習模組 OpenAI 服務簡介"
 featured: true
 draft: false
 toc: false
-shareImage: "/images/2023-02/2023-02-16/ms-learn.png"
-thumbnail: "/images/2023-02/2023-02-16/ms-learn.png"
+shareImage: "/images/2023/2023-02/2023-02-16/ms-learn.png"
+thumbnail: "/images/2023/2023-02/2023-02-16/ms-learn.png"
 # thumbnail: "/images/2023/2023-02/2023-02-11/01.png"
 # shareImage: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
 # thumbnail: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
