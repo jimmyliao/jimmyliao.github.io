@@ -40,7 +40,7 @@ tags:
 節錄幾個圖跟筆記以後快速 Reference。
 
 - Azure OpenAI 與 Azure AI 服務的關係
-  ![](/images/2023-02/2023-02-16/microsoft-ai-portfolio-graphic.png)
+  ![](/images/2023/2023-02/2023-02-16/microsoft-ai-portfolio-graphic.png)
 
 - Six Microsoft AI Principles
   - Fairness: Al systems shouldn't make decisions that discriminate against or support bias of a group or individual.
