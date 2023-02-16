@@ -23,7 +23,7 @@ tags:
   - OpenAI
 ---
 
-熱騰騰的 Azure OpenAI 服務簡介在 [Microsoft Learn 課程模組](https://learn.microsoft.com/en-us/training/) 上架囉! 以後是不是可以就直接先請聽眾看完可以省略簡介部分 XD
+熱騰騰的 Azure OpenAI 服務簡介在 [Microsoft Learn 課程模組](https://learn.microsoft.com/en-us/training/) 上架囉! 以後是不是可以就直接先請聽眾自己看完這課程，然後我就快速切入主題。 XD
 
 - 英文版本連結在[這裡](https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/)
 
