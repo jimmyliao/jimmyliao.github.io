@@ -42,7 +42,7 @@ USD $20 = 1000,000 token
 - 英文 約有 750,000 英文字
 - 中文 (DBCS) 約有 37,500 個單字
 
-另外根據[統計](https://www.linkedin.com/business/learning/blog/career-success-tips/you-speak-at-least-7-000-words-a-day-here-s-how-to-make-them)，一個人一天大約會說 7,000 個單字，也就是說，一個月的單字數應該是 21,000 個單字。由於 Token 計算是提問與回答，所以我們將數量乘以 2，也就是說，約需產生 42,000 個單字，如果中文使用是再 Double 計算 token 用量。單純將 ChatGPT 當作 GPT-3 的 Text-davinci 模型來使用，應該是用不完，而且加上宣稱的尖峰時刻快樂使用、優先使用新功能，還有更快的回應時間，這個價格其實蠻划算的。
+另外根據[統計](https://www.linkedin.com/business/learning/blog/career-success-tips/you-speak-at-least-7-000-words-a-day-here-s-how-to-make-them)，一個人一天大約會說 7,000 個單字，也就是說，一個月的單字數應該是 210,000 個單字。由於 Token 計算是提問與回答，所以我們將數量乘以 2，也就是說，約需產生 420,000 個單字，如果中文使用是再 Double 計算 token 用量。單純將 ChatGPT 當作 GPT-3 的 Text-davinci 模型來使用，應該是用不完，而且加上宣稱的尖峰時刻快樂使用、優先使用新功能，還有更快的回應時間，這個價格其實蠻划算的。
 
 另外再附上 OpenAI 的 token 計算機，可以讓你自行估算。只需要貼上你的問題與回答，就可以看到字元數，與實際 token 數。
 [tokenizer](https://platform.openai.com/tokenizer)
