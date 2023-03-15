@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on JimmyLiao Notes</title>
+    <link>https://jimmyliao.net/categories/linux/</link>
+    <description>Recent content in Linux on JimmyLiao Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 08 Nov 2021 20:50:16 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips and Tricks: The usage of xargs for kubectl</title>
+      <link>https://jimmyliao.net/post/2021-11-08-xargs/</link>
+      <pubDate>Mon, 08 Nov 2021 20:50:16 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-08-xargs/</guid>
+      <description>&lt;p&gt;When performing the operation on the cluster, you may need to check/edit the pod or resource back and forth. Here is one of the useful linux command &lt;code&gt;xargs&lt;/code&gt; to speed up your &lt;code&gt;kubectl&lt;/code&gt; operation.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

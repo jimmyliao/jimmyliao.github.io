@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on JimmyLiao Notes</title>
+    <link>https://jimmyliao.net/categories/aws/</link>
+    <description>Recent content in AWS on JimmyLiao Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 16 Nov 2021 22:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon EC2 AMI Locator for Ubuntu</title>
+      <link>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</link>
+      <pubDate>Tue, 16 Nov 2021 22:10:36 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-16-ami-id-locate/</guid>
+      <description>&lt;p&gt;今天在找對應的 Ubuntu 官方支援 EC2 的 AMI-ID，記錄一下找的方式。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

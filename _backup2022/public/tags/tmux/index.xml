@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmux on JimmyLiao Notes</title>
+    <link>https://jimmyliao.net/tags/tmux/</link>
+    <description>Recent content in Tmux on JimmyLiao Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 15 Oct 2021 22:50:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combine TMUX and Bash history</title>
+      <link>https://jimmyliao.net/post/2021-10-15-tmux-tip-01/</link>
+      <pubDate>Fri, 15 Oct 2021 22:50:28 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-10-15-tmux-tip-01/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note if you&#39;re working with multiple sessions and would save command onto history&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

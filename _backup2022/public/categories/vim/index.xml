@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VIM on JimmyLiao Notes</title>
+    <link>https://jimmyliao.net/categories/vim/</link>
+    <description>Recent content in VIM on JimmyLiao Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 28 Nov 2022 08:10:36 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解決更新到 macOS Monterery 之後 VIM 9.0 出現 YouCompleteMe unavailable 的問題</title>
+      <link>https://jimmyliao.net/post/2022-11-28-macos-vim/</link>
+      <pubDate>Mon, 28 Nov 2022 08:10:36 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2022-11-28-macos-vim/</guid>
+      <description>&lt;p&gt;久久沒打開 macbook，想說更新到 12.6.1 可以再度撐一陣子，沒想到打開 VIM 時出現&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; vim
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;YouCompleteMe unavailable: requires Vim compiled with Python &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;2.7.1+ or 3.5.1+&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; support.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Press ENTER or &lt;span class=&#34;nb&#34;&gt;type&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; to &lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>VIM: indent for multiple lines or comment block</title>
+      <link>https://jimmyliao.net/post/2021-09-17-vim-tip-01/</link>
+      <pubDate>Fri, 17 Sep 2021 20:05:28 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-09-17-vim-tip-01/</guid>
+      <description>Indenting On the first line you would like to mark to indent, enter to visual mode: (Press Ctrl+v)
+Move cursor down to the last line for indent
+Press &amp;gt; to indent
+Comment Block On the first line you would like to mark to indent, enter to visual mode: (Press Ctrl+v)
+Move cursor down to the last line for indent
+Press Shift+i, then Press #</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PrimeHub on JimmyLiao Notes</title>
+    <link>https://jimmyliao.net/categories/primehub/</link>
+    <description>Recent content in PrimeHub on JimmyLiao Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/primehub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Crane to Build Custom Image part 2: Update Keras version of TF 2.4.1 Notebook</title>
+      <link>https://jimmyliao.net/post/2021-11-13-crane-tf241/</link>
+      <pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-13-crane-tf241/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;中文版&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jimmyliao.net/post/2021-11-12-crane-oneclick/&#34;&gt;前一篇&lt;/a&gt; 已經介紹如何設定好 Crane 並且成功驗證可以客製一個 Docker Image，這一篇會透過一個使用 PrimeHub 的實際案例：如何從原有的 TensorFlow &lt;a href=&#34;https://docs.primehub.io/docs/guide_manual/images-list&#34;&gt;2.4.1 Notebook Image&lt;/a&gt; (裡面包括 Keras 2.3.1)，更新 Keras 版本到較新的版本 &lt;a href=&#34;https://pypi.org/project/keras/2.4.3/&#34;&gt;2.4.3&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Crane to Build Custom Image with 1-Click PrimeHub</title>
+      <link>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</link>
+      <pubDate>Fri, 12 Nov 2021 23:50:16 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-12-crane-oneclick/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;先快速來個中文版&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/infuseai/crane-the-minimalist-container-image-builder-68253722be8c&#34;&gt;Crane&lt;/a&gt; 是 InfuseAI 剛推出的&lt;a href=&#34;https://github.com/InfuseAI/crane&#34;&gt; Open Source Project&lt;/a&gt;，簡言之就是可以在已經&lt;a href=&#34;https://docs.docker.com/engine/install/&#34;&gt;裝好 Docker&lt;/a&gt; 的電腦上，免除撰寫 Dockerfile ，也免除透過 Command 方式編譯 Docker Image。另外也提供快速把自己在 Docker Hub 編譯好的 Image 加入 PrimeHub 環境裡，以下的範例，就以之前介紹的 &lt;a href=&#34;http://localhost:1313/post/2021-09-24-primehub-oneclick/&#34;&gt;1-Click 環境&lt;/a&gt;，&lt;a href=&#34;https://docs.primehub.io/docs/guide_manual/admin-image#build-custom-image&#34;&gt;客製化 Docker Image&lt;/a&gt;，裡面包含 PrimeHub 新推出的 &lt;a href=&#34;https://github.com/InfuseAI/primehub-python-sdk&#34;&gt;SDK&lt;/a&gt; 。來看看吧～&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HOWTO: delete the PrimeHub 1-Click Install</title>
+      <link>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</link>
+      <pubDate>Sun, 07 Nov 2021 20:30:55 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-07-oneclick-deletion/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How to delete the PrimeHub 1-Click Install&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After the &lt;a href=&#34;https://one.primehub.io/&#34;&gt;1-Click&lt;/a&gt; trial and you&#39;re ready to &lt;a href=&#34;https://discord.com/invite/CrAxQznedH&#34;&gt;explore your business value&lt;/a&gt; with PrimeHub. But hold on, remember to delete the trial instance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cloud-Native Observability Series, Part 1: How to monitor PrimeHub 1-Click Install with Portainer</title>
+      <link>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</link>
+      <pubDate>Sat, 06 Nov 2021 10:25:55 +0800</pubDate>
+      
+      <guid>https://jimmyliao.net/post/2021-11-06-portainer-oneclick/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How to monitor the PrimeHub 1-Click Install with Portainer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The first step after setting up the PrimeHub 1-Click onto Kubernetes is to find the solutions for observability, including monitoring, logging, and tracing. This article shows the easy way to build it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
