@@ -1,7 +1,7 @@
 ---
-title: "在 Azure Language Studio 使用 GPT 模型加速 Labeling 工作"
+title: "Using the GPT model in Azure Language Studio to speed up Labelling"
 date: 2023-03-29T00:18:36+08:00
-description: "在 Azure Language Studio 使用 GPT 模型加速 Labelling 工作"
+description: "Using the GPT model in Azure Language Studio to speed up Labelling"
 featured: false
 draft: false
 toc: false
