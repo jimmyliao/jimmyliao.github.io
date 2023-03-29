@@ -20,6 +20,8 @@ categories:
 
 Two weeks ago, Azure Language Studio announced a new preview feature: [Accelerate Labelling with GPT Models in Language Cognitive Services](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/accelerate-labelling-with-gpt-models-in-language-cognitive/ba-p/3769264). Let's try it out. 
 
+P.S. It's support text named entity recognition (NER) now.
+
 <!--more-->
 
 1. Remember to deploy the text-davinci-002 model in Azure OpenAI first, and then set up the permissions in Access Control (IAM), so that you can use it in Azure Language Studio. 

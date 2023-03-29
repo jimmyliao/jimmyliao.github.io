@@ -20,6 +20,8 @@ categories:
 
 兩周前 Azure Language Studio 公告了一個預覽的新功能: [利用 GPT 模型來加速 Labeling 的過程](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/accelerate-labelling-with-gpt-models-in-language-cognitive/ba-p/3769264)，我們就來試試看吧。
 
+(P.S. 此功能目前是支援文字部分)
+
 <!--more-->
 
 1. 記得在 Azure OpenAI 中先佈署 text-davinci-002 模型，然後在 Access Control (IAM) 中設定好權限，這樣才能在 Azure Language Studio 中使用。
