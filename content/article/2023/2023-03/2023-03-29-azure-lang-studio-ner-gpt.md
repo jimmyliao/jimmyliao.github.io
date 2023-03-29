@@ -5,7 +5,8 @@ description: "Using the GPT model in Azure Language Studio to speed up Labelling
 featured: false
 draft: false
 toc: false
-shareImage: "/images/fb_share.jpg"
+# shareImage: "/images/fb_share.jpg"
+shareImage: "/images/2023/2023-03/2023-03-29/2023-03-29.jpg"
 codeMaxLines: 10
 codeLineNumbers: false
 
