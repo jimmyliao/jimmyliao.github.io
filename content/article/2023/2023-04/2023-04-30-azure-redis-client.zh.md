@@ -24,7 +24,7 @@ categories:
 1. 首先記下 Azure Redis Cache 的連線資訊，基本上就是 Endpoint, Port 跟 Access Key。然後 Advanced Settings 中的 Non-TLS access only 勾勾記得不要打開。
 
 
-2. 打開 RedisInsight，使用 'Add Database Manually' 新增，Host = Endpoint，Port = <port>，Password = Access Key，然後記得 'Use TLS' 勾一下。點選 Add。
+2. 打開 RedisInsight，使用 `Add Database Manually` 新增，Host = Endpoint，Port = <port>，Password = Access Key，然後記得 `Use TLS` 勾一下。點選 Add。
 
   ![](/images/2023/2023-04/2023-04-30/01.png)
 
