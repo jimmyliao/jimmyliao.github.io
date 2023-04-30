@@ -6,6 +6,7 @@ featured: false
 draft: false
 toc: false
 shareImage: "/images/fb_share.jpg"
+thumbnail: "/images/fb_share.jpg"
 codeMaxLines: 10
 codeLineNumbers: false
 
