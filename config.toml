@@ -11,7 +11,7 @@ theme = "bilberry-hugo-theme"
 enableRobotsTXT = true
 
 # Change to one of your content languages defined at the end.
-DefaultContentLanguage = "zh"
+DefaultContentLanguage = "en"
 
 # Enable / Disable Google Analytics statistics for your site
 googleAnalytics = "G-Z8GF80P8LB"
