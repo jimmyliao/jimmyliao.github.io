@@ -1,7 +1,7 @@
 ---
-title: "利用 Docker 建立 SQL Server 環境"
+title: "利用 Docker 建立 SQL Server 2022 開發版本環境"
 date: 2023-05-10T00:18:36+08:00
-description: "利用 Docker 建立 SQL Server 環境"
+description: "利用 Docker 建立 SQL Server 開發版本環境"
 featured: false
 draft: true
 toc: false
@@ -22,7 +22,13 @@ categories:
 
 <!--more-->
 
-1. 
+1. 使用 Docker command 手動下載 SQL Server 2022 開發版本
+```
+$ docker pull mcr.microsoft.com/mssql/server:2022-latest
+
+
+$ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourStrong-Passw0rd" -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
+```
 
 2. 搞定！
 
