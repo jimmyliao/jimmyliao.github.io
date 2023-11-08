@@ -27,7 +27,11 @@ This is the temporary page to draft the introduction.
 
 ### 請將上述句子，翻譯成英文
 
-Hi, I'm Jimmy Liao. I'm glad to rejoin Appier and currently working as a Software Engineer in BotBonnie. I was a Backend Engineer in AIQUA, responsible for UI-Backend. After leaving, I joined InfuseAI as a Customer Success Engineer, responsible for PrimeHub MLOps product onboarding and the establishment of the Presales, Training, and Customer Support team. Then I joined Microsoft as a Cloud Solution Architect in the Customer Success Unit, responsible for customer advisory cases related to Data/AI on Azure, including the Azure OpenAI handson workshop event a while ago, and some well-known projects that can be disclosed, such as TSMC's internal ChatGPT, MediaTek's Copilot, and several banks and SI factories internal ChatGPT, etc.
+Hi, I'm Jimmy Liao. I'm glad to rejoin Appier, currently working in BotBonnie. Previously I was a Backend Engineer in AIQUA. 
+
+After leaving, I joined InfuseAI as the first CSE, responsible for MLOps product onboarding and Customer Support team building. Then I joined Microsoft as Azure Cloud Solution Architect, deliver Azure OpenAI hands-on workshops for customer, and involve projects such as TSMC's internal ChatGPT, MediaTek's Copilot, and several banks internal ChatGPT, etc.
+
+One interesting fact you may know more about me is that I'd tried to commuting by running or biking from home to office, and it's about 20km. I'd tried to do it for 3 months.
 
 I'm glad to rejoin Appier and continue to participate in the RD activities of Enterprise Solution. I hope to work and exchange with old friends and new friends here.
 
