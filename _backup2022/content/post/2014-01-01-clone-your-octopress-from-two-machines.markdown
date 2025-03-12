@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "clone your octopress from two machines"
-date: 2014-01-01 20:46:15 +0800
+date: 2014-01-01T20:46:15+08:00
 comments: true
 categories: 
 - Blog

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JazzHub from zero"
-date: 2013-12-10 23:50:57 +0800
+date: 2013-12-10T23:50:57+08:00
 published: false
 comments: true
 categories: 

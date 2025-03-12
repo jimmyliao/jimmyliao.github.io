@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to add Category list into your octopress"
-date: 2014-01-19 23:42:07 +0800
+date: 2014-01-19T23:42:07+08:00
 comments: true
 categories: 
 - Octopress

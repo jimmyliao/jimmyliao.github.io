@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: 2016-05-05 22:00:46 +0800
+date: 2016-05-05T22:00:46+08:00
 comments: true
 categories: 
 - Hexo

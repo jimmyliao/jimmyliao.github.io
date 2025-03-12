@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Build a Worklight Application on Bluemix"
-date: 2014-03-05 23:57:25 +0800
+date: 2014-03-05T23:57:25+08:00
 published: false
 comments: true
 categories: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to add [Read on] more link"
-date: 2014-01-10 21:39:47 +0800
+date: 2014-01-10+21:39:47+08:00
 comments: true
 categories: 
 - Markdown

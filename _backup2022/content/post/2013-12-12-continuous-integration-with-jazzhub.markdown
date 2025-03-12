@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Continuous Integration with JazzHub"
-date: 2013-12-12 23:53:34 +0800
+date: 2013-12-12T23:53:34+08:00
 published: false
 comments: true
 categories: 

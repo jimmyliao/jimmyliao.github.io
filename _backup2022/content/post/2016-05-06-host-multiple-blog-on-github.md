@@ -1,6 +1,6 @@
 ---
 title: 'Host Multple Blog on one Github Pages'
-date: 2016-05-06 15:50:46 +0800
+date: 2016-05-06T15:50:46+08:00
 comments: true
 categories: 
 - Hexo

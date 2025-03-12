@@ -1,6 +1,6 @@
 ---
 title: 'Re-Setup Octopress on different laptop'
-date: 2016-05-04 22:07:46 +0800
+date: 2016-05-04T22:07:46+08:00
 comments: true
 categories: 
 - Octopress
