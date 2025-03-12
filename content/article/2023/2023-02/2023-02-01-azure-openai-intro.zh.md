@@ -5,7 +5,6 @@ description: "Azure OpenAI Part 4: Azure OpenAI 服務申請"
 featured: true
 draft: false
 toc: false
-# shareImage: "/images/fb_share.jpg"
 shareImage: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
 thumbnail: "/images/2023/2023-01/2023-01-11/openai_logo.jpg"
 codeMaxLines: 10
@@ -33,7 +32,6 @@ tags:
 
 
 先從新聞公告看一下目前 Microsoft AI 上的關鍵進展
-  <!--![](/images/2023/2023-01/2023-01-13/2023-01-13-01.png)-->
   ![](https://news.microsoft.com/wp-content/uploads/prod/sites/74/2023/01/0119-1.png)
   
 像是 GitHub Copilot、Azure OpenAI、Project Silica、Project Brainwave 等等，都是微軟在人工智慧領域的重要進展，也是微軟在 2022 年的 AI 重大發展。
