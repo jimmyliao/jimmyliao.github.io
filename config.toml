@@ -193,7 +193,8 @@ disqusShortname = "jimmyliao"
   [markup.goldmark]
     [markup.goldmark.renderer]
       # change to 'true' if you need to render raw HTML within your markdown content
-      unsafe = false
+      # unsafe = false
+      unsafe = true
 
   [markup.tableOfContents]
     endLevel = 5
