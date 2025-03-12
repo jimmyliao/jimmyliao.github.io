@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Font on JimmyLiao</title><link>https://jimmyliao.net/categories/font/</link><description>Recent content in Font on JimmyLiao</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/font/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM Plex Mono</title><link>https://jimmyliao.net/article/2021/2021-11/2021-11-14-ibmplexmono/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/article/2021/2021-11/2021-11-14-ibmplexmono/</guid><description>Going to use IBM Plex Mono for daily work (Terminal, Sublime, VSCode, Chrome).
-Some notes for my personal setup cross-laptop (osx, kubuntu, windows)
-Download from Google Fonts Install via Font Book app Download powerline patch font - perplexed and install via Font Book app, too.
-Specify the font onto each application. Enjoy!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Font on JimmyLiao</title><link>https://jimmyliao.net/categories/font/</link><description>Recent content in Font on JimmyLiao</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 13 Nov 2021 23:30:28 +0800</lastBuildDate><atom:link href="https://jimmyliao.net/categories/font/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM Plex Mono</title><link>https://jimmyliao.net/article/2021/2021-11/2021-11-14-ibmplexmono/</link><pubDate>Sat, 13 Nov 2021 23:30:28 +0800</pubDate><guid>https://jimmyliao.net/article/2021/2021-11/2021-11-14-ibmplexmono/</guid><description>&lt;p>Going to use IBM Plex Mono for daily work (Terminal, Sublime, VSCode, Chrome).&lt;/p>
+&lt;p>Some notes for my personal setup cross-laptop (osx, kubuntu, windows)&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Download from &lt;a href="https://fonts.google.com/specimen/IBM&amp;#43;Plex&amp;#43;Mono#standard-styles">Google Fonts&lt;/a>
+&lt;img src="https://jimmyliao.net/images/2021-11-14-01.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Install via Font Book app
+&lt;img src="https://jimmyliao.net/images/2021-11-14-02.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-03.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-04.png" alt="">
+&lt;img src="https://jimmyliao.net/images/2021-11-14-05.png" alt="">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Download powerline patch font - &lt;a href="https://github.com/phoikoi/perplexed">perplexed&lt;/a> and install via Font Book app, too.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Specify the font onto each application.
+&lt;img src="https://jimmyliao.net/images/2021-11-14-06.png" alt="">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Enjoy!&lt;/strong>&lt;/p></description></item></channel></rss>
