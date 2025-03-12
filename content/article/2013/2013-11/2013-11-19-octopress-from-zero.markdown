@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "octopress from zero"
-date: 2013-11-19T22:07:46+08:00
+date: 2013-11-19T22:07:46:00+08:00
 comments: true
 categories: 
 - Blog

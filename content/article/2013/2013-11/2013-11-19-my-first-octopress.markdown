@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "my first octopress"
-date: 2013-11-19T21:08:03+08:00
+date: 2013-11-19T21:08:03:00+08:00
 comments: true
 sharing: true
 footer: true
