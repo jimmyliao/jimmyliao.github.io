@@ -11,15 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      # - name: Create cname file
-      #   run: echo "demo.gh.jimmyliao.net" > static/CNAME
-
-      - name: Update robot.txt
-        run: |
-                    echo -e "User-agent: *\nDisallow: /" > static/robots.txt
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo (Optional - Cloudflare can handle this)
         uses: peaceiris/actions-hugo@v2
